@@ -1,0 +1,4809 @@
+[
+  {
+    "timestamp": "2025-03-11 21:00:45",
+    "type": "game_start",
+    "details": {
+      "game_id": "43078603-dafa-423d-86e5-9c08685a11c8",
+      "start_time": "2025-03-11 21:00:45",
+      "red_team": {
+        "spymaster": "Red Spymaster",
+        "operative": "Red Operative",
+        "spymaster_model": "gpt-4o",
+        "operative_model": "gpt-4o"
+      },
+      "blue_team": {
+        "spymaster": "Blue Spymaster",
+        "operative": "Blue Operative",
+        "spymaster_model": "gpt-4o",
+        "operative_model": "gpt-4o"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:00:45",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 8,
+      "blue_remaining": 9,
+      "board": [
+        {
+          "word": "cast",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "life",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "eagle",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "straw",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "grass",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "water",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "fighter",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "club",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "well",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "war",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "whale",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "maple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "bug",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "sound",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "spike",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "wind",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "millionaire",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "alien",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "soul",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "cover",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "ham",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "church",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "cycle",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "crane",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "horse",
+          "type": "red",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": true
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:00:45",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 8,
+      "blue_remaining": 9,
+      "board": [
+        {
+          "word": "cast",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "life",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "eagle",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "straw",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "grass",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "water",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "fighter",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "club",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "well",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "war",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "whale",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "maple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "bug",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "sound",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "spike",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "wind",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "millionaire",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "alien",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "soul",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "cover",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "ham",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "church",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "cycle",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "crane",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "horse",
+          "type": "red",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": true
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:00:46",
+    "type": "clue",
+    "details": {
+      "team": "blue",
+      "player": "Blue Spymaster",
+      "word": "nature",
+      "number": 3,
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:00:46",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 8,
+      "blue_remaining": 9,
+      "board": [
+        {
+          "word": "cast",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "life",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "eagle",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "straw",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "grass",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "water",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "fighter",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "club",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "well",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "war",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "whale",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "maple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "bug",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "sound",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "spike",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "wind",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "millionaire",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "alien",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "soul",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "cover",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "ham",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "church",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "cycle",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "crane",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "horse",
+          "type": "red",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:00:46",
+    "type": "guess",
+    "details": {
+      "team": "blue",
+      "player": "Blue Operative",
+      "word": "eagle",
+      "result": "NEUTRAL (Wrong)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:00:46",
+    "type": "turn_end",
+    "details": {
+      "team": "blue",
+      "reason": "Incorrect guess"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:00:46",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 8,
+      "blue_remaining": 9,
+      "board": [
+        {
+          "word": "cast",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "life",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "eagle",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "straw",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "grass",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "water",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "fighter",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "club",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "well",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "war",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "whale",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "maple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "bug",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "sound",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "spike",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "wind",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "millionaire",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "alien",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "soul",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "cover",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "ham",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "church",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "cycle",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "crane",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "horse",
+          "type": "red",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": true
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:00:47",
+    "type": "clue",
+    "details": {
+      "team": "red",
+      "player": "Red Spymaster",
+      "word": "golf",
+      "number": 2,
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:00:47",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 8,
+      "blue_remaining": 9,
+      "board": [
+        {
+          "word": "cast",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "life",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "eagle",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "straw",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "grass",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "water",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "fighter",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "club",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "well",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "war",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "whale",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "maple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "bug",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "sound",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "spike",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "wind",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "millionaire",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "alien",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "soul",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "cover",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "ham",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "church",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "cycle",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "crane",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "horse",
+          "type": "red",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:00:47",
+    "type": "guess",
+    "details": {
+      "team": "red",
+      "player": "Red Operative",
+      "word": "club",
+      "result": "RED (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:00:47",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 7,
+      "blue_remaining": 9,
+      "board": [
+        {
+          "word": "cast",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "life",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "eagle",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "straw",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "grass",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "water",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "fighter",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "club",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "well",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "war",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "whale",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "maple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "bug",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "sound",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "spike",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "wind",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "millionaire",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "alien",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "soul",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "cover",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "ham",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "church",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "cycle",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "crane",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "horse",
+          "type": "red",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:00:48",
+    "type": "guess",
+    "details": {
+      "team": "red",
+      "player": "Red Operative",
+      "word": "grass",
+      "result": "RED (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:00:48",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 6,
+      "blue_remaining": 9,
+      "board": [
+        {
+          "word": "cast",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "life",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "eagle",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "straw",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "grass",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "water",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "fighter",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "club",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "well",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "war",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "whale",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "maple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "bug",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "sound",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "spike",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "wind",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "millionaire",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "alien",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "soul",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "cover",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "ham",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "church",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "cycle",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "crane",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "horse",
+          "type": "red",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:00:49",
+    "type": "guess",
+    "details": {
+      "team": "red",
+      "player": "Red Operative",
+      "word": "wind",
+      "result": "BLUE (Wrong)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:00:49",
+    "type": "turn_end",
+    "details": {
+      "team": "red",
+      "reason": "Incorrect guess"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:00:49",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 6,
+      "blue_remaining": 8,
+      "board": [
+        {
+          "word": "cast",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "life",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "eagle",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "straw",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "grass",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "water",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "fighter",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "club",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "well",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "war",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "whale",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "maple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "bug",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "sound",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "spike",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "wind",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "millionaire",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "alien",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "soul",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "cover",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "ham",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "church",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "cycle",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "crane",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "horse",
+          "type": "red",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": true
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:00:51",
+    "type": "clue",
+    "details": {
+      "team": "blue",
+      "player": "Blue Spymaster",
+      "word": "maple",
+      "number": 2,
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:00:51",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 6,
+      "blue_remaining": 8,
+      "board": [
+        {
+          "word": "cast",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "life",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "eagle",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "straw",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "grass",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "water",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "fighter",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "club",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "well",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "war",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "whale",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "maple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "bug",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "sound",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "spike",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "wind",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "millionaire",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "alien",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "soul",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "cover",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "ham",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "church",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "cycle",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "crane",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "horse",
+          "type": "red",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:00:52",
+    "type": "guess",
+    "details": {
+      "team": "blue",
+      "player": "Blue Operative",
+      "word": "maple",
+      "result": "BLUE (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:00:52",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 6,
+      "blue_remaining": 7,
+      "board": [
+        {
+          "word": "cast",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "life",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "eagle",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "straw",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "grass",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "water",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "fighter",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "club",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "well",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "war",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "whale",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "maple",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "bug",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "sound",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "spike",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "wind",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "millionaire",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "alien",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "soul",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "cover",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "ham",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "church",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "cycle",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "crane",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "horse",
+          "type": "red",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:00:53",
+    "type": "guess",
+    "details": {
+      "team": "blue",
+      "player": "Blue Operative",
+      "word": "cover",
+      "result": "RED (Wrong)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:00:53",
+    "type": "turn_end",
+    "details": {
+      "team": "blue",
+      "reason": "Incorrect guess"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:00:53",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 5,
+      "blue_remaining": 7,
+      "board": [
+        {
+          "word": "cast",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "life",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "eagle",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "straw",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "grass",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "water",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "fighter",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "club",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "well",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "war",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "whale",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "maple",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "bug",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "sound",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "spike",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "wind",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "millionaire",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "alien",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "soul",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "cover",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "ham",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "church",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "cycle",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "crane",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "horse",
+          "type": "red",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": true
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:00:53",
+    "type": "clue",
+    "details": {
+      "team": "red",
+      "player": "Red Spymaster",
+      "word": "religion",
+      "number": 2,
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:00:53",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 5,
+      "blue_remaining": 7,
+      "board": [
+        {
+          "word": "cast",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "life",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "eagle",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "straw",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "grass",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "water",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "fighter",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "club",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "well",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "war",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "whale",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "maple",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "bug",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "sound",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "spike",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "wind",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "millionaire",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "alien",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "soul",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "cover",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "ham",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "church",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "cycle",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "crane",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "horse",
+          "type": "red",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:00:54",
+    "type": "guess",
+    "details": {
+      "team": "red",
+      "player": "Red Operative",
+      "word": "church",
+      "result": "RED (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:00:54",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 4,
+      "blue_remaining": 7,
+      "board": [
+        {
+          "word": "cast",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "life",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "eagle",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "straw",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "grass",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "water",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "fighter",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "club",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "well",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "war",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "whale",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "maple",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "bug",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "sound",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "spike",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "wind",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "millionaire",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "alien",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "soul",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "cover",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "ham",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "church",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cycle",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "crane",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "horse",
+          "type": "red",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:00:54",
+    "type": "guess",
+    "details": {
+      "team": "red",
+      "player": "Red Operative",
+      "word": "soul",
+      "result": "BLUE (Wrong)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:00:54",
+    "type": "turn_end",
+    "details": {
+      "team": "red",
+      "reason": "Incorrect guess"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:00:54",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 4,
+      "blue_remaining": 6,
+      "board": [
+        {
+          "word": "cast",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "life",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "eagle",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "straw",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "grass",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "water",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "fighter",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "club",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "well",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "war",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "whale",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "maple",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "bug",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "sound",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "spike",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "wind",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "millionaire",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "alien",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "soul",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "cover",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "ham",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "church",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cycle",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "crane",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "horse",
+          "type": "red",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": true
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:00:55",
+    "type": "clue",
+    "details": {
+      "team": "blue",
+      "player": "Blue Spymaster",
+      "word": "wealthy",
+      "number": 2,
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:00:55",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 4,
+      "blue_remaining": 6,
+      "board": [
+        {
+          "word": "cast",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "life",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "eagle",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "straw",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "grass",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "water",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "fighter",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "club",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "well",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "war",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "whale",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "maple",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "bug",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "sound",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "spike",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "wind",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "millionaire",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "alien",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "soul",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "cover",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "ham",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "church",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cycle",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "crane",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "horse",
+          "type": "red",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:00:55",
+    "type": "guess",
+    "details": {
+      "team": "blue",
+      "player": "Blue Operative",
+      "word": "millionaire",
+      "result": "BLUE (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:00:55",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 4,
+      "blue_remaining": 5,
+      "board": [
+        {
+          "word": "cast",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "life",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "eagle",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "straw",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "grass",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "water",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "fighter",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "club",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "well",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "war",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "whale",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "maple",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "bug",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "sound",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "spike",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "wind",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "millionaire",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "alien",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "soul",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "cover",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "ham",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "church",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cycle",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "crane",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "horse",
+          "type": "red",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:00:56",
+    "type": "guess",
+    "details": {
+      "team": "blue",
+      "player": "Blue Operative",
+      "word": "well",
+      "result": "BLUE (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:00:56",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 4,
+      "blue_remaining": 4,
+      "board": [
+        {
+          "word": "cast",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "life",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "eagle",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "straw",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "grass",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "water",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "fighter",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "club",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "well",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "war",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "whale",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "maple",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "bug",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "sound",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "spike",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "wind",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "millionaire",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "alien",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "soul",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "cover",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "ham",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "church",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cycle",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "crane",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "horse",
+          "type": "red",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:00:57",
+    "type": "guess",
+    "details": {
+      "team": "blue",
+      "player": "Blue Operative",
+      "word": "whale",
+      "result": "NEUTRAL (Wrong)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:00:57",
+    "type": "turn_end",
+    "details": {
+      "team": "blue",
+      "reason": "Incorrect guess"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:00:57",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 4,
+      "blue_remaining": 4,
+      "board": [
+        {
+          "word": "cast",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "life",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "eagle",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "straw",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "grass",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "water",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "fighter",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "club",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "well",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "war",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "whale",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "maple",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "bug",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "sound",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "spike",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "wind",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "millionaire",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "alien",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "soul",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "cover",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "ham",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "church",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cycle",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "crane",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "horse",
+          "type": "red",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": true
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:00:57",
+    "type": "clue",
+    "details": {
+      "team": "red",
+      "player": "Red Spymaster",
+      "word": "carousel",
+      "number": 2,
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:00:57",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 4,
+      "blue_remaining": 4,
+      "board": [
+        {
+          "word": "cast",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "life",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "eagle",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "straw",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "grass",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "water",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "fighter",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "club",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "well",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "war",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "whale",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "maple",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "bug",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "sound",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "spike",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "wind",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "millionaire",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "alien",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "soul",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "cover",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "ham",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "church",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cycle",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "crane",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "horse",
+          "type": "red",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:00:58",
+    "type": "guess",
+    "details": {
+      "team": "red",
+      "player": "Red Operative",
+      "word": "horse",
+      "result": "RED (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:00:58",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 3,
+      "blue_remaining": 4,
+      "board": [
+        {
+          "word": "cast",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "life",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "eagle",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "straw",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "grass",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "water",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "fighter",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "club",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "well",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "war",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "whale",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "maple",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "bug",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "sound",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "spike",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "wind",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "millionaire",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "alien",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "soul",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "cover",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "ham",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "church",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cycle",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "crane",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "horse",
+          "type": "red",
+          "revealed": true
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:00:58",
+    "type": "guess",
+    "details": {
+      "team": "red",
+      "player": "Red Operative",
+      "word": "cycle",
+      "result": "RED (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:00:58",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 2,
+      "blue_remaining": 4,
+      "board": [
+        {
+          "word": "cast",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "life",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "eagle",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "straw",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "grass",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "water",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "fighter",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "club",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "well",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "war",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "whale",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "maple",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "bug",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "sound",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "spike",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "wind",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "millionaire",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "alien",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "soul",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "cover",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "ham",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "church",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cycle",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "crane",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "horse",
+          "type": "red",
+          "revealed": true
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:00:59",
+    "type": "guess",
+    "details": {
+      "team": "red",
+      "player": "Red Operative",
+      "word": "crane",
+      "result": "NEUTRAL (Wrong)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:00:59",
+    "type": "turn_end",
+    "details": {
+      "team": "red",
+      "reason": "Incorrect guess"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:00:59",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 2,
+      "blue_remaining": 4,
+      "board": [
+        {
+          "word": "cast",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "life",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "eagle",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "straw",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "grass",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "water",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "fighter",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "club",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "well",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "war",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "whale",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "maple",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "bug",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "sound",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "spike",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "wind",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "millionaire",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "alien",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "soul",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "cover",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "ham",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "church",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cycle",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "crane",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "horse",
+          "type": "red",
+          "revealed": true
+        }
+      ],
+      "for_spymaster": true
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:00:59",
+    "type": "clue",
+    "details": {
+      "team": "blue",
+      "player": "Blue Spymaster",
+      "word": "insect",
+      "number": 2,
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:00:59",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 2,
+      "blue_remaining": 4,
+      "board": [
+        {
+          "word": "cast",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "life",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "eagle",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "straw",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "grass",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "water",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "fighter",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "club",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "well",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "war",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "whale",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "maple",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "bug",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "sound",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "spike",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "wind",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "millionaire",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "alien",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "soul",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "cover",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "ham",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "church",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cycle",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "crane",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "horse",
+          "type": "red",
+          "revealed": true
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:01:00",
+    "type": "guess",
+    "details": {
+      "team": "blue",
+      "player": "Blue Operative",
+      "word": "bug",
+      "result": "BLUE (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:01:00",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 2,
+      "blue_remaining": 3,
+      "board": [
+        {
+          "word": "cast",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "life",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "eagle",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "straw",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "grass",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "water",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "fighter",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "club",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "well",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "war",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "whale",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "maple",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "bug",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "sound",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "spike",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "wind",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "millionaire",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "alien",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "soul",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "cover",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "ham",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "church",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cycle",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "crane",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "horse",
+          "type": "red",
+          "revealed": true
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:01:00",
+    "type": "guess",
+    "details": {
+      "team": "blue",
+      "player": "Blue Operative",
+      "word": "alien",
+      "result": "NEUTRAL (Wrong)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:01:00",
+    "type": "turn_end",
+    "details": {
+      "team": "blue",
+      "reason": "Incorrect guess"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:01:00",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 2,
+      "blue_remaining": 3,
+      "board": [
+        {
+          "word": "cast",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "life",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "eagle",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "straw",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "grass",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "water",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "fighter",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "club",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "well",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "war",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "whale",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "maple",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "bug",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "sound",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "spike",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "wind",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "millionaire",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "alien",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "soul",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "cover",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "ham",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "church",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cycle",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "crane",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "horse",
+          "type": "red",
+          "revealed": true
+        }
+      ],
+      "for_spymaster": true
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:01:01",
+    "type": "clue",
+    "details": {
+      "team": "red",
+      "player": "Red Spymaster",
+      "word": "theater",
+      "number": 2,
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:01:01",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 2,
+      "blue_remaining": 3,
+      "board": [
+        {
+          "word": "cast",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "life",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "eagle",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "straw",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "grass",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "water",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "fighter",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "club",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "well",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "war",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "whale",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "maple",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "bug",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "sound",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "spike",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "wind",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "millionaire",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "alien",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "soul",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "cover",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "ham",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "church",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cycle",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "crane",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "horse",
+          "type": "red",
+          "revealed": true
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:01:01",
+    "type": "guess",
+    "details": {
+      "team": "red",
+      "player": "Red Operative",
+      "word": "cast",
+      "result": "RED (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:01:01",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 1,
+      "blue_remaining": 3,
+      "board": [
+        {
+          "word": "cast",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "life",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "eagle",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "straw",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "grass",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "water",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "fighter",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "club",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "well",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "war",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "whale",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "maple",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "bug",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "sound",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "spike",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "wind",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "millionaire",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "alien",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "soul",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "cover",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "ham",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "church",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cycle",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "crane",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "horse",
+          "type": "red",
+          "revealed": true
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:01:02",
+    "type": "guess",
+    "details": {
+      "team": "red",
+      "player": "Red Operative",
+      "word": "sound",
+      "result": "NEUTRAL (Wrong)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:01:02",
+    "type": "turn_end",
+    "details": {
+      "team": "red",
+      "reason": "Incorrect guess"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:01:02",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 1,
+      "blue_remaining": 3,
+      "board": [
+        {
+          "word": "cast",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "life",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "eagle",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "straw",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "grass",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "water",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "fighter",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "club",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "well",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "war",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "whale",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "maple",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "bug",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "sound",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "spike",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "wind",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "millionaire",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "alien",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "soul",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "cover",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "ham",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "church",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cycle",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "crane",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "horse",
+          "type": "red",
+          "revealed": true
+        }
+      ],
+      "for_spymaster": true
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:01:03",
+    "type": "clue",
+    "details": {
+      "team": "blue",
+      "player": "Blue Spymaster",
+      "word": "drink",
+      "number": 2,
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:01:03",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 1,
+      "blue_remaining": 3,
+      "board": [
+        {
+          "word": "cast",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "life",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "eagle",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "straw",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "grass",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "water",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "fighter",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "club",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "well",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "war",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "whale",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "maple",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "bug",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "sound",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "spike",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "wind",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "millionaire",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "alien",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "soul",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "cover",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "ham",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "church",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cycle",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "crane",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "horse",
+          "type": "red",
+          "revealed": true
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:01:04",
+    "type": "guess",
+    "details": {
+      "team": "blue",
+      "player": "Blue Operative",
+      "word": "water",
+      "result": "BLUE (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:01:04",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 1,
+      "blue_remaining": 2,
+      "board": [
+        {
+          "word": "cast",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "life",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "eagle",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "straw",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "grass",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "water",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "fighter",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "club",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "well",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "war",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "whale",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "maple",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "bug",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "sound",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "spike",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "wind",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "millionaire",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "alien",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "soul",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "cover",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "ham",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "church",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cycle",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "crane",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "horse",
+          "type": "red",
+          "revealed": true
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:01:04",
+    "type": "guess",
+    "details": {
+      "team": "blue",
+      "player": "Blue Operative",
+      "word": "straw",
+      "result": "BLUE (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:01:04",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 1,
+      "blue_remaining": 1,
+      "board": [
+        {
+          "word": "cast",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "life",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "eagle",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "straw",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "grass",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "water",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "fighter",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "club",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "well",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "war",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "whale",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "maple",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "bug",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "sound",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "spike",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "wind",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "millionaire",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "alien",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "soul",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "cover",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "ham",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "church",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cycle",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "crane",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "horse",
+          "type": "red",
+          "revealed": true
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:01:05",
+    "type": "guess",
+    "details": {
+      "team": "blue",
+      "player": "Blue Operative",
+      "word": "life",
+      "result": "RED (Wrong)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:01:05",
+    "type": "game_end",
+    "details": {
+      "winner": "red",
+      "duration": 20.288039922714233,
+      "total_turns": 9
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:01:05",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 0,
+      "blue_remaining": 1,
+      "board": [
+        {
+          "word": "cast",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "life",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "eagle",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "straw",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "grass",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "water",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "fighter",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "club",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "well",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "war",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "whale",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "maple",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "bug",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "sound",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "spike",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "wind",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "millionaire",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "alien",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "soul",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "cover",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "ham",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "church",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cycle",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "crane",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "horse",
+          "type": "red",
+          "revealed": true
+        }
+      ],
+      "for_spymaster": true
+    }
+  }
+]

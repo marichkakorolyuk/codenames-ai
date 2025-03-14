@@ -1,0 +1,253 @@
+{
+  "red_wins": 0,
+  "blue_wins": 1,
+  "game_duration": 18.998526096343994,
+  "total_turns": 9,
+  "red_team": {
+    "correct_guesses": 6,
+    "wrong_guesses": 1
+  },
+  "blue_team": {
+    "correct_guesses": 8,
+    "wrong_guesses": 1
+  },
+  "clues": [
+    {
+      "team": "blue",
+      "clue_word": "theater",
+      "clue_number": 4,
+      "model": "gpt-4o",
+      "target_words": [
+        "theater",
+        "plot",
+        "scale",
+        "flute"
+      ],
+      "guesses": [
+        {
+          "word": "theater",
+          "actual_type": "blue",
+          "is_correct": true,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:16:59"
+        },
+        {
+          "word": "plot",
+          "actual_type": "blue",
+          "is_correct": true,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:17:00"
+        },
+        {
+          "word": "cloak",
+          "actual_type": "neutral",
+          "is_correct": false,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:17:00"
+        }
+      ],
+      "timestamp": "2025-03-11 21:16:59"
+    },
+    {
+      "team": "red",
+      "clue_word": "park",
+      "clue_number": 3,
+      "model": "gpt-4o",
+      "target_words": [
+        "car",
+        "ground",
+        "park"
+      ],
+      "guesses": [
+        {
+          "word": "car",
+          "actual_type": "red",
+          "is_correct": true,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:17:02"
+        },
+        {
+          "word": "trunk",
+          "actual_type": "red",
+          "is_correct": true,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:17:02"
+        }
+      ],
+      "timestamp": "2025-03-11 21:17:01"
+    },
+    {
+      "team": "blue",
+      "clue_word": "Garden",
+      "clue_number": 3,
+      "model": "gpt-4o",
+      "target_words": [
+        "rose",
+        "slug",
+        "cotton"
+      ],
+      "guesses": [
+        {
+          "word": "rose",
+          "actual_type": "blue",
+          "is_correct": true,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:17:04"
+        },
+        {
+          "word": "slug",
+          "actual_type": "blue",
+          "is_correct": true,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:17:04"
+        }
+      ],
+      "timestamp": "2025-03-11 21:17:03"
+    },
+    {
+      "team": "red",
+      "clue_word": "parkland",
+      "clue_number": 4,
+      "model": "gpt-4o",
+      "target_words": [
+        "park",
+        "ground",
+        "litter",
+        "america"
+      ],
+      "guesses": [
+        {
+          "word": "park",
+          "actual_type": "red",
+          "is_correct": true,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:17:06"
+        },
+        {
+          "word": "ground",
+          "actual_type": "red",
+          "is_correct": true,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:17:07"
+        }
+      ],
+      "timestamp": "2025-03-11 21:17:06"
+    },
+    {
+      "team": "blue",
+      "clue_word": "music",
+      "clue_number": 3,
+      "model": "gpt-4o",
+      "target_words": [
+        "flute",
+        "scale",
+        "capital"
+      ],
+      "guesses": [
+        {
+          "word": "flute",
+          "actual_type": "blue",
+          "is_correct": true,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:17:08"
+        },
+        {
+          "word": "scale",
+          "actual_type": "blue",
+          "is_correct": true,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:17:09"
+        }
+      ],
+      "timestamp": "2025-03-11 21:17:08"
+    },
+    {
+      "team": "red",
+      "clue_word": "Independence",
+      "clue_number": 3,
+      "model": "gpt-4o",
+      "target_words": [
+        "america",
+        "pie",
+        "luck"
+      ],
+      "guesses": [
+        {
+          "word": "america",
+          "actual_type": "red",
+          "is_correct": true,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:17:11"
+        },
+        {
+          "word": "capital",
+          "actual_type": "blue",
+          "is_correct": false,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:17:11"
+        }
+      ],
+      "timestamp": "2025-03-11 21:17:10"
+    },
+    {
+      "team": "blue",
+      "clue_word": "textile",
+      "clue_number": 2,
+      "model": "gpt-4o",
+      "target_words": [
+        "board",
+        "cotton"
+      ],
+      "guesses": [
+        {
+          "word": "cotton",
+          "actual_type": "blue",
+          "is_correct": true,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:17:13"
+        }
+      ],
+      "timestamp": "2025-03-11 21:17:12"
+    },
+    {
+      "team": "red",
+      "clue_word": "Fortune",
+      "clue_number": 3,
+      "model": "gpt-4o",
+      "target_words": [
+        "luck",
+        "pie",
+        "litter"
+      ],
+      "guesses": [
+        {
+          "word": "luck",
+          "actual_type": "red",
+          "is_correct": true,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:17:15"
+        }
+      ],
+      "timestamp": "2025-03-11 21:17:14"
+    },
+    {
+      "team": "blue",
+      "clue_word": "surf",
+      "clue_number": 1,
+      "model": "gpt-4o",
+      "target_words": [
+        "board"
+      ],
+      "guesses": [
+        {
+          "word": "board",
+          "actual_type": "blue",
+          "is_correct": true,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:17:17"
+        }
+      ],
+      "timestamp": "2025-03-11 21:17:16"
+    }
+  ]
+}

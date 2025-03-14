@@ -1,0 +1,251 @@
+{
+  "red_wins": 0,
+  "blue_wins": 1,
+  "game_duration": 24.68411612510681,
+  "total_turns": 9,
+  "red_team": {
+    "correct_guesses": 6,
+    "wrong_guesses": 1
+  },
+  "blue_team": {
+    "correct_guesses": 8,
+    "wrong_guesses": 1
+  },
+  "clues": [
+    {
+      "team": "blue",
+      "clue_word": "flight",
+      "clue_number": 3,
+      "model": "gpt-4o",
+      "target_words": [
+        "jack",
+        "helicopter",
+        "dragon"
+      ],
+      "guesses": [
+        {
+          "word": "helicopter",
+          "actual_type": "blue",
+          "is_correct": true,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:27:27"
+        },
+        {
+          "word": "chick",
+          "actual_type": "neutral",
+          "is_correct": false,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:27:27"
+        }
+      ],
+      "timestamp": "2025-03-11 21:27:26"
+    },
+    {
+      "team": "red",
+      "clue_word": "coal",
+      "clue_number": 3,
+      "model": "gpt-4o",
+      "target_words": [
+        "mine",
+        "pitch",
+        "iron"
+      ],
+      "guesses": [
+        {
+          "word": "mine",
+          "actual_type": "red",
+          "is_correct": true,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:27:29"
+        },
+        {
+          "word": "pitch",
+          "actual_type": "red",
+          "is_correct": true,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:27:30"
+        }
+      ],
+      "timestamp": "2025-03-11 21:27:28"
+    },
+    {
+      "team": "blue",
+      "clue_word": "worship",
+      "clue_number": 3,
+      "model": "gpt-4o",
+      "target_words": [
+        "church",
+        "temple",
+        "dragon"
+      ],
+      "guesses": [
+        {
+          "word": "church",
+          "actual_type": "blue",
+          "is_correct": true,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:27:32"
+        },
+        {
+          "word": "temple",
+          "actual_type": "blue",
+          "is_correct": true,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:27:33"
+        }
+      ],
+      "timestamp": "2025-03-11 21:27:32"
+    },
+    {
+      "team": "red",
+      "clue_word": "Metal",
+      "clue_number": 3,
+      "model": "gpt-4o",
+      "target_words": [
+        "iron",
+        "switch",
+        "suit"
+      ],
+      "guesses": [
+        {
+          "word": "iron",
+          "actual_type": "red",
+          "is_correct": true,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:27:36"
+        },
+        {
+          "word": "jack",
+          "actual_type": "blue",
+          "is_correct": false,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:27:37"
+        }
+      ],
+      "timestamp": "2025-03-11 21:27:35"
+    },
+    {
+      "team": "blue",
+      "clue_word": "fire",
+      "clue_number": 3,
+      "model": "gpt-4o",
+      "target_words": [
+        "dragon",
+        "bomb",
+        "fan"
+      ],
+      "guesses": [
+        {
+          "word": "dragon",
+          "actual_type": "blue",
+          "is_correct": true,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:27:39"
+        },
+        {
+          "word": "bomb",
+          "actual_type": "blue",
+          "is_correct": true,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:27:40"
+        }
+      ],
+      "timestamp": "2025-03-11 21:27:38"
+    },
+    {
+      "team": "red",
+      "clue_word": "detective",
+      "clue_number": 3,
+      "model": "gpt-4o",
+      "target_words": [
+        "plot",
+        "tail",
+        "suit"
+      ],
+      "guesses": [
+        {
+          "word": "suit",
+          "actual_type": "red",
+          "is_correct": true,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:27:42"
+        },
+        {
+          "word": "plot",
+          "actual_type": "red",
+          "is_correct": true,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:27:43"
+        }
+      ],
+      "timestamp": "2025-03-11 21:27:42"
+    },
+    {
+      "team": "blue",
+      "clue_word": "Outback",
+      "clue_number": 3,
+      "model": "gpt-4o",
+      "target_words": [
+        "australia",
+        "fan",
+        "rock"
+      ],
+      "guesses": [
+        {
+          "word": "australia",
+          "actual_type": "blue",
+          "is_correct": true,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:27:45"
+        },
+        {
+          "word": "rock",
+          "actual_type": "blue",
+          "is_correct": true,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:27:46"
+        }
+      ],
+      "timestamp": "2025-03-11 21:27:44"
+    },
+    {
+      "team": "red",
+      "clue_word": "flip",
+      "clue_number": 2,
+      "model": "gpt-4o",
+      "target_words": [
+        "switch",
+        "tail"
+      ],
+      "guesses": [
+        {
+          "word": "switch",
+          "actual_type": "red",
+          "is_correct": true,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:27:48"
+        }
+      ],
+      "timestamp": "2025-03-11 21:27:47"
+    },
+    {
+      "team": "blue",
+      "clue_word": "breeze",
+      "clue_number": 1,
+      "model": "gpt-4o",
+      "target_words": [
+        "fan"
+      ],
+      "guesses": [
+        {
+          "word": "fan",
+          "actual_type": "blue",
+          "is_correct": true,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:27:50"
+        }
+      ],
+      "timestamp": "2025-03-11 21:27:49"
+    }
+  ]
+}

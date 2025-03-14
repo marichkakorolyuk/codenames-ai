@@ -1,0 +1,4357 @@
+[
+  {
+    "timestamp": "2025-03-11 21:04:25",
+    "type": "game_start",
+    "details": {
+      "game_id": "585b4819-447b-48c1-a5f2-8ed62d7ddace",
+      "start_time": "2025-03-11 21:04:25",
+      "red_team": {
+        "spymaster": "Red Spymaster",
+        "operative": "Red Operative",
+        "spymaster_model": "gpt-4o",
+        "operative_model": "gpt-4o"
+      },
+      "blue_team": {
+        "spymaster": "Blue Spymaster",
+        "operative": "Blue Operative",
+        "spymaster_model": "gpt-4o",
+        "operative_model": "gpt-4o"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:04:25",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 8,
+      "blue_remaining": 9,
+      "board": [
+        {
+          "word": "game",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "cell",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "mole",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "iron",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "helicopter",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "wind",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "lead",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "carrot",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "beach",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "plot",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "soldier",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "maple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "foot",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "ice",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "marble",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "face",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "australia",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "ring",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "cap",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "sub",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "web",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "drill",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "snow",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "school",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "straw",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": true
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:04:25",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 8,
+      "blue_remaining": 9,
+      "board": [
+        {
+          "word": "game",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "cell",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "mole",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "iron",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "helicopter",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "wind",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "lead",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "carrot",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "beach",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "plot",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "soldier",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "maple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "foot",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "ice",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "marble",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "face",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "australia",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "ring",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "cap",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "sub",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "web",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "drill",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "snow",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "school",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "straw",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": true
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:04:26",
+    "type": "clue",
+    "details": {
+      "team": "blue",
+      "player": "Blue Spymaster",
+      "word": "metal",
+      "number": 2,
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:04:26",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 8,
+      "blue_remaining": 9,
+      "board": [
+        {
+          "word": "game",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "cell",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "mole",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "iron",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "helicopter",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "wind",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "lead",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "carrot",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "beach",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "plot",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "soldier",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "maple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "foot",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "ice",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "marble",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "face",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "australia",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "ring",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "cap",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "sub",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "web",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "drill",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "snow",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "school",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "straw",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:04:27",
+    "type": "guess",
+    "details": {
+      "team": "blue",
+      "player": "Blue Operative",
+      "word": "iron",
+      "result": "BLUE (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:04:27",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 8,
+      "blue_remaining": 8,
+      "board": [
+        {
+          "word": "game",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "cell",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "mole",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "iron",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "helicopter",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "wind",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "lead",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "carrot",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "beach",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "plot",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "soldier",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "maple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "foot",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "ice",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "marble",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "face",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "australia",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "ring",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "cap",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "sub",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "web",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "drill",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "snow",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "school",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "straw",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:04:27",
+    "type": "guess",
+    "details": {
+      "team": "blue",
+      "player": "Blue Operative",
+      "word": "lead",
+      "result": "BLUE (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:04:27",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 8,
+      "blue_remaining": 7,
+      "board": [
+        {
+          "word": "game",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "cell",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "mole",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "iron",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "helicopter",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "wind",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "lead",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "carrot",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "beach",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "plot",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "soldier",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "maple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "foot",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "ice",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "marble",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "face",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "australia",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "ring",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "cap",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "sub",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "web",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "drill",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "snow",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "school",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "straw",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:04:28",
+    "type": "guess",
+    "details": {
+      "team": "blue",
+      "player": "Blue Operative",
+      "word": "drill",
+      "result": "RED (Wrong)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:04:28",
+    "type": "turn_end",
+    "details": {
+      "team": "blue",
+      "reason": "Incorrect guess"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:04:28",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 7,
+      "blue_remaining": 7,
+      "board": [
+        {
+          "word": "game",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "cell",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "mole",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "iron",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "helicopter",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "wind",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "lead",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "carrot",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "beach",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "plot",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "soldier",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "maple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "foot",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "ice",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "marble",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "face",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "australia",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "ring",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "cap",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "sub",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "web",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "drill",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "snow",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "school",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "straw",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": true
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:04:28",
+    "type": "clue",
+    "details": {
+      "team": "red",
+      "player": "Red Spymaster",
+      "word": "spy",
+      "number": 3,
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:04:28",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 7,
+      "blue_remaining": 7,
+      "board": [
+        {
+          "word": "game",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "cell",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "mole",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "iron",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "helicopter",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "wind",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "lead",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "carrot",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "beach",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "plot",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "soldier",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "maple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "foot",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "ice",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "marble",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "face",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "australia",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "ring",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "cap",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "sub",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "web",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "drill",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "snow",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "school",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "straw",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:04:29",
+    "type": "guess",
+    "details": {
+      "team": "red",
+      "player": "Red Operative",
+      "word": "mole",
+      "result": "RED (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:04:29",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 6,
+      "blue_remaining": 7,
+      "board": [
+        {
+          "word": "game",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "cell",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "mole",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "iron",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "helicopter",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "wind",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "lead",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "carrot",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "beach",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "plot",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "soldier",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "maple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "foot",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "ice",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "marble",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "face",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "australia",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "ring",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "cap",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "sub",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "web",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "drill",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "snow",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "school",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "straw",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:04:30",
+    "type": "guess",
+    "details": {
+      "team": "red",
+      "player": "Red Operative",
+      "word": "plot",
+      "result": "NEUTRAL (Wrong)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:04:30",
+    "type": "turn_end",
+    "details": {
+      "team": "red",
+      "reason": "Incorrect guess"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:04:30",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 6,
+      "blue_remaining": 7,
+      "board": [
+        {
+          "word": "game",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "cell",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "mole",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "iron",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "helicopter",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "wind",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "lead",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "carrot",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "beach",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "plot",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "soldier",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "maple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "foot",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "ice",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "marble",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "face",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "australia",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "ring",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "cap",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "sub",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "web",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "drill",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "snow",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "school",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "straw",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": true
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:04:30",
+    "type": "clue",
+    "details": {
+      "team": "blue",
+      "player": "Blue Spymaster",
+      "word": "sand",
+      "number": 2,
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:04:30",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 6,
+      "blue_remaining": 7,
+      "board": [
+        {
+          "word": "game",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "cell",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "mole",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "iron",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "helicopter",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "wind",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "lead",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "carrot",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "beach",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "plot",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "soldier",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "maple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "foot",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "ice",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "marble",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "face",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "australia",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "ring",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "cap",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "sub",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "web",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "drill",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "snow",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "school",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "straw",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:04:31",
+    "type": "guess",
+    "details": {
+      "team": "blue",
+      "player": "Blue Operative",
+      "word": "beach",
+      "result": "BLUE (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:04:31",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 6,
+      "blue_remaining": 6,
+      "board": [
+        {
+          "word": "game",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "cell",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "mole",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "iron",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "helicopter",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "wind",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "lead",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "carrot",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "beach",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "plot",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "soldier",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "maple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "foot",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "ice",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "marble",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "face",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "australia",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "ring",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "cap",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "sub",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "web",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "drill",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "snow",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "school",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "straw",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:04:31",
+    "type": "guess",
+    "details": {
+      "team": "blue",
+      "player": "Blue Operative",
+      "word": "australia",
+      "result": "BLUE (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:04:31",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 6,
+      "blue_remaining": 5,
+      "board": [
+        {
+          "word": "game",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "cell",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "mole",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "iron",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "helicopter",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "wind",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "lead",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "carrot",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "beach",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "plot",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "soldier",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "maple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "foot",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "ice",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "marble",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "face",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "australia",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "ring",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "cap",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "sub",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "web",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "drill",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "snow",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "school",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "straw",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:04:32",
+    "type": "guess",
+    "details": {
+      "team": "blue",
+      "player": "Blue Operative",
+      "word": "wind",
+      "result": "RED (Wrong)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:04:32",
+    "type": "turn_end",
+    "details": {
+      "team": "blue",
+      "reason": "Incorrect guess"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:04:32",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 5,
+      "blue_remaining": 5,
+      "board": [
+        {
+          "word": "game",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "cell",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "mole",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "iron",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "helicopter",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "wind",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "lead",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "carrot",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "beach",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "plot",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "soldier",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "maple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "foot",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "ice",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "marble",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "face",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "australia",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "ring",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "cap",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "sub",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "web",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "drill",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "snow",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "school",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "straw",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": true
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:04:32",
+    "type": "clue",
+    "details": {
+      "team": "red",
+      "player": "Red Spymaster",
+      "word": "phone",
+      "number": 2,
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:04:32",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 5,
+      "blue_remaining": 5,
+      "board": [
+        {
+          "word": "game",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "cell",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "mole",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "iron",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "helicopter",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "wind",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "lead",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "carrot",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "beach",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "plot",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "soldier",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "maple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "foot",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "ice",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "marble",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "face",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "australia",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "ring",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "cap",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "sub",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "web",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "drill",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "snow",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "school",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "straw",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:04:33",
+    "type": "guess",
+    "details": {
+      "team": "red",
+      "player": "Red Operative",
+      "word": "cell",
+      "result": "RED (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:04:33",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 4,
+      "blue_remaining": 5,
+      "board": [
+        {
+          "word": "game",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "cell",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "mole",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "iron",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "helicopter",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "wind",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "lead",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "carrot",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "beach",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "plot",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "soldier",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "maple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "foot",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "ice",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "marble",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "face",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "australia",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "ring",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "cap",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "sub",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "web",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "drill",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "snow",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "school",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "straw",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:04:34",
+    "type": "guess",
+    "details": {
+      "team": "red",
+      "player": "Red Operative",
+      "word": "ring",
+      "result": "RED (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:04:34",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 3,
+      "blue_remaining": 5,
+      "board": [
+        {
+          "word": "game",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "cell",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "mole",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "iron",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "helicopter",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "wind",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "lead",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "carrot",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "beach",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "plot",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "soldier",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "maple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "foot",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "ice",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "marble",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "face",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "australia",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "ring",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cap",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "sub",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "web",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "drill",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "snow",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "school",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "straw",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:04:34",
+    "type": "guess",
+    "details": {
+      "team": "red",
+      "player": "Red Operative",
+      "word": "game",
+      "result": "RED (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:04:34",
+    "type": "turn_end",
+    "details": {
+      "team": "red",
+      "reason": "No more guesses left"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:04:34",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 2,
+      "blue_remaining": 5,
+      "board": [
+        {
+          "word": "game",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cell",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "mole",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "iron",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "helicopter",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "wind",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "lead",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "carrot",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "beach",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "plot",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "soldier",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "maple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "foot",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "ice",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "marble",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "face",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "australia",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "ring",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cap",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "sub",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "web",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "drill",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "snow",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "school",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "straw",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": true
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:04:35",
+    "type": "clue",
+    "details": {
+      "team": "blue",
+      "player": "Blue Spymaster",
+      "word": "baseball",
+      "number": 2,
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:04:35",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 2,
+      "blue_remaining": 5,
+      "board": [
+        {
+          "word": "game",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cell",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "mole",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "iron",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "helicopter",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "wind",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "lead",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "carrot",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "beach",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "plot",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "soldier",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "maple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "foot",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "ice",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "marble",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "face",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "australia",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "ring",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cap",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "sub",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "web",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "drill",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "snow",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "school",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "straw",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:04:35",
+    "type": "guess",
+    "details": {
+      "team": "blue",
+      "player": "Blue Operative",
+      "word": "cap",
+      "result": "BLUE (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:04:35",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 2,
+      "blue_remaining": 4,
+      "board": [
+        {
+          "word": "game",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cell",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "mole",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "iron",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "helicopter",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "wind",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "lead",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "carrot",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "beach",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "plot",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "soldier",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "maple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "foot",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "ice",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "marble",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "face",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "australia",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "ring",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cap",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "sub",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "web",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "drill",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "snow",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "school",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "straw",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:04:36",
+    "type": "guess",
+    "details": {
+      "team": "blue",
+      "player": "Blue Operative",
+      "word": "foot",
+      "result": "BLUE (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:04:36",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 2,
+      "blue_remaining": 3,
+      "board": [
+        {
+          "word": "game",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cell",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "mole",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "iron",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "helicopter",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "wind",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "lead",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "carrot",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "beach",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "plot",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "soldier",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "maple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "foot",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "ice",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "marble",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "face",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "australia",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "ring",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cap",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "sub",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "web",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "drill",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "snow",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "school",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "straw",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:04:36",
+    "type": "guess",
+    "details": {
+      "team": "blue",
+      "player": "Blue Operative",
+      "word": "sub",
+      "result": "BLUE (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:04:36",
+    "type": "turn_end",
+    "details": {
+      "team": "blue",
+      "reason": "No more guesses left"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:04:36",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 2,
+      "blue_remaining": 2,
+      "board": [
+        {
+          "word": "game",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cell",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "mole",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "iron",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "helicopter",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "wind",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "lead",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "carrot",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "beach",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "plot",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "soldier",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "maple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "foot",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "ice",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "marble",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "face",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "australia",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "ring",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cap",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "sub",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "web",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "drill",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "snow",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "school",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "straw",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": true
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:04:37",
+    "type": "clue",
+    "details": {
+      "team": "red",
+      "player": "Red Spymaster",
+      "word": "Spider",
+      "number": 2,
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:04:37",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 2,
+      "blue_remaining": 2,
+      "board": [
+        {
+          "word": "game",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cell",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "mole",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "iron",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "helicopter",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "wind",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "lead",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "carrot",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "beach",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "plot",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "soldier",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "maple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "foot",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "ice",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "marble",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "face",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "australia",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "ring",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cap",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "sub",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "web",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "drill",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "snow",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "school",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "straw",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:04:37",
+    "type": "guess",
+    "details": {
+      "team": "red",
+      "player": "Red Operative",
+      "word": "web",
+      "result": "RED (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:04:37",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 1,
+      "blue_remaining": 2,
+      "board": [
+        {
+          "word": "game",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cell",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "mole",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "iron",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "helicopter",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "wind",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "lead",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "carrot",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "beach",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "plot",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "soldier",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "maple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "foot",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "ice",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "marble",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "face",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "australia",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "ring",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cap",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "sub",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "web",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "drill",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "snow",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "school",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "straw",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:04:38",
+    "type": "guess",
+    "details": {
+      "team": "red",
+      "player": "Red Operative",
+      "word": "snow",
+      "result": "NEUTRAL (Wrong)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:04:38",
+    "type": "turn_end",
+    "details": {
+      "team": "red",
+      "reason": "Incorrect guess"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:04:38",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 1,
+      "blue_remaining": 2,
+      "board": [
+        {
+          "word": "game",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cell",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "mole",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "iron",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "helicopter",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "wind",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "lead",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "carrot",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "beach",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "plot",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "soldier",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "maple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "foot",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "ice",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "marble",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "face",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "australia",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "ring",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cap",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "sub",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "web",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "drill",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "snow",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "school",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "straw",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": true
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:04:38",
+    "type": "clue",
+    "details": {
+      "team": "blue",
+      "player": "Blue Spymaster",
+      "word": "education",
+      "number": 2,
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:04:38",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 1,
+      "blue_remaining": 2,
+      "board": [
+        {
+          "word": "game",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cell",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "mole",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "iron",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "helicopter",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "wind",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "lead",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "carrot",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "beach",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "plot",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "soldier",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "maple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "foot",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "ice",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "marble",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "face",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "australia",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "ring",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cap",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "sub",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "web",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "drill",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "snow",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "school",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "straw",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:04:39",
+    "type": "guess",
+    "details": {
+      "team": "blue",
+      "player": "Blue Operative",
+      "word": "school",
+      "result": "BLUE (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:04:39",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 1,
+      "blue_remaining": 1,
+      "board": [
+        {
+          "word": "game",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cell",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "mole",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "iron",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "helicopter",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "wind",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "lead",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "carrot",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "beach",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "plot",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "soldier",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "maple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "foot",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "ice",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "marble",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "face",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "australia",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "ring",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cap",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "sub",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "web",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "drill",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "snow",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "school",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "straw",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:04:39",
+    "type": "guess",
+    "details": {
+      "team": "blue",
+      "player": "Blue Operative",
+      "word": "marble",
+      "result": "NEUTRAL (Wrong)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:04:39",
+    "type": "turn_end",
+    "details": {
+      "team": "blue",
+      "reason": "Incorrect guess"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:04:39",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 1,
+      "blue_remaining": 1,
+      "board": [
+        {
+          "word": "game",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cell",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "mole",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "iron",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "helicopter",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "wind",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "lead",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "carrot",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "beach",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "plot",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "soldier",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "maple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "foot",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "ice",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "marble",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "face",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "australia",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "ring",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cap",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "sub",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "web",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "drill",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "snow",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "school",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "straw",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": true
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:04:40",
+    "type": "clue",
+    "details": {
+      "team": "red",
+      "player": "Red Spymaster",
+      "word": "military",
+      "number": 1,
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:04:40",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 1,
+      "blue_remaining": 1,
+      "board": [
+        {
+          "word": "game",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cell",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "mole",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "iron",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "helicopter",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "wind",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "lead",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "carrot",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "beach",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "plot",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "soldier",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "maple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "foot",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "ice",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "marble",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "face",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "australia",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "ring",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cap",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "sub",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "web",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "drill",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "snow",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "school",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "straw",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:04:40",
+    "type": "guess",
+    "details": {
+      "team": "red",
+      "player": "Red Operative",
+      "word": "soldier",
+      "result": "RED (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:04:40",
+    "type": "game_end",
+    "details": {
+      "winner": "red",
+      "duration": 14.778578042984009,
+      "total_turns": 8
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:04:40",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 0,
+      "blue_remaining": 1,
+      "board": [
+        {
+          "word": "game",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cell",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "mole",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "iron",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "helicopter",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "wind",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "lead",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "carrot",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "beach",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "plot",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "soldier",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "maple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "foot",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "ice",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "marble",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "face",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "australia",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "ring",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cap",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "sub",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "web",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "drill",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "snow",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "school",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "straw",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": true
+    }
+  }
+]

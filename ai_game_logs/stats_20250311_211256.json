@@ -1,0 +1,289 @@
+{
+  "red_wins": 0,
+  "blue_wins": 1,
+  "game_duration": 26.451645851135254,
+  "total_turns": 12,
+  "red_team": {
+    "correct_guesses": 7,
+    "wrong_guesses": 3
+  },
+  "blue_team": {
+    "correct_guesses": 6,
+    "wrong_guesses": 1
+  },
+  "clues": [
+    {
+      "team": "red",
+      "clue_word": "Anatomy",
+      "clue_number": 4,
+      "model": "gpt-4o",
+      "target_words": [
+        "spine",
+        "heart",
+        "soul",
+        "pilot"
+      ],
+      "guesses": [
+        {
+          "word": "spine",
+          "actual_type": "red",
+          "is_correct": true,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:12:31"
+        },
+        {
+          "word": "organ",
+          "actual_type": "blue",
+          "is_correct": false,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:12:32"
+        }
+      ],
+      "timestamp": "2025-03-11 21:12:30"
+    },
+    {
+      "team": "blue",
+      "clue_word": "Finger",
+      "clue_number": 2,
+      "model": "gpt-4o",
+      "target_words": [
+        "thumb",
+        "cap"
+      ],
+      "guesses": [
+        {
+          "word": "thumb",
+          "actual_type": "blue",
+          "is_correct": true,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:12:33"
+        }
+      ],
+      "timestamp": "2025-03-11 21:12:32"
+    },
+    {
+      "team": "red",
+      "clue_word": "Aviation",
+      "clue_number": 3,
+      "model": "gpt-4o",
+      "target_words": [
+        "air",
+        "pilot"
+      ],
+      "guesses": [
+        {
+          "word": "pilot",
+          "actual_type": "red",
+          "is_correct": true,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:12:35"
+        },
+        {
+          "word": "air",
+          "actual_type": "red",
+          "is_correct": true,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:12:35"
+        }
+      ],
+      "timestamp": "2025-03-11 21:12:35"
+    },
+    {
+      "team": "blue",
+      "clue_word": "Security",
+      "clue_number": 3,
+      "model": "gpt-4o",
+      "target_words": [
+        "police",
+        "bomb",
+        "cap"
+      ],
+      "guesses": [
+        {
+          "word": "police",
+          "actual_type": "blue",
+          "is_correct": true,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:12:38"
+        },
+        {
+          "word": "bomb",
+          "actual_type": "blue",
+          "is_correct": true,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:12:38"
+        }
+      ],
+      "timestamp": "2025-03-11 21:12:37"
+    },
+    {
+      "team": "red",
+      "clue_word": "Music",
+      "clue_number": 3,
+      "model": "gpt-4o",
+      "target_words": [],
+      "guesses": [
+        {
+          "word": "concert",
+          "actual_type": "blue",
+          "is_correct": false,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:12:40"
+        }
+      ],
+      "timestamp": "2025-03-11 21:12:39"
+    },
+    {
+      "team": "blue",
+      "clue_word": "Bee",
+      "clue_number": 2,
+      "model": "gpt-4o",
+      "target_words": [],
+      "guesses": [
+        {
+          "word": "honey",
+          "actual_type": "blue",
+          "is_correct": true,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:12:41"
+        }
+      ],
+      "timestamp": "2025-03-11 21:12:41"
+    },
+    {
+      "team": "red",
+      "clue_word": "Music",
+      "clue_number": 4,
+      "model": "gpt-4o",
+      "target_words": [
+        "soul",
+        "note",
+        "heart",
+        "staff"
+      ],
+      "guesses": [
+        {
+          "word": "note",
+          "actual_type": "red",
+          "is_correct": true,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:12:43"
+        },
+        {
+          "word": "jam",
+          "actual_type": "neutral",
+          "is_correct": false,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:12:44"
+        }
+      ],
+      "timestamp": "2025-03-11 21:12:43"
+    },
+    {
+      "team": "blue",
+      "clue_word": "Headgear",
+      "clue_number": 2,
+      "model": "gpt-4o",
+      "target_words": [
+        "cap",
+        "club"
+      ],
+      "guesses": [
+        {
+          "word": "cap",
+          "actual_type": "blue",
+          "is_correct": true,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:12:45"
+        }
+      ],
+      "timestamp": "2025-03-11 21:12:45"
+    },
+    {
+      "team": "red",
+      "clue_word": "Passion",
+      "clue_number": 3,
+      "model": "gpt-4o",
+      "target_words": [
+        "soul",
+        "heart",
+        "france"
+      ],
+      "guesses": [
+        {
+          "word": "heart",
+          "actual_type": "red",
+          "is_correct": true,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:12:47"
+        },
+        {
+          "word": "soul",
+          "actual_type": "red",
+          "is_correct": true,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:12:48"
+        }
+      ],
+      "timestamp": "2025-03-11 21:12:47"
+    },
+    {
+      "team": "blue",
+      "clue_word": "Golf",
+      "clue_number": 1,
+      "model": "gpt-4o",
+      "target_words": [
+        "club"
+      ],
+      "guesses": [
+        {
+          "word": "hole",
+          "actual_type": "neutral",
+          "is_correct": false,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:12:50"
+        }
+      ],
+      "timestamp": "2025-03-11 21:12:50"
+    },
+    {
+      "team": "red",
+      "clue_word": "Justice",
+      "clue_number": 2,
+      "model": "gpt-4o",
+      "target_words": [
+        "staff",
+        "court"
+      ],
+      "guesses": [
+        {
+          "word": "court",
+          "actual_type": "red",
+          "is_correct": true,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:12:52"
+        }
+      ],
+      "timestamp": "2025-03-11 21:12:51"
+    },
+    {
+      "team": "blue",
+      "clue_word": "Golf",
+      "clue_number": 1,
+      "model": "gpt-4o",
+      "target_words": [
+        "club"
+      ],
+      "guesses": [
+        {
+          "word": "club",
+          "actual_type": "blue",
+          "is_correct": true,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:12:56"
+        }
+      ],
+      "timestamp": "2025-03-11 21:12:55"
+    }
+  ]
+}

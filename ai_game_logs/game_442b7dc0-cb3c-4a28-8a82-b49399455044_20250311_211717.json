@@ -1,0 +1,4935 @@
+[
+  {
+    "timestamp": "2025-03-11 21:16:58",
+    "type": "game_start",
+    "details": {
+      "game_id": "442b7dc0-cb3c-4a28-8a82-b49399455044",
+      "start_time": "2025-03-11 21:16:58",
+      "red_team": {
+        "spymaster": "Red Spymaster",
+        "operative": "Red Operative",
+        "spymaster_model": "gpt-4o",
+        "operative_model": "gpt-4o"
+      },
+      "blue_team": {
+        "spymaster": "Blue Spymaster",
+        "operative": "Blue Operative",
+        "spymaster_model": "gpt-4o",
+        "operative_model": "gpt-4o"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:16:58",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 8,
+      "blue_remaining": 9,
+      "board": [
+        {
+          "word": "board",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "rose",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "plot",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "cloak",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "flute",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "cotton",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "luck",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "slug",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "tooth",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "america",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "pumpkin",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "car",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "theater",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "pie",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "amazon",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "scale",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "ground",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "czech",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "capital",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "trunk",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "china",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "litter",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "shot",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "park",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "table",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": true
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:16:58",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 8,
+      "blue_remaining": 9,
+      "board": [
+        {
+          "word": "board",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "rose",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "plot",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "cloak",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "flute",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "cotton",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "luck",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "slug",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "tooth",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "america",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "pumpkin",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "car",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "theater",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "pie",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "amazon",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "scale",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "ground",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "czech",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "capital",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "trunk",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "china",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "litter",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "shot",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "park",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "table",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": true
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:16:59",
+    "type": "clue",
+    "details": {
+      "team": "blue",
+      "player": "Blue Spymaster",
+      "word": "theater",
+      "number": 4,
+      "model": "gpt-4o",
+      "target_words": [
+        "theater",
+        "plot",
+        "scale",
+        "flute"
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:16:59",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 8,
+      "blue_remaining": 9,
+      "board": [
+        {
+          "word": "board",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "rose",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "plot",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "cloak",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "flute",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "cotton",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "luck",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "slug",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "tooth",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "america",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "pumpkin",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "car",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "theater",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "pie",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "amazon",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "scale",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "ground",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "czech",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "capital",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "trunk",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "china",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "litter",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "shot",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "park",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "table",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:16:59",
+    "type": "guess",
+    "details": {
+      "team": "blue",
+      "player": "Blue Operative",
+      "word": "theater",
+      "result": "BLUE (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:16:59",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 8,
+      "blue_remaining": 8,
+      "board": [
+        {
+          "word": "board",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "rose",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "plot",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "cloak",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "flute",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "cotton",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "luck",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "slug",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "tooth",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "america",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "pumpkin",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "car",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "theater",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "pie",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "amazon",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "scale",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "ground",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "czech",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "capital",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "trunk",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "china",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "litter",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "shot",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "park",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "table",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:17:00",
+    "type": "guess",
+    "details": {
+      "team": "blue",
+      "player": "Blue Operative",
+      "word": "plot",
+      "result": "BLUE (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:17:00",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 8,
+      "blue_remaining": 7,
+      "board": [
+        {
+          "word": "board",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "rose",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "plot",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "cloak",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "flute",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "cotton",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "luck",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "slug",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "tooth",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "america",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "pumpkin",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "car",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "theater",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "pie",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "amazon",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "scale",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "ground",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "czech",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "capital",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "trunk",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "china",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "litter",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "shot",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "park",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "table",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:17:00",
+    "type": "guess",
+    "details": {
+      "team": "blue",
+      "player": "Blue Operative",
+      "word": "cloak",
+      "result": "NEUTRAL (Wrong)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:17:00",
+    "type": "turn_end",
+    "details": {
+      "team": "blue",
+      "reason": "Incorrect guess"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:17:00",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 8,
+      "blue_remaining": 7,
+      "board": [
+        {
+          "word": "board",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "rose",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "plot",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "cloak",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "flute",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "cotton",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "luck",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "slug",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "tooth",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "america",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "pumpkin",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "car",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "theater",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "pie",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "amazon",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "scale",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "ground",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "czech",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "capital",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "trunk",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "china",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "litter",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "shot",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "park",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "table",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": true
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:17:01",
+    "type": "clue",
+    "details": {
+      "team": "red",
+      "player": "Red Spymaster",
+      "word": "park",
+      "number": 3,
+      "model": "gpt-4o",
+      "target_words": [
+        "car",
+        "ground",
+        "park"
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:17:01",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 8,
+      "blue_remaining": 7,
+      "board": [
+        {
+          "word": "board",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "rose",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "plot",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "cloak",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "flute",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "cotton",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "luck",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "slug",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "tooth",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "america",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "pumpkin",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "car",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "theater",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "pie",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "amazon",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "scale",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "ground",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "czech",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "capital",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "trunk",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "china",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "litter",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "shot",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "park",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "table",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:17:02",
+    "type": "guess",
+    "details": {
+      "team": "red",
+      "player": "Red Operative",
+      "word": "car",
+      "result": "RED (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:17:02",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 7,
+      "blue_remaining": 7,
+      "board": [
+        {
+          "word": "board",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "rose",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "plot",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "cloak",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "flute",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "cotton",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "luck",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "slug",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "tooth",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "america",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "pumpkin",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "car",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "theater",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "pie",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "amazon",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "scale",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "ground",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "czech",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "capital",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "trunk",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "china",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "litter",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "shot",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "park",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "table",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:17:02",
+    "type": "guess",
+    "details": {
+      "team": "red",
+      "player": "Red Operative",
+      "word": "trunk",
+      "result": "RED (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:17:02",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 6,
+      "blue_remaining": 7,
+      "board": [
+        {
+          "word": "board",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "rose",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "plot",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "cloak",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "flute",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "cotton",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "luck",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "slug",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "tooth",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "america",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "pumpkin",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "car",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "theater",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "pie",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "amazon",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "scale",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "ground",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "czech",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "capital",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "trunk",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "china",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "litter",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "shot",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "park",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "table",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:17:03",
+    "type": "turn_end",
+    "details": {
+      "team": "red",
+      "reason": "Operative chose to end turn"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:17:03",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 6,
+      "blue_remaining": 7,
+      "board": [
+        {
+          "word": "board",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "rose",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "plot",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "cloak",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "flute",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "cotton",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "luck",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "slug",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "tooth",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "america",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "pumpkin",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "car",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "theater",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "pie",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "amazon",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "scale",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "ground",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "czech",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "capital",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "trunk",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "china",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "litter",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "shot",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "park",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "table",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": true
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:17:03",
+    "type": "clue",
+    "details": {
+      "team": "blue",
+      "player": "Blue Spymaster",
+      "word": "Garden",
+      "number": 3,
+      "model": "gpt-4o",
+      "target_words": [
+        "rose",
+        "slug",
+        "cotton"
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:17:03",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 6,
+      "blue_remaining": 7,
+      "board": [
+        {
+          "word": "board",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "rose",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "plot",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "cloak",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "flute",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "cotton",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "luck",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "slug",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "tooth",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "america",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "pumpkin",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "car",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "theater",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "pie",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "amazon",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "scale",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "ground",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "czech",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "capital",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "trunk",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "china",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "litter",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "shot",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "park",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "table",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:17:04",
+    "type": "guess",
+    "details": {
+      "team": "blue",
+      "player": "Blue Operative",
+      "word": "rose",
+      "result": "BLUE (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:17:04",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 6,
+      "blue_remaining": 6,
+      "board": [
+        {
+          "word": "board",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "rose",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "plot",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "cloak",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "flute",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "cotton",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "luck",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "slug",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "tooth",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "america",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "pumpkin",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "car",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "theater",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "pie",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "amazon",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "scale",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "ground",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "czech",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "capital",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "trunk",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "china",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "litter",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "shot",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "park",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "table",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:17:04",
+    "type": "guess",
+    "details": {
+      "team": "blue",
+      "player": "Blue Operative",
+      "word": "slug",
+      "result": "BLUE (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:17:04",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 6,
+      "blue_remaining": 5,
+      "board": [
+        {
+          "word": "board",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "rose",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "plot",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "cloak",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "flute",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "cotton",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "luck",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "slug",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "tooth",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "america",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "pumpkin",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "car",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "theater",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "pie",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "amazon",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "scale",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "ground",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "czech",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "capital",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "trunk",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "china",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "litter",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "shot",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "park",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "table",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:17:05",
+    "type": "turn_end",
+    "details": {
+      "team": "blue",
+      "reason": "Operative chose to end turn"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:17:05",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 6,
+      "blue_remaining": 5,
+      "board": [
+        {
+          "word": "board",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "rose",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "plot",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "cloak",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "flute",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "cotton",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "luck",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "slug",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "tooth",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "america",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "pumpkin",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "car",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "theater",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "pie",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "amazon",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "scale",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "ground",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "czech",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "capital",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "trunk",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "china",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "litter",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "shot",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "park",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "table",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": true
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:17:06",
+    "type": "clue",
+    "details": {
+      "team": "red",
+      "player": "Red Spymaster",
+      "word": "parkland",
+      "number": 4,
+      "model": "gpt-4o",
+      "target_words": [
+        "park",
+        "ground",
+        "litter",
+        "america"
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:17:06",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 6,
+      "blue_remaining": 5,
+      "board": [
+        {
+          "word": "board",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "rose",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "plot",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "cloak",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "flute",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "cotton",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "luck",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "slug",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "tooth",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "america",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "pumpkin",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "car",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "theater",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "pie",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "amazon",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "scale",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "ground",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "czech",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "capital",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "trunk",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "china",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "litter",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "shot",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "park",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "table",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:17:06",
+    "type": "guess",
+    "details": {
+      "team": "red",
+      "player": "Red Operative",
+      "word": "park",
+      "result": "RED (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:17:06",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 5,
+      "blue_remaining": 5,
+      "board": [
+        {
+          "word": "board",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "rose",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "plot",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "cloak",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "flute",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "cotton",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "luck",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "slug",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "tooth",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "america",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "pumpkin",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "car",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "theater",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "pie",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "amazon",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "scale",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "ground",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "czech",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "capital",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "trunk",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "china",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "litter",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "shot",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "park",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "table",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:17:07",
+    "type": "guess",
+    "details": {
+      "team": "red",
+      "player": "Red Operative",
+      "word": "ground",
+      "result": "RED (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:17:07",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 4,
+      "blue_remaining": 5,
+      "board": [
+        {
+          "word": "board",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "rose",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "plot",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "cloak",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "flute",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "cotton",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "luck",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "slug",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "tooth",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "america",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "pumpkin",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "car",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "theater",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "pie",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "amazon",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "scale",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "ground",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "czech",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "capital",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "trunk",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "china",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "litter",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "shot",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "park",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "table",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:17:07",
+    "type": "turn_end",
+    "details": {
+      "team": "red",
+      "reason": "Operative chose to end turn"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:17:07",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 4,
+      "blue_remaining": 5,
+      "board": [
+        {
+          "word": "board",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "rose",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "plot",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "cloak",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "flute",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "cotton",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "luck",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "slug",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "tooth",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "america",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "pumpkin",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "car",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "theater",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "pie",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "amazon",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "scale",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "ground",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "czech",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "capital",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "trunk",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "china",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "litter",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "shot",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "park",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "table",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": true
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:17:08",
+    "type": "clue",
+    "details": {
+      "team": "blue",
+      "player": "Blue Spymaster",
+      "word": "music",
+      "number": 3,
+      "model": "gpt-4o",
+      "target_words": [
+        "flute",
+        "scale",
+        "capital"
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:17:08",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 4,
+      "blue_remaining": 5,
+      "board": [
+        {
+          "word": "board",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "rose",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "plot",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "cloak",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "flute",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "cotton",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "luck",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "slug",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "tooth",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "america",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "pumpkin",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "car",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "theater",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "pie",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "amazon",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "scale",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "ground",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "czech",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "capital",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "trunk",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "china",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "litter",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "shot",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "park",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "table",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:17:08",
+    "type": "guess",
+    "details": {
+      "team": "blue",
+      "player": "Blue Operative",
+      "word": "flute",
+      "result": "BLUE (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:17:08",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 4,
+      "blue_remaining": 4,
+      "board": [
+        {
+          "word": "board",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "rose",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "plot",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "cloak",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "flute",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "cotton",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "luck",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "slug",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "tooth",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "america",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "pumpkin",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "car",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "theater",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "pie",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "amazon",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "scale",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "ground",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "czech",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "capital",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "trunk",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "china",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "litter",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "shot",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "park",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "table",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:17:09",
+    "type": "guess",
+    "details": {
+      "team": "blue",
+      "player": "Blue Operative",
+      "word": "scale",
+      "result": "BLUE (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:17:09",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 4,
+      "blue_remaining": 3,
+      "board": [
+        {
+          "word": "board",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "rose",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "plot",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "cloak",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "flute",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "cotton",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "luck",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "slug",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "tooth",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "america",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "pumpkin",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "car",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "theater",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "pie",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "amazon",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "scale",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "ground",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "czech",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "capital",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "trunk",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "china",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "litter",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "shot",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "park",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "table",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:17:10",
+    "type": "turn_end",
+    "details": {
+      "team": "blue",
+      "reason": "Operative chose to end turn"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:17:10",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 4,
+      "blue_remaining": 3,
+      "board": [
+        {
+          "word": "board",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "rose",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "plot",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "cloak",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "flute",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "cotton",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "luck",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "slug",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "tooth",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "america",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "pumpkin",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "car",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "theater",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "pie",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "amazon",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "scale",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "ground",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "czech",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "capital",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "trunk",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "china",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "litter",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "shot",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "park",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "table",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": true
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:17:10",
+    "type": "clue",
+    "details": {
+      "team": "red",
+      "player": "Red Spymaster",
+      "word": "Independence",
+      "number": 3,
+      "model": "gpt-4o",
+      "target_words": [
+        "america",
+        "pie",
+        "luck"
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:17:10",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 4,
+      "blue_remaining": 3,
+      "board": [
+        {
+          "word": "board",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "rose",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "plot",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "cloak",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "flute",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "cotton",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "luck",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "slug",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "tooth",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "america",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "pumpkin",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "car",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "theater",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "pie",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "amazon",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "scale",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "ground",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "czech",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "capital",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "trunk",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "china",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "litter",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "shot",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "park",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "table",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:17:11",
+    "type": "guess",
+    "details": {
+      "team": "red",
+      "player": "Red Operative",
+      "word": "america",
+      "result": "RED (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:17:11",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 3,
+      "blue_remaining": 3,
+      "board": [
+        {
+          "word": "board",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "rose",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "plot",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "cloak",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "flute",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "cotton",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "luck",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "slug",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "tooth",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "america",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "pumpkin",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "car",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "theater",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "pie",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "amazon",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "scale",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "ground",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "czech",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "capital",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "trunk",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "china",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "litter",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "shot",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "park",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "table",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:17:11",
+    "type": "guess",
+    "details": {
+      "team": "red",
+      "player": "Red Operative",
+      "word": "capital",
+      "result": "BLUE (Wrong)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:17:11",
+    "type": "turn_end",
+    "details": {
+      "team": "red",
+      "reason": "Incorrect guess"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:17:11",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 3,
+      "blue_remaining": 2,
+      "board": [
+        {
+          "word": "board",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "rose",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "plot",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "cloak",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "flute",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "cotton",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "luck",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "slug",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "tooth",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "america",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "pumpkin",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "car",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "theater",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "pie",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "amazon",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "scale",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "ground",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "czech",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "capital",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "trunk",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "china",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "litter",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "shot",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "park",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "table",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": true
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:17:12",
+    "type": "clue",
+    "details": {
+      "team": "blue",
+      "player": "Blue Spymaster",
+      "word": "textile",
+      "number": 2,
+      "model": "gpt-4o",
+      "target_words": [
+        "board",
+        "cotton"
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:17:12",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 3,
+      "blue_remaining": 2,
+      "board": [
+        {
+          "word": "board",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "rose",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "plot",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "cloak",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "flute",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "cotton",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "luck",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "slug",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "tooth",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "america",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "pumpkin",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "car",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "theater",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "pie",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "amazon",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "scale",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "ground",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "czech",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "capital",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "trunk",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "china",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "litter",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "shot",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "park",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "table",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:17:13",
+    "type": "guess",
+    "details": {
+      "team": "blue",
+      "player": "Blue Operative",
+      "word": "cotton",
+      "result": "BLUE (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:17:13",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 3,
+      "blue_remaining": 1,
+      "board": [
+        {
+          "word": "board",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "rose",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "plot",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "cloak",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "flute",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "cotton",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "luck",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "slug",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "tooth",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "america",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "pumpkin",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "car",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "theater",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "pie",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "amazon",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "scale",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "ground",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "czech",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "capital",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "trunk",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "china",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "litter",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "shot",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "park",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "table",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:17:13",
+    "type": "turn_end",
+    "details": {
+      "team": "blue",
+      "reason": "Operative chose to end turn"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:17:13",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 3,
+      "blue_remaining": 1,
+      "board": [
+        {
+          "word": "board",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "rose",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "plot",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "cloak",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "flute",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "cotton",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "luck",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "slug",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "tooth",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "america",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "pumpkin",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "car",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "theater",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "pie",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "amazon",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "scale",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "ground",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "czech",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "capital",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "trunk",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "china",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "litter",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "shot",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "park",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "table",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": true
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:17:14",
+    "type": "clue",
+    "details": {
+      "team": "red",
+      "player": "Red Spymaster",
+      "word": "Fortune",
+      "number": 3,
+      "model": "gpt-4o",
+      "target_words": [
+        "luck",
+        "pie",
+        "litter"
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:17:14",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 3,
+      "blue_remaining": 1,
+      "board": [
+        {
+          "word": "board",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "rose",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "plot",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "cloak",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "flute",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "cotton",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "luck",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "slug",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "tooth",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "america",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "pumpkin",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "car",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "theater",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "pie",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "amazon",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "scale",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "ground",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "czech",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "capital",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "trunk",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "china",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "litter",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "shot",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "park",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "table",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:17:15",
+    "type": "guess",
+    "details": {
+      "team": "red",
+      "player": "Red Operative",
+      "word": "luck",
+      "result": "RED (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:17:15",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 2,
+      "blue_remaining": 1,
+      "board": [
+        {
+          "word": "board",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "rose",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "plot",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "cloak",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "flute",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "cotton",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "luck",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "slug",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "tooth",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "america",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "pumpkin",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "car",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "theater",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "pie",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "amazon",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "scale",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "ground",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "czech",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "capital",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "trunk",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "china",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "litter",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "shot",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "park",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "table",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:17:15",
+    "type": "turn_end",
+    "details": {
+      "team": "red",
+      "reason": "Operative chose to end turn"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:17:15",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 2,
+      "blue_remaining": 1,
+      "board": [
+        {
+          "word": "board",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "rose",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "plot",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "cloak",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "flute",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "cotton",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "luck",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "slug",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "tooth",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "america",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "pumpkin",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "car",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "theater",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "pie",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "amazon",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "scale",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "ground",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "czech",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "capital",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "trunk",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "china",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "litter",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "shot",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "park",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "table",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": true
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:17:16",
+    "type": "clue",
+    "details": {
+      "team": "blue",
+      "player": "Blue Spymaster",
+      "word": "surf",
+      "number": 1,
+      "model": "gpt-4o",
+      "target_words": [
+        "board"
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:17:16",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 2,
+      "blue_remaining": 1,
+      "board": [
+        {
+          "word": "board",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "rose",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "plot",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "cloak",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "flute",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "cotton",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "luck",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "slug",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "tooth",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "america",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "pumpkin",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "car",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "theater",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "pie",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "amazon",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "scale",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "ground",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "czech",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "capital",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "trunk",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "china",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "litter",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "shot",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "park",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "table",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:17:17",
+    "type": "guess",
+    "details": {
+      "team": "blue",
+      "player": "Blue Operative",
+      "word": "board",
+      "result": "BLUE (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:17:17",
+    "type": "game_end",
+    "details": {
+      "winner": "blue",
+      "duration": 18.998526096343994,
+      "total_turns": 9
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:17:17",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 2,
+      "blue_remaining": 0,
+      "board": [
+        {
+          "word": "board",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "rose",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "plot",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "cloak",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "flute",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "cotton",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "luck",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "slug",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "tooth",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "america",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "pumpkin",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "car",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "theater",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "pie",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "amazon",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "scale",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "ground",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "czech",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "capital",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "trunk",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "china",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "litter",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "shot",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "park",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "table",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": true
+    }
+  }
+]

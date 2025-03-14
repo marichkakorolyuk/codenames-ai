@@ -1,0 +1,4935 @@
+[
+  {
+    "timestamp": "2025-03-11 21:27:25",
+    "type": "game_start",
+    "details": {
+      "game_id": "3fb4f4ad-2042-4512-8678-9d40e68eec7c",
+      "start_time": "2025-03-11 21:27:25",
+      "red_team": {
+        "spymaster": "Red Spymaster",
+        "operative": "Red Operative",
+        "spymaster_model": "gpt-4o",
+        "operative_model": "gpt-4o"
+      },
+      "blue_team": {
+        "spymaster": "Blue Spymaster",
+        "operative": "Blue Operative",
+        "spymaster_model": "gpt-4o",
+        "operative_model": "gpt-4o"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:27:25",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 8,
+      "blue_remaining": 9,
+      "board": [
+        {
+          "word": "mint",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "chick",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "plot",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "pitch",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "belt",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "jack",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "australia",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "mammoth",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "switch",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "church",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "iron",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "drop",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "mine",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "stream",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bermuda",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "dragon",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "tail",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "fan",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "capital",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "rock",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "helicopter",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "suit",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "temple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "stick",
+          "type": "assassin",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": true
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:27:25",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 8,
+      "blue_remaining": 9,
+      "board": [
+        {
+          "word": "mint",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "chick",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "plot",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "pitch",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "belt",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "jack",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "australia",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "mammoth",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "switch",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "church",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "iron",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "drop",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "mine",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "stream",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bermuda",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "dragon",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "tail",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "fan",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "capital",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "rock",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "helicopter",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "suit",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "temple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "stick",
+          "type": "assassin",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": true
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:27:26",
+    "type": "clue",
+    "details": {
+      "team": "blue",
+      "player": "Blue Spymaster",
+      "word": "flight",
+      "number": 3,
+      "model": "gpt-4o",
+      "target_words": [
+        "jack",
+        "helicopter",
+        "dragon"
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:27:26",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 8,
+      "blue_remaining": 9,
+      "board": [
+        {
+          "word": "mint",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "chick",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "plot",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "pitch",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "belt",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "jack",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "australia",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "mammoth",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "switch",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "church",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "iron",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "drop",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "mine",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "stream",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bermuda",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "dragon",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "tail",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "fan",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "capital",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "rock",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "helicopter",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "suit",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "temple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "stick",
+          "type": "assassin",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:27:27",
+    "type": "guess",
+    "details": {
+      "team": "blue",
+      "player": "Blue Operative",
+      "word": "helicopter",
+      "result": "BLUE (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:27:27",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 8,
+      "blue_remaining": 8,
+      "board": [
+        {
+          "word": "mint",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "chick",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "plot",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "pitch",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "belt",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "jack",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "australia",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "mammoth",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "switch",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "church",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "iron",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "drop",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "mine",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "stream",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bermuda",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "dragon",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "tail",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "fan",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "capital",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "rock",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "helicopter",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "suit",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "temple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "stick",
+          "type": "assassin",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:27:27",
+    "type": "guess",
+    "details": {
+      "team": "blue",
+      "player": "Blue Operative",
+      "word": "chick",
+      "result": "NEUTRAL (Wrong)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:27:27",
+    "type": "turn_end",
+    "details": {
+      "team": "blue",
+      "reason": "Incorrect guess"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:27:27",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 8,
+      "blue_remaining": 8,
+      "board": [
+        {
+          "word": "mint",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "chick",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "plot",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "pitch",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "belt",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "jack",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "australia",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "mammoth",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "switch",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "church",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "iron",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "drop",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "mine",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "stream",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bermuda",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "dragon",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "tail",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "fan",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "capital",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "rock",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "helicopter",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "suit",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "temple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "stick",
+          "type": "assassin",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": true
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:27:28",
+    "type": "clue",
+    "details": {
+      "team": "red",
+      "player": "Red Spymaster",
+      "word": "coal",
+      "number": 3,
+      "model": "gpt-4o",
+      "target_words": [
+        "mine",
+        "pitch",
+        "iron"
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:27:28",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 8,
+      "blue_remaining": 8,
+      "board": [
+        {
+          "word": "mint",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "chick",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "plot",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "pitch",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "belt",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "jack",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "australia",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "mammoth",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "switch",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "church",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "iron",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "drop",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "mine",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "stream",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bermuda",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "dragon",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "tail",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "fan",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "capital",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "rock",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "helicopter",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "suit",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "temple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "stick",
+          "type": "assassin",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:27:29",
+    "type": "guess",
+    "details": {
+      "team": "red",
+      "player": "Red Operative",
+      "word": "mine",
+      "result": "RED (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:27:29",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 7,
+      "blue_remaining": 8,
+      "board": [
+        {
+          "word": "mint",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "chick",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "plot",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "pitch",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "belt",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "jack",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "australia",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "mammoth",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "switch",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "church",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "iron",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "drop",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "mine",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "stream",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bermuda",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "dragon",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "tail",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "fan",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "capital",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "rock",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "helicopter",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "suit",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "temple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "stick",
+          "type": "assassin",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:27:30",
+    "type": "guess",
+    "details": {
+      "team": "red",
+      "player": "Red Operative",
+      "word": "pitch",
+      "result": "RED (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:27:30",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 6,
+      "blue_remaining": 8,
+      "board": [
+        {
+          "word": "mint",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "chick",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "plot",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "pitch",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "belt",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "jack",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "australia",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "mammoth",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "switch",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "church",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "iron",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "drop",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "mine",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "stream",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bermuda",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "dragon",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "tail",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "fan",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "capital",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "rock",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "helicopter",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "suit",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "temple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "stick",
+          "type": "assassin",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:27:30",
+    "type": "turn_end",
+    "details": {
+      "team": "red",
+      "reason": "Operative chose to end turn"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:27:30",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 6,
+      "blue_remaining": 8,
+      "board": [
+        {
+          "word": "mint",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "chick",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "plot",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "pitch",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "belt",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "jack",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "australia",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "mammoth",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "switch",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "church",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "iron",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "drop",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "mine",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "stream",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bermuda",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "dragon",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "tail",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "fan",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "capital",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "rock",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "helicopter",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "suit",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "temple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "stick",
+          "type": "assassin",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": true
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:27:32",
+    "type": "clue",
+    "details": {
+      "team": "blue",
+      "player": "Blue Spymaster",
+      "word": "worship",
+      "number": 3,
+      "model": "gpt-4o",
+      "target_words": [
+        "church",
+        "temple",
+        "dragon"
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:27:32",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 6,
+      "blue_remaining": 8,
+      "board": [
+        {
+          "word": "mint",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "chick",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "plot",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "pitch",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "belt",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "jack",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "australia",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "mammoth",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "switch",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "church",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "iron",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "drop",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "mine",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "stream",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bermuda",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "dragon",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "tail",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "fan",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "capital",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "rock",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "helicopter",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "suit",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "temple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "stick",
+          "type": "assassin",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:27:32",
+    "type": "guess",
+    "details": {
+      "team": "blue",
+      "player": "Blue Operative",
+      "word": "church",
+      "result": "BLUE (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:27:32",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 6,
+      "blue_remaining": 7,
+      "board": [
+        {
+          "word": "mint",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "chick",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "plot",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "pitch",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "belt",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "jack",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "australia",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "mammoth",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "switch",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "church",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "iron",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "drop",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "mine",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "stream",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bermuda",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "dragon",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "tail",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "fan",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "capital",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "rock",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "helicopter",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "suit",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "temple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "stick",
+          "type": "assassin",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:27:33",
+    "type": "guess",
+    "details": {
+      "team": "blue",
+      "player": "Blue Operative",
+      "word": "temple",
+      "result": "BLUE (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:27:33",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 6,
+      "blue_remaining": 6,
+      "board": [
+        {
+          "word": "mint",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "chick",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "plot",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "pitch",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "belt",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "jack",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "australia",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "mammoth",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "switch",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "church",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "iron",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "drop",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "mine",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "stream",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bermuda",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "dragon",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "tail",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "fan",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "capital",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "rock",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "helicopter",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "suit",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "temple",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "stick",
+          "type": "assassin",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:27:34",
+    "type": "turn_end",
+    "details": {
+      "team": "blue",
+      "reason": "Operative chose to end turn"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:27:34",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 6,
+      "blue_remaining": 6,
+      "board": [
+        {
+          "word": "mint",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "chick",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "plot",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "pitch",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "belt",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "jack",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "australia",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "mammoth",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "switch",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "church",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "iron",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "drop",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "mine",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "stream",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bermuda",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "dragon",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "tail",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "fan",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "capital",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "rock",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "helicopter",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "suit",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "temple",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "stick",
+          "type": "assassin",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": true
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:27:35",
+    "type": "clue",
+    "details": {
+      "team": "red",
+      "player": "Red Spymaster",
+      "word": "Metal",
+      "number": 3,
+      "model": "gpt-4o",
+      "target_words": [
+        "iron",
+        "switch",
+        "suit"
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:27:35",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 6,
+      "blue_remaining": 6,
+      "board": [
+        {
+          "word": "mint",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "chick",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "plot",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "pitch",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "belt",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "jack",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "australia",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "mammoth",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "switch",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "church",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "iron",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "drop",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "mine",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "stream",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bermuda",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "dragon",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "tail",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "fan",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "capital",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "rock",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "helicopter",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "suit",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "temple",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "stick",
+          "type": "assassin",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:27:36",
+    "type": "guess",
+    "details": {
+      "team": "red",
+      "player": "Red Operative",
+      "word": "iron",
+      "result": "RED (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:27:36",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 5,
+      "blue_remaining": 6,
+      "board": [
+        {
+          "word": "mint",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "chick",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "plot",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "pitch",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "belt",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "jack",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "australia",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "mammoth",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "switch",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "church",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "iron",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "drop",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "mine",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "stream",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bermuda",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "dragon",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "tail",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "fan",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "capital",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "rock",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "helicopter",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "suit",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "temple",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "stick",
+          "type": "assassin",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:27:37",
+    "type": "guess",
+    "details": {
+      "team": "red",
+      "player": "Red Operative",
+      "word": "jack",
+      "result": "BLUE (Wrong)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:27:37",
+    "type": "turn_end",
+    "details": {
+      "team": "red",
+      "reason": "Incorrect guess"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:27:37",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 5,
+      "blue_remaining": 5,
+      "board": [
+        {
+          "word": "mint",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "chick",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "plot",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "pitch",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "belt",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "jack",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "australia",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "mammoth",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "switch",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "church",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "iron",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "drop",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "mine",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "stream",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bermuda",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "dragon",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "tail",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "fan",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "capital",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "rock",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "helicopter",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "suit",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "temple",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "stick",
+          "type": "assassin",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": true
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:27:38",
+    "type": "clue",
+    "details": {
+      "team": "blue",
+      "player": "Blue Spymaster",
+      "word": "fire",
+      "number": 3,
+      "model": "gpt-4o",
+      "target_words": [
+        "dragon",
+        "bomb",
+        "fan"
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:27:38",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 5,
+      "blue_remaining": 5,
+      "board": [
+        {
+          "word": "mint",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "chick",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "plot",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "pitch",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "belt",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "jack",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "australia",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "mammoth",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "switch",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "church",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "iron",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "drop",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "mine",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "stream",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bermuda",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "dragon",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "tail",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "fan",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "capital",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "rock",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "helicopter",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "suit",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "temple",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "stick",
+          "type": "assassin",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:27:39",
+    "type": "guess",
+    "details": {
+      "team": "blue",
+      "player": "Blue Operative",
+      "word": "dragon",
+      "result": "BLUE (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:27:39",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 5,
+      "blue_remaining": 4,
+      "board": [
+        {
+          "word": "mint",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "chick",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "plot",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "pitch",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "belt",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "jack",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "australia",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "mammoth",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "switch",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "church",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "iron",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "drop",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "mine",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "stream",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bermuda",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "dragon",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "tail",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "fan",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "capital",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "rock",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "helicopter",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "suit",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "temple",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "stick",
+          "type": "assassin",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:27:40",
+    "type": "guess",
+    "details": {
+      "team": "blue",
+      "player": "Blue Operative",
+      "word": "bomb",
+      "result": "BLUE (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:27:40",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 5,
+      "blue_remaining": 3,
+      "board": [
+        {
+          "word": "mint",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "chick",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "plot",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "pitch",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "belt",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "jack",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "australia",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "mammoth",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "switch",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "church",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "iron",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "drop",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "mine",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "stream",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bermuda",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "dragon",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "tail",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "fan",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "capital",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "rock",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "helicopter",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "suit",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "temple",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "stick",
+          "type": "assassin",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:27:41",
+    "type": "turn_end",
+    "details": {
+      "team": "blue",
+      "reason": "Operative chose to end turn"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:27:41",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 5,
+      "blue_remaining": 3,
+      "board": [
+        {
+          "word": "mint",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "chick",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "plot",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "pitch",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "belt",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "jack",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "australia",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "mammoth",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "switch",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "church",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "iron",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "drop",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "mine",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "stream",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bermuda",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "dragon",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "tail",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "fan",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "capital",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "rock",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "helicopter",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "suit",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "temple",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "stick",
+          "type": "assassin",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": true
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:27:42",
+    "type": "clue",
+    "details": {
+      "team": "red",
+      "player": "Red Spymaster",
+      "word": "detective",
+      "number": 3,
+      "model": "gpt-4o",
+      "target_words": [
+        "plot",
+        "tail",
+        "suit"
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:27:42",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 5,
+      "blue_remaining": 3,
+      "board": [
+        {
+          "word": "mint",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "chick",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "plot",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "pitch",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "belt",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "jack",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "australia",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "mammoth",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "switch",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "church",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "iron",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "drop",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "mine",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "stream",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bermuda",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "dragon",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "tail",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "fan",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "capital",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "rock",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "helicopter",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "suit",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "temple",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "stick",
+          "type": "assassin",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:27:42",
+    "type": "guess",
+    "details": {
+      "team": "red",
+      "player": "Red Operative",
+      "word": "suit",
+      "result": "RED (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:27:42",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 4,
+      "blue_remaining": 3,
+      "board": [
+        {
+          "word": "mint",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "chick",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "plot",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "pitch",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "belt",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "jack",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "australia",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "mammoth",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "switch",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "church",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "iron",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "drop",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "mine",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "stream",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bermuda",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "dragon",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "tail",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "fan",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "capital",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "rock",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "helicopter",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "suit",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "temple",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "stick",
+          "type": "assassin",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:27:43",
+    "type": "guess",
+    "details": {
+      "team": "red",
+      "player": "Red Operative",
+      "word": "plot",
+      "result": "RED (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:27:43",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 3,
+      "blue_remaining": 3,
+      "board": [
+        {
+          "word": "mint",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "chick",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "plot",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "pitch",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "belt",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "jack",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "australia",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "mammoth",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "switch",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "church",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "iron",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "drop",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "mine",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "stream",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bermuda",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "dragon",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "tail",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "fan",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "capital",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "rock",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "helicopter",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "suit",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "temple",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "stick",
+          "type": "assassin",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:27:43",
+    "type": "turn_end",
+    "details": {
+      "team": "red",
+      "reason": "Operative chose to end turn"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:27:43",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 3,
+      "blue_remaining": 3,
+      "board": [
+        {
+          "word": "mint",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "chick",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "plot",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "pitch",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "belt",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "jack",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "australia",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "mammoth",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "switch",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "church",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "iron",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "drop",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "mine",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "stream",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bermuda",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "dragon",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "tail",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "fan",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "capital",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "rock",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "helicopter",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "suit",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "temple",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "stick",
+          "type": "assassin",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": true
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:27:44",
+    "type": "clue",
+    "details": {
+      "team": "blue",
+      "player": "Blue Spymaster",
+      "word": "Outback",
+      "number": 3,
+      "model": "gpt-4o",
+      "target_words": [
+        "australia",
+        "fan",
+        "rock"
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:27:44",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 3,
+      "blue_remaining": 3,
+      "board": [
+        {
+          "word": "mint",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "chick",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "plot",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "pitch",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "belt",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "jack",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "australia",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "mammoth",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "switch",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "church",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "iron",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "drop",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "mine",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "stream",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bermuda",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "dragon",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "tail",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "fan",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "capital",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "rock",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "helicopter",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "suit",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "temple",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "stick",
+          "type": "assassin",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:27:45",
+    "type": "guess",
+    "details": {
+      "team": "blue",
+      "player": "Blue Operative",
+      "word": "australia",
+      "result": "BLUE (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:27:45",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 3,
+      "blue_remaining": 2,
+      "board": [
+        {
+          "word": "mint",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "chick",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "plot",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "pitch",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "belt",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "jack",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "australia",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "mammoth",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "switch",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "church",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "iron",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "drop",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "mine",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "stream",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bermuda",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "dragon",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "tail",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "fan",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "capital",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "rock",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "helicopter",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "suit",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "temple",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "stick",
+          "type": "assassin",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:27:46",
+    "type": "guess",
+    "details": {
+      "team": "blue",
+      "player": "Blue Operative",
+      "word": "rock",
+      "result": "BLUE (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:27:46",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 3,
+      "blue_remaining": 1,
+      "board": [
+        {
+          "word": "mint",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "chick",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "plot",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "pitch",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "belt",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "jack",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "australia",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "mammoth",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "switch",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "church",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "iron",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "drop",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "mine",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "stream",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bermuda",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "dragon",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "tail",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "fan",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "capital",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "rock",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "helicopter",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "suit",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "temple",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "stick",
+          "type": "assassin",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:27:46",
+    "type": "turn_end",
+    "details": {
+      "team": "blue",
+      "reason": "Operative chose to end turn"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:27:46",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 3,
+      "blue_remaining": 1,
+      "board": [
+        {
+          "word": "mint",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "chick",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "plot",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "pitch",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "belt",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "jack",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "australia",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "mammoth",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "switch",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "church",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "iron",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "drop",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "mine",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "stream",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bermuda",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "dragon",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "tail",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "fan",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "capital",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "rock",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "helicopter",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "suit",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "temple",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "stick",
+          "type": "assassin",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": true
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:27:47",
+    "type": "clue",
+    "details": {
+      "team": "red",
+      "player": "Red Spymaster",
+      "word": "flip",
+      "number": 2,
+      "model": "gpt-4o",
+      "target_words": [
+        "switch",
+        "tail"
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:27:47",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 3,
+      "blue_remaining": 1,
+      "board": [
+        {
+          "word": "mint",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "chick",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "plot",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "pitch",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "belt",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "jack",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "australia",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "mammoth",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "switch",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "church",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "iron",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "drop",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "mine",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "stream",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bermuda",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "dragon",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "tail",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "fan",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "capital",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "rock",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "helicopter",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "suit",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "temple",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "stick",
+          "type": "assassin",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:27:48",
+    "type": "guess",
+    "details": {
+      "team": "red",
+      "player": "Red Operative",
+      "word": "switch",
+      "result": "RED (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:27:48",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 2,
+      "blue_remaining": 1,
+      "board": [
+        {
+          "word": "mint",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "chick",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "plot",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "pitch",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "belt",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "jack",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "australia",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "mammoth",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "switch",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "church",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "iron",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "drop",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "mine",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "stream",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bermuda",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "dragon",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "tail",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "fan",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "capital",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "rock",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "helicopter",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "suit",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "temple",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "stick",
+          "type": "assassin",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:27:48",
+    "type": "turn_end",
+    "details": {
+      "team": "red",
+      "reason": "Operative chose to end turn"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:27:48",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 2,
+      "blue_remaining": 1,
+      "board": [
+        {
+          "word": "mint",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "chick",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "plot",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "pitch",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "belt",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "jack",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "australia",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "mammoth",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "switch",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "church",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "iron",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "drop",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "mine",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "stream",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bermuda",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "dragon",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "tail",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "fan",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "capital",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "rock",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "helicopter",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "suit",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "temple",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "stick",
+          "type": "assassin",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": true
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:27:49",
+    "type": "clue",
+    "details": {
+      "team": "blue",
+      "player": "Blue Spymaster",
+      "word": "breeze",
+      "number": 1,
+      "model": "gpt-4o",
+      "target_words": [
+        "fan"
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:27:49",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 2,
+      "blue_remaining": 1,
+      "board": [
+        {
+          "word": "mint",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "chick",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "plot",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "pitch",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "belt",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "jack",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "australia",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "mammoth",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "switch",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "church",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "iron",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "drop",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "mine",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "stream",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bermuda",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "dragon",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "tail",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "fan",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "capital",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "rock",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "helicopter",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "suit",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "temple",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "stick",
+          "type": "assassin",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:27:50",
+    "type": "guess",
+    "details": {
+      "team": "blue",
+      "player": "Blue Operative",
+      "word": "fan",
+      "result": "BLUE (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:27:50",
+    "type": "game_end",
+    "details": {
+      "winner": "blue",
+      "duration": 24.68411612510681,
+      "total_turns": 9,
+      "start_time": "2025-03-11 21:27:25",
+      "end_time": 1741728470.0761092
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:27:50",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 2,
+      "blue_remaining": 0,
+      "board": [
+        {
+          "word": "mint",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "chick",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "plot",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "pitch",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "belt",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "jack",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "australia",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "mammoth",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "switch",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "church",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "iron",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "drop",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "mine",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "stream",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bermuda",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "dragon",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "tail",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "fan",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "capital",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "rock",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "helicopter",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "suit",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "temple",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "stick",
+          "type": "assassin",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": true
+    }
+  }
+]

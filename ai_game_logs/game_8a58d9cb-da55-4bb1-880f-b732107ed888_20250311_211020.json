@@ -1,0 +1,4513 @@
+[
+  {
+    "timestamp": "2025-03-11 21:09:39",
+    "type": "game_start",
+    "details": {
+      "game_id": "8a58d9cb-da55-4bb1-880f-b732107ed888",
+      "start_time": "2025-03-11 21:09:39",
+      "red_team": {
+        "spymaster": "Red Spymaster",
+        "operative": "Red Operative",
+        "spymaster_model": "gpt-4o",
+        "operative_model": "gpt-4o"
+      },
+      "blue_team": {
+        "spymaster": "Blue Spymaster",
+        "operative": "Blue Operative",
+        "spymaster_model": "gpt-4o",
+        "operative_model": "gpt-4o"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:09:39",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 9,
+      "blue_remaining": 8,
+      "board": [
+        {
+          "word": "platypus",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "conductor",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "play",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "laser",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "temple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "part",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "alps",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "bug",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "buck",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "fly",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "shadow",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "england",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "turkey",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "bridge",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "compound",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "band",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "air",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "mexico",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "battery",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "paper",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "america",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "tick",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "back",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "vet",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": true
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:09:39",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 9,
+      "blue_remaining": 8,
+      "board": [
+        {
+          "word": "platypus",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "conductor",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "play",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "laser",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "temple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "part",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "alps",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "bug",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "buck",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "fly",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "shadow",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "england",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "turkey",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "bridge",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "compound",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "band",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "air",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "mexico",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "battery",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "paper",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "america",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "tick",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "back",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "vet",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": true
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:09:45",
+    "type": "clue",
+    "details": {
+      "team": "red",
+      "player": "Red Spymaster",
+      "word": "travel",
+      "number": 3,
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:09:45",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 9,
+      "blue_remaining": 8,
+      "board": [
+        {
+          "word": "platypus",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "conductor",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "play",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "laser",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "temple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "part",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "alps",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "bug",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "buck",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "fly",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "shadow",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "england",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "turkey",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "bridge",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "compound",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "band",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "air",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "mexico",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "battery",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "paper",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "america",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "tick",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "back",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "vet",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:09:47",
+    "type": "guess",
+    "details": {
+      "team": "red",
+      "player": "Red Operative",
+      "word": "alps",
+      "result": "RED (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:09:47",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 8,
+      "blue_remaining": 8,
+      "board": [
+        {
+          "word": "platypus",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "conductor",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "play",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "laser",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "temple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "part",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "alps",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "bug",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "buck",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "fly",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "shadow",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "england",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "turkey",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "bridge",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "compound",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "band",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "air",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "mexico",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "battery",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "paper",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "america",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "tick",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "back",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "vet",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:09:48",
+    "type": "guess",
+    "details": {
+      "team": "red",
+      "player": "Red Operative",
+      "word": "mexico",
+      "result": "BLUE (Wrong)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:09:48",
+    "type": "turn_end",
+    "details": {
+      "team": "red",
+      "reason": "Incorrect guess"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:09:48",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 8,
+      "blue_remaining": 7,
+      "board": [
+        {
+          "word": "platypus",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "conductor",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "play",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "laser",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "temple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "part",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "alps",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "bug",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "buck",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "fly",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "shadow",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "england",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "turkey",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "bridge",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "compound",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "band",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "air",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "mexico",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "battery",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "paper",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "america",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "tick",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "back",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "vet",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": true
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:09:50",
+    "type": "clue",
+    "details": {
+      "team": "blue",
+      "player": "Blue Spymaster",
+      "word": "music",
+      "number": 2,
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:09:50",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 8,
+      "blue_remaining": 7,
+      "board": [
+        {
+          "word": "platypus",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "conductor",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "play",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "laser",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "temple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "part",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "alps",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "bug",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "buck",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "fly",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "shadow",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "england",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "turkey",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "bridge",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "compound",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "band",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "air",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "mexico",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "battery",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "paper",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "america",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "tick",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "back",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "vet",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:09:51",
+    "type": "guess",
+    "details": {
+      "team": "blue",
+      "player": "Blue Operative",
+      "word": "band",
+      "result": "BLUE (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:09:51",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 8,
+      "blue_remaining": 6,
+      "board": [
+        {
+          "word": "platypus",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "conductor",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "play",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "laser",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "temple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "part",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "alps",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "bug",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "buck",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "fly",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "shadow",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "england",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "turkey",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "bridge",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "compound",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "band",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "air",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "mexico",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "battery",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "paper",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "america",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "tick",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "back",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "vet",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:09:54",
+    "type": "guess",
+    "details": {
+      "team": "blue",
+      "player": "Blue Operative",
+      "word": "conductor",
+      "result": "NEUTRAL (Wrong)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:09:54",
+    "type": "turn_end",
+    "details": {
+      "team": "blue",
+      "reason": "Incorrect guess"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:09:54",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 8,
+      "blue_remaining": 6,
+      "board": [
+        {
+          "word": "platypus",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "conductor",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "bomb",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "play",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "laser",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "temple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "part",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "alps",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "bug",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "buck",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "fly",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "shadow",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "england",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "turkey",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "bridge",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "compound",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "band",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "air",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "mexico",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "battery",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "paper",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "america",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "tick",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "back",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "vet",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": true
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:09:55",
+    "type": "clue",
+    "details": {
+      "team": "red",
+      "player": "Red Spymaster",
+      "word": "explode",
+      "number": 3,
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:09:55",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 8,
+      "blue_remaining": 6,
+      "board": [
+        {
+          "word": "platypus",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "conductor",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "bomb",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "play",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "laser",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "temple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "part",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "alps",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "bug",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "buck",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "fly",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "shadow",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "england",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "turkey",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "bridge",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "compound",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "band",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "air",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "mexico",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "battery",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "paper",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "america",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "tick",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "back",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "vet",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:09:59",
+    "type": "guess",
+    "details": {
+      "team": "red",
+      "player": "Red Operative",
+      "word": "bomb",
+      "result": "RED (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:09:59",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 7,
+      "blue_remaining": 6,
+      "board": [
+        {
+          "word": "platypus",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "conductor",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "bomb",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "play",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "laser",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "temple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "part",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "alps",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "bug",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "buck",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "fly",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "shadow",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "england",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "turkey",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "bridge",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "compound",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "band",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "air",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "mexico",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "battery",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "paper",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "america",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "tick",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "back",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "vet",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:10:01",
+    "type": "guess",
+    "details": {
+      "team": "red",
+      "player": "Red Operative",
+      "word": "battery",
+      "result": "RED (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:10:01",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 6,
+      "blue_remaining": 6,
+      "board": [
+        {
+          "word": "platypus",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "conductor",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "bomb",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "play",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "laser",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "temple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "part",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "alps",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "bug",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "buck",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "fly",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "shadow",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "england",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "turkey",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "bridge",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "compound",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "band",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "air",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "mexico",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "battery",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "paper",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "america",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "tick",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "back",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "vet",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:10:03",
+    "type": "guess",
+    "details": {
+      "team": "red",
+      "player": "Red Operative",
+      "word": "compound",
+      "result": "NEUTRAL (Wrong)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:10:03",
+    "type": "turn_end",
+    "details": {
+      "team": "red",
+      "reason": "Incorrect guess"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:10:03",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 6,
+      "blue_remaining": 6,
+      "board": [
+        {
+          "word": "platypus",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "conductor",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "bomb",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "play",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "laser",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "temple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "part",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "alps",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "bug",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "buck",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "fly",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "shadow",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "england",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "turkey",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "bridge",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "compound",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "band",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "air",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "mexico",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "battery",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "paper",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "america",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "tick",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "back",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "vet",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": true
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:10:03",
+    "type": "clue",
+    "details": {
+      "team": "blue",
+      "player": "Blue Spymaster",
+      "word": "Australia",
+      "number": 2,
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:10:03",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 6,
+      "blue_remaining": 6,
+      "board": [
+        {
+          "word": "platypus",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "conductor",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "bomb",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "play",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "laser",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "temple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "part",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "alps",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "bug",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "buck",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "fly",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "shadow",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "england",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "turkey",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "bridge",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "compound",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "band",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "air",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "mexico",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "battery",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "paper",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "america",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "tick",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "back",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "vet",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:10:04",
+    "type": "guess",
+    "details": {
+      "team": "blue",
+      "player": "Blue Operative",
+      "word": "platypus",
+      "result": "BLUE (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:10:04",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 6,
+      "blue_remaining": 5,
+      "board": [
+        {
+          "word": "platypus",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "conductor",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "bomb",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "play",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "laser",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "temple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "part",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "alps",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "bug",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "buck",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "fly",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "shadow",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "england",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "turkey",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "bridge",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "compound",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "band",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "air",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "mexico",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "battery",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "paper",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "america",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "tick",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "back",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "vet",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:10:04",
+    "type": "guess",
+    "details": {
+      "team": "blue",
+      "player": "Blue Operative",
+      "word": "fly",
+      "result": "RED (Wrong)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:10:04",
+    "type": "turn_end",
+    "details": {
+      "team": "blue",
+      "reason": "Incorrect guess"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:10:04",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 5,
+      "blue_remaining": 5,
+      "board": [
+        {
+          "word": "platypus",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "conductor",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "bomb",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "play",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "laser",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "temple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "part",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "alps",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "bug",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "buck",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "fly",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "shadow",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "england",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "turkey",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "bridge",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "compound",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "band",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "air",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "mexico",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "battery",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "paper",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "america",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "tick",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "back",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "vet",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": true
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:10:05",
+    "type": "clue",
+    "details": {
+      "team": "red",
+      "player": "Red Spymaster",
+      "word": "Thanksgiving",
+      "number": 2,
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:10:05",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 5,
+      "blue_remaining": 5,
+      "board": [
+        {
+          "word": "platypus",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "conductor",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "bomb",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "play",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "laser",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "temple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "part",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "alps",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "bug",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "buck",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "fly",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "shadow",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "england",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "turkey",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "bridge",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "compound",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "band",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "air",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "mexico",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "battery",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "paper",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "america",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "tick",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "back",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "vet",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:10:06",
+    "type": "guess",
+    "details": {
+      "team": "red",
+      "player": "Red Operative",
+      "word": "turkey",
+      "result": "RED (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:10:06",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 4,
+      "blue_remaining": 5,
+      "board": [
+        {
+          "word": "platypus",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "conductor",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "bomb",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "play",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "laser",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "temple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "part",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "alps",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "bug",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "buck",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "fly",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "shadow",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "england",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "turkey",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "bridge",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "compound",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "band",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "air",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "mexico",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "battery",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "paper",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "america",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "tick",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "back",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "vet",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:10:07",
+    "type": "guess",
+    "details": {
+      "team": "red",
+      "player": "Red Operative",
+      "word": "america",
+      "result": "BLUE (Wrong)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:10:07",
+    "type": "turn_end",
+    "details": {
+      "team": "red",
+      "reason": "Incorrect guess"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:10:07",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 4,
+      "blue_remaining": 4,
+      "board": [
+        {
+          "word": "platypus",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "conductor",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "bomb",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "play",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "laser",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "temple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "part",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "alps",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "bug",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "buck",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "fly",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "shadow",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "england",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "turkey",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "bridge",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "compound",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "band",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "air",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "mexico",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "battery",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "paper",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "america",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "tick",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "back",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "vet",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": true
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:10:09",
+    "type": "clue",
+    "details": {
+      "team": "blue",
+      "player": "Blue Spymaster",
+      "word": "act",
+      "number": 3,
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:10:09",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 4,
+      "blue_remaining": 4,
+      "board": [
+        {
+          "word": "platypus",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "conductor",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "bomb",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "play",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "laser",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "temple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "part",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "alps",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "bug",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "buck",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "fly",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "shadow",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "england",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "turkey",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "bridge",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "compound",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "band",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "air",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "mexico",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "battery",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "paper",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "america",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "tick",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "back",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "vet",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:10:09",
+    "type": "guess",
+    "details": {
+      "team": "blue",
+      "player": "Blue Operative",
+      "word": "play",
+      "result": "BLUE (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:10:09",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 4,
+      "blue_remaining": 3,
+      "board": [
+        {
+          "word": "platypus",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "conductor",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "bomb",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "play",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "laser",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "temple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "part",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "alps",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "bug",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "buck",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "fly",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "shadow",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "england",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "turkey",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "bridge",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "compound",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "band",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "air",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "mexico",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "battery",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "paper",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "america",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "tick",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "back",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "vet",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:10:10",
+    "type": "guess",
+    "details": {
+      "team": "blue",
+      "player": "Blue Operative",
+      "word": "part",
+      "result": "BLUE (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:10:10",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 4,
+      "blue_remaining": 2,
+      "board": [
+        {
+          "word": "platypus",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "conductor",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "bomb",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "play",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "laser",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "temple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "part",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "alps",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "bug",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "buck",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "fly",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "shadow",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "england",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "turkey",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "bridge",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "compound",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "band",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "air",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "mexico",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "battery",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "paper",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "america",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "tick",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "back",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "vet",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:10:11",
+    "type": "guess",
+    "details": {
+      "team": "blue",
+      "player": "Blue Operative",
+      "word": "shadow",
+      "result": "NEUTRAL (Wrong)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:10:11",
+    "type": "turn_end",
+    "details": {
+      "team": "blue",
+      "reason": "Incorrect guess"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:10:11",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 4,
+      "blue_remaining": 2,
+      "board": [
+        {
+          "word": "platypus",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "conductor",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "bomb",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "play",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "laser",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "temple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "part",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "alps",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "bug",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "buck",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "fly",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "shadow",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "england",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "turkey",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "bridge",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "compound",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "band",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "air",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "mexico",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "battery",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "paper",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "america",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "tick",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "back",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "vet",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": true
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:10:11",
+    "type": "clue",
+    "details": {
+      "team": "red",
+      "player": "Red Spymaster",
+      "word": "fold",
+      "number": 2,
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:10:11",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 4,
+      "blue_remaining": 2,
+      "board": [
+        {
+          "word": "platypus",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "conductor",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "bomb",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "play",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "laser",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "temple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "part",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "alps",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "bug",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "buck",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "fly",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "shadow",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "england",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "turkey",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "bridge",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "compound",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "band",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "air",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "mexico",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "battery",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "paper",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "america",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "tick",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "back",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "vet",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:10:12",
+    "type": "guess",
+    "details": {
+      "team": "red",
+      "player": "Red Operative",
+      "word": "paper",
+      "result": "RED (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:10:12",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 3,
+      "blue_remaining": 2,
+      "board": [
+        {
+          "word": "platypus",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "conductor",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "bomb",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "play",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "laser",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "temple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "part",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "alps",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "bug",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "buck",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "fly",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "shadow",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "england",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "turkey",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "bridge",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "compound",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "band",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "air",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "mexico",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "battery",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "paper",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "america",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "tick",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "back",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "vet",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:10:13",
+    "type": "guess",
+    "details": {
+      "team": "red",
+      "player": "Red Operative",
+      "word": "back",
+      "result": "RED (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:10:13",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 2,
+      "blue_remaining": 2,
+      "board": [
+        {
+          "word": "platypus",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "conductor",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "bomb",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "play",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "laser",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "temple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "part",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "alps",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "bug",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "buck",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "fly",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "shadow",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "england",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "turkey",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "bridge",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "compound",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "band",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "air",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "mexico",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "battery",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "paper",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "america",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "tick",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "back",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "vet",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:10:15",
+    "type": "guess",
+    "details": {
+      "team": "red",
+      "player": "Red Operative",
+      "word": "bridge",
+      "result": "RED (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:10:15",
+    "type": "turn_end",
+    "details": {
+      "team": "red",
+      "reason": "No more guesses left"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:10:15",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 1,
+      "blue_remaining": 2,
+      "board": [
+        {
+          "word": "platypus",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "conductor",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "bomb",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "play",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "laser",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "temple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "part",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "alps",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "bug",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "buck",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "fly",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "shadow",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "england",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "turkey",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "bridge",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "compound",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "band",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "air",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "mexico",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "battery",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "paper",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "america",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "tick",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "back",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "vet",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": true
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:10:17",
+    "type": "clue",
+    "details": {
+      "team": "blue",
+      "player": "Blue Spymaster",
+      "word": "insect",
+      "number": 2,
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:10:17",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 1,
+      "blue_remaining": 2,
+      "board": [
+        {
+          "word": "platypus",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "conductor",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "bomb",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "play",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "laser",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "temple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "part",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "alps",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "bug",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "buck",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "fly",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "shadow",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "england",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "turkey",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "bridge",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "compound",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "band",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "air",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "mexico",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "battery",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "paper",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "america",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "tick",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "back",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "vet",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:10:18",
+    "type": "guess",
+    "details": {
+      "team": "blue",
+      "player": "Blue Operative",
+      "word": "bug",
+      "result": "NEUTRAL (Wrong)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:10:18",
+    "type": "turn_end",
+    "details": {
+      "team": "blue",
+      "reason": "Incorrect guess"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:10:18",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 1,
+      "blue_remaining": 2,
+      "board": [
+        {
+          "word": "platypus",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "conductor",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "bomb",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "play",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "laser",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "temple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "part",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "alps",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "bug",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "buck",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "fly",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "shadow",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "england",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "turkey",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "bridge",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "compound",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "band",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "air",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "mexico",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "battery",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "paper",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "america",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "tick",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "back",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "vet",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": true
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:10:19",
+    "type": "clue",
+    "details": {
+      "team": "red",
+      "player": "Red Spymaster",
+      "word": "breeze",
+      "number": 1,
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:10:19",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 1,
+      "blue_remaining": 2,
+      "board": [
+        {
+          "word": "platypus",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "conductor",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "bomb",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "play",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "laser",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "temple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "part",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "alps",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "bug",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "buck",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "fly",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "shadow",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "england",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "turkey",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "bridge",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "compound",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "band",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "air",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "mexico",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "battery",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "paper",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "america",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "tick",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "back",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "vet",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:10:20",
+    "type": "guess",
+    "details": {
+      "team": "red",
+      "player": "Red Operative",
+      "word": "air",
+      "result": "RED (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:10:20",
+    "type": "game_end",
+    "details": {
+      "winner": "red",
+      "duration": 41.0228328704834,
+      "total_turns": 9
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:10:20",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 0,
+      "blue_remaining": 2,
+      "board": [
+        {
+          "word": "platypus",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "conductor",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "bomb",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "play",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "laser",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "temple",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "part",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "alps",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "bug",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "buck",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "fly",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "shadow",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "england",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "turkey",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "bridge",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "compound",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "band",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "air",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "mexico",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "battery",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "paper",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "america",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "tick",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "back",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "vet",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": true
+    }
+  }
+]

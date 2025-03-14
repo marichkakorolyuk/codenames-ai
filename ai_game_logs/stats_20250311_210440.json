@@ -1,0 +1,221 @@
+{
+  "red_wins": 1,
+  "blue_wins": 0,
+  "game_duration": 14.778578042984009,
+  "total_turns": 8,
+  "red_team": {
+    "correct_guesses": 6,
+    "wrong_guesses": 2
+  },
+  "blue_team": {
+    "correct_guesses": 8,
+    "wrong_guesses": 3
+  },
+  "clues": [
+    {
+      "team": "blue",
+      "clue_word": "metal",
+      "clue_number": 2,
+      "model": "gpt-4o",
+      "guesses": [
+        {
+          "word": "iron",
+          "actual_type": "blue",
+          "is_correct": true,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:04:27"
+        },
+        {
+          "word": "lead",
+          "actual_type": "blue",
+          "is_correct": true,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:04:27"
+        },
+        {
+          "word": "drill",
+          "actual_type": "red",
+          "is_correct": false,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:04:28"
+        }
+      ],
+      "timestamp": "2025-03-11 21:04:26"
+    },
+    {
+      "team": "red",
+      "clue_word": "spy",
+      "clue_number": 3,
+      "model": "gpt-4o",
+      "guesses": [
+        {
+          "word": "mole",
+          "actual_type": "red",
+          "is_correct": true,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:04:29"
+        },
+        {
+          "word": "plot",
+          "actual_type": "neutral",
+          "is_correct": false,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:04:30"
+        }
+      ],
+      "timestamp": "2025-03-11 21:04:28"
+    },
+    {
+      "team": "blue",
+      "clue_word": "sand",
+      "clue_number": 2,
+      "model": "gpt-4o",
+      "guesses": [
+        {
+          "word": "beach",
+          "actual_type": "blue",
+          "is_correct": true,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:04:31"
+        },
+        {
+          "word": "australia",
+          "actual_type": "blue",
+          "is_correct": true,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:04:31"
+        },
+        {
+          "word": "wind",
+          "actual_type": "red",
+          "is_correct": false,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:04:32"
+        }
+      ],
+      "timestamp": "2025-03-11 21:04:30"
+    },
+    {
+      "team": "red",
+      "clue_word": "phone",
+      "clue_number": 2,
+      "model": "gpt-4o",
+      "guesses": [
+        {
+          "word": "cell",
+          "actual_type": "red",
+          "is_correct": true,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:04:33"
+        },
+        {
+          "word": "ring",
+          "actual_type": "red",
+          "is_correct": true,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:04:34"
+        },
+        {
+          "word": "game",
+          "actual_type": "red",
+          "is_correct": true,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:04:34"
+        }
+      ],
+      "timestamp": "2025-03-11 21:04:32"
+    },
+    {
+      "team": "blue",
+      "clue_word": "baseball",
+      "clue_number": 2,
+      "model": "gpt-4o",
+      "guesses": [
+        {
+          "word": "cap",
+          "actual_type": "blue",
+          "is_correct": true,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:04:35"
+        },
+        {
+          "word": "foot",
+          "actual_type": "blue",
+          "is_correct": true,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:04:36"
+        },
+        {
+          "word": "sub",
+          "actual_type": "blue",
+          "is_correct": true,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:04:36"
+        }
+      ],
+      "timestamp": "2025-03-11 21:04:35"
+    },
+    {
+      "team": "red",
+      "clue_word": "Spider",
+      "clue_number": 2,
+      "model": "gpt-4o",
+      "guesses": [
+        {
+          "word": "web",
+          "actual_type": "red",
+          "is_correct": true,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:04:37"
+        },
+        {
+          "word": "snow",
+          "actual_type": "neutral",
+          "is_correct": false,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:04:38"
+        }
+      ],
+      "timestamp": "2025-03-11 21:04:37"
+    },
+    {
+      "team": "blue",
+      "clue_word": "education",
+      "clue_number": 2,
+      "model": "gpt-4o",
+      "guesses": [
+        {
+          "word": "school",
+          "actual_type": "blue",
+          "is_correct": true,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:04:39"
+        },
+        {
+          "word": "marble",
+          "actual_type": "neutral",
+          "is_correct": false,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:04:39"
+        }
+      ],
+      "timestamp": "2025-03-11 21:04:38"
+    },
+    {
+      "team": "red",
+      "clue_word": "military",
+      "clue_number": 1,
+      "model": "gpt-4o",
+      "guesses": [
+        {
+          "word": "soldier",
+          "actual_type": "red",
+          "is_correct": true,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:04:40"
+        }
+      ],
+      "timestamp": "2025-03-11 21:04:40"
+    }
+  ]
+}

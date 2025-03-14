@@ -1,0 +1,5690 @@
+[
+  {
+    "timestamp": "2025-03-11 21:12:29",
+    "type": "game_start",
+    "details": {
+      "game_id": "618412e7-cd0a-41b3-b9d9-99bde414d1cf",
+      "start_time": "2025-03-11 21:12:29",
+      "red_team": {
+        "spymaster": "Red Spymaster",
+        "operative": "Red Operative",
+        "spymaster_model": "gpt-4o",
+        "operative_model": "gpt-4o"
+      },
+      "blue_team": {
+        "spymaster": "Blue Spymaster",
+        "operative": "Blue Operative",
+        "spymaster_model": "gpt-4o",
+        "operative_model": "gpt-4o"
+      }
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:29",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 9,
+      "blue_remaining": 8,
+      "board": [
+        {
+          "word": "hole",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "air",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "wave",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "honey",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "jam",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "police",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "concert",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "marble",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "soul",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "organ",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "snowman",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "spine",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "cap",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "pilot",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "thumb",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "center",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "staff",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "note",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "heart",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "court",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "france",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "loch ness",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "club",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "crown",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": true
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:29",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 9,
+      "blue_remaining": 8,
+      "board": [
+        {
+          "word": "hole",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "air",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "wave",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "honey",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "jam",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "police",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "concert",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "marble",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "soul",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "organ",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "snowman",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "spine",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "cap",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "pilot",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "thumb",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "center",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "staff",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "note",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "heart",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "court",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "france",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "loch ness",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "club",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "crown",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": true
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:30",
+    "type": "clue",
+    "details": {
+      "team": "red",
+      "player": "Red Spymaster",
+      "word": "Anatomy",
+      "number": 4,
+      "model": "gpt-4o",
+      "target_words": [
+        "spine",
+        "heart",
+        "soul",
+        "pilot"
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:30",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 9,
+      "blue_remaining": 8,
+      "board": [
+        {
+          "word": "hole",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "air",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "wave",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "honey",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "jam",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "police",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "concert",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "marble",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "soul",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "organ",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "snowman",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "spine",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "cap",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "pilot",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "thumb",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "center",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "staff",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "note",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "heart",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "court",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "france",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "loch ness",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "club",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "crown",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:31",
+    "type": "guess",
+    "details": {
+      "team": "red",
+      "player": "Red Operative",
+      "word": "spine",
+      "result": "RED (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:31",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 8,
+      "blue_remaining": 8,
+      "board": [
+        {
+          "word": "hole",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "air",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "wave",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "honey",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "jam",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "police",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "concert",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "marble",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "soul",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "organ",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "snowman",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "spine",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cap",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "pilot",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "thumb",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "center",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "staff",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "note",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "heart",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "court",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "france",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "loch ness",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "club",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "crown",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:32",
+    "type": "guess",
+    "details": {
+      "team": "red",
+      "player": "Red Operative",
+      "word": "organ",
+      "result": "BLUE (Wrong)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:32",
+    "type": "turn_end",
+    "details": {
+      "team": "red",
+      "reason": "Incorrect guess"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:32",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 8,
+      "blue_remaining": 7,
+      "board": [
+        {
+          "word": "hole",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "air",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "wave",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "honey",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "jam",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "police",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "concert",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "marble",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "soul",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "organ",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "snowman",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "spine",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cap",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "pilot",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "thumb",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "center",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "staff",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "note",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "heart",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "court",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "france",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "loch ness",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "club",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "crown",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": true
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:32",
+    "type": "clue",
+    "details": {
+      "team": "blue",
+      "player": "Blue Spymaster",
+      "word": "Finger",
+      "number": 2,
+      "model": "gpt-4o",
+      "target_words": [
+        "thumb",
+        "cap"
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:32",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 8,
+      "blue_remaining": 7,
+      "board": [
+        {
+          "word": "hole",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "air",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "wave",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "honey",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "jam",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "police",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "concert",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "marble",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "soul",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "organ",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "snowman",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "spine",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cap",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "pilot",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "thumb",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "center",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "staff",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "note",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "heart",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "court",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "france",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "loch ness",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "club",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "crown",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:33",
+    "type": "guess",
+    "details": {
+      "team": "blue",
+      "player": "Blue Operative",
+      "word": "thumb",
+      "result": "BLUE (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:33",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 8,
+      "blue_remaining": 6,
+      "board": [
+        {
+          "word": "hole",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "air",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "wave",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "honey",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "jam",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "police",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "concert",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "marble",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "soul",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "organ",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "snowman",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "spine",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cap",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "pilot",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "thumb",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "center",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "staff",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "note",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "heart",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "court",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "france",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "loch ness",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "club",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "crown",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:33",
+    "type": "turn_end",
+    "details": {
+      "team": "blue",
+      "reason": "Operative chose to end turn"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:33",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 8,
+      "blue_remaining": 6,
+      "board": [
+        {
+          "word": "hole",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "air",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "wave",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "honey",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "jam",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "police",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "concert",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "marble",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "soul",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "organ",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "snowman",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "spine",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cap",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "pilot",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "thumb",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "center",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "staff",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "note",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "heart",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "court",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "france",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "loch ness",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "club",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "crown",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": true
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:35",
+    "type": "clue",
+    "details": {
+      "team": "red",
+      "player": "Red Spymaster",
+      "word": "Aviation",
+      "number": 3,
+      "model": "gpt-4o",
+      "target_words": [
+        "air",
+        "pilot"
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:35",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 8,
+      "blue_remaining": 6,
+      "board": [
+        {
+          "word": "hole",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "air",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "wave",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "honey",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "jam",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "police",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "concert",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "marble",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "soul",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "organ",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "snowman",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "spine",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cap",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "pilot",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "thumb",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "center",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "staff",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "note",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "heart",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "court",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "france",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "loch ness",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "club",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "crown",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:35",
+    "type": "guess",
+    "details": {
+      "team": "red",
+      "player": "Red Operative",
+      "word": "pilot",
+      "result": "RED (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:35",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 7,
+      "blue_remaining": 6,
+      "board": [
+        {
+          "word": "hole",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "air",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "wave",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "honey",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "jam",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "police",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "concert",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "marble",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "soul",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "organ",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "snowman",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "spine",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cap",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "pilot",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "thumb",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "center",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "staff",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "note",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "heart",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "court",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "france",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "loch ness",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "club",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "crown",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:35",
+    "type": "guess",
+    "details": {
+      "team": "red",
+      "player": "Red Operative",
+      "word": "air",
+      "result": "RED (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:35",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 6,
+      "blue_remaining": 6,
+      "board": [
+        {
+          "word": "hole",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "air",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "wave",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "honey",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "jam",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "police",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "concert",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "marble",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "soul",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "organ",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "snowman",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "spine",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cap",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "pilot",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "thumb",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "center",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "staff",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "note",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "heart",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "court",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "france",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "loch ness",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "club",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "crown",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:36",
+    "type": "turn_end",
+    "details": {
+      "team": "red",
+      "reason": "Operative chose to end turn"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:36",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 6,
+      "blue_remaining": 6,
+      "board": [
+        {
+          "word": "hole",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "air",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "wave",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "honey",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "jam",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "police",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "concert",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "marble",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "soul",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "organ",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "snowman",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "spine",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cap",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "pilot",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "thumb",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "center",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "staff",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "note",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "heart",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "court",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "france",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "loch ness",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "club",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "crown",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": true
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:37",
+    "type": "clue",
+    "details": {
+      "team": "blue",
+      "player": "Blue Spymaster",
+      "word": "Security",
+      "number": 3,
+      "model": "gpt-4o",
+      "target_words": [
+        "police",
+        "bomb",
+        "cap"
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:37",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 6,
+      "blue_remaining": 6,
+      "board": [
+        {
+          "word": "hole",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "air",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "wave",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "honey",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "jam",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "police",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "concert",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "marble",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "soul",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "organ",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "snowman",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "spine",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cap",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "pilot",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "thumb",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "center",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "staff",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "note",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "heart",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "court",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "france",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "loch ness",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "club",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "crown",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:38",
+    "type": "guess",
+    "details": {
+      "team": "blue",
+      "player": "Blue Operative",
+      "word": "police",
+      "result": "BLUE (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:38",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 6,
+      "blue_remaining": 5,
+      "board": [
+        {
+          "word": "hole",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "air",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "wave",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "honey",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "jam",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "police",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "concert",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "marble",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "soul",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "organ",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "snowman",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "spine",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cap",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "pilot",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "thumb",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "center",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "staff",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "note",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "heart",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "court",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "france",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "loch ness",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "club",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "crown",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:38",
+    "type": "guess",
+    "details": {
+      "team": "blue",
+      "player": "Blue Operative",
+      "word": "bomb",
+      "result": "BLUE (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:38",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 6,
+      "blue_remaining": 4,
+      "board": [
+        {
+          "word": "hole",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "air",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "wave",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "honey",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "jam",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "police",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "concert",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "marble",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "soul",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "organ",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "snowman",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "spine",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cap",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "pilot",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "thumb",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "center",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "staff",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "note",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "heart",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "court",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "france",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "loch ness",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "club",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "crown",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:39",
+    "type": "turn_end",
+    "details": {
+      "team": "blue",
+      "reason": "Operative chose to end turn"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:39",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 6,
+      "blue_remaining": 4,
+      "board": [
+        {
+          "word": "hole",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "air",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "wave",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "honey",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "jam",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "police",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "concert",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "marble",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "soul",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "organ",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "snowman",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "spine",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cap",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "pilot",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "thumb",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "center",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "staff",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "note",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "heart",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "court",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "france",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "loch ness",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "club",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "crown",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": true
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:39",
+    "type": "clue",
+    "details": {
+      "team": "red",
+      "player": "Red Spymaster",
+      "word": "Music",
+      "number": 3,
+      "model": "gpt-4o",
+      "target_words": []
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:39",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 6,
+      "blue_remaining": 4,
+      "board": [
+        {
+          "word": "hole",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "air",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "wave",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "honey",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "jam",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "police",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "concert",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "marble",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "soul",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "organ",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "snowman",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "spine",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cap",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "pilot",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "thumb",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "center",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "staff",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "note",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "heart",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "court",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "france",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "loch ness",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "club",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "crown",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:40",
+    "type": "guess",
+    "details": {
+      "team": "red",
+      "player": "Red Operative",
+      "word": "concert",
+      "result": "BLUE (Wrong)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:40",
+    "type": "turn_end",
+    "details": {
+      "team": "red",
+      "reason": "Incorrect guess"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:40",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 6,
+      "blue_remaining": 3,
+      "board": [
+        {
+          "word": "hole",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "air",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "wave",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "honey",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "jam",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "police",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "concert",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "marble",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "soul",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "organ",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "snowman",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "spine",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cap",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "pilot",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "thumb",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "center",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "staff",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "note",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "heart",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "court",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "france",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "loch ness",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "club",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "crown",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": true
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:41",
+    "type": "clue",
+    "details": {
+      "team": "blue",
+      "player": "Blue Spymaster",
+      "word": "Bee",
+      "number": 2,
+      "model": "gpt-4o",
+      "target_words": []
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:41",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 6,
+      "blue_remaining": 3,
+      "board": [
+        {
+          "word": "hole",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "air",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "wave",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "honey",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "jam",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "police",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "concert",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "marble",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "soul",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "organ",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "snowman",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "spine",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cap",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "pilot",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "thumb",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "center",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "staff",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "note",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "heart",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "court",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "france",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "loch ness",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "club",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "crown",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:41",
+    "type": "guess",
+    "details": {
+      "team": "blue",
+      "player": "Blue Operative",
+      "word": "honey",
+      "result": "BLUE (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:41",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 6,
+      "blue_remaining": 2,
+      "board": [
+        {
+          "word": "hole",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "air",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "wave",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "honey",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "jam",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "police",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "concert",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "marble",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "soul",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "organ",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "snowman",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "spine",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cap",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "pilot",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "thumb",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "center",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "staff",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "note",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "heart",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "court",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "france",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "loch ness",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "club",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "crown",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:42",
+    "type": "turn_end",
+    "details": {
+      "team": "blue",
+      "reason": "Operative chose to end turn"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:42",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 6,
+      "blue_remaining": 2,
+      "board": [
+        {
+          "word": "hole",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "air",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "wave",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "honey",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "jam",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "police",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "concert",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "marble",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "soul",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "organ",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "snowman",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "spine",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cap",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "pilot",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "thumb",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "center",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "staff",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "note",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "heart",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "court",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "france",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "loch ness",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "club",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "crown",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": true
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:43",
+    "type": "clue",
+    "details": {
+      "team": "red",
+      "player": "Red Spymaster",
+      "word": "Music",
+      "number": 4,
+      "model": "gpt-4o",
+      "target_words": [
+        "soul",
+        "note",
+        "heart",
+        "staff"
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:43",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 6,
+      "blue_remaining": 2,
+      "board": [
+        {
+          "word": "hole",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "air",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "wave",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "honey",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "jam",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "police",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "concert",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "marble",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "soul",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "organ",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "snowman",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "spine",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cap",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "pilot",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "thumb",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "center",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "staff",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "note",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "heart",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "court",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "france",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "loch ness",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "club",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "crown",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:43",
+    "type": "guess",
+    "details": {
+      "team": "red",
+      "player": "Red Operative",
+      "word": "note",
+      "result": "RED (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:43",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 5,
+      "blue_remaining": 2,
+      "board": [
+        {
+          "word": "hole",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "air",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "wave",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "honey",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "jam",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "police",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "concert",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "marble",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "soul",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "organ",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "snowman",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "spine",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cap",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "pilot",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "thumb",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "center",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "staff",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "note",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "heart",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "court",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "france",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "loch ness",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "club",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "crown",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:44",
+    "type": "guess",
+    "details": {
+      "team": "red",
+      "player": "Red Operative",
+      "word": "jam",
+      "result": "NEUTRAL (Wrong)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:44",
+    "type": "turn_end",
+    "details": {
+      "team": "red",
+      "reason": "Incorrect guess"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:44",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 5,
+      "blue_remaining": 2,
+      "board": [
+        {
+          "word": "hole",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "air",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "wave",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "honey",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "jam",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "police",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "concert",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "marble",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "soul",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "organ",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "snowman",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "spine",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cap",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "pilot",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "thumb",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "center",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "staff",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "note",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "heart",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "court",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "france",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "loch ness",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "club",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "crown",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": true
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:45",
+    "type": "clue",
+    "details": {
+      "team": "blue",
+      "player": "Blue Spymaster",
+      "word": "Headgear",
+      "number": 2,
+      "model": "gpt-4o",
+      "target_words": [
+        "cap",
+        "club"
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:45",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 5,
+      "blue_remaining": 2,
+      "board": [
+        {
+          "word": "hole",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "air",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "wave",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "honey",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "jam",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "police",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "concert",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "marble",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "soul",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "organ",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "snowman",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "spine",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cap",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "pilot",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "thumb",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "center",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "staff",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "note",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "heart",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "court",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "france",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "loch ness",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "club",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "crown",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:45",
+    "type": "guess",
+    "details": {
+      "team": "blue",
+      "player": "Blue Operative",
+      "word": "cap",
+      "result": "BLUE (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:45",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 5,
+      "blue_remaining": 1,
+      "board": [
+        {
+          "word": "hole",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "air",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "wave",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "honey",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "jam",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "police",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "concert",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "marble",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "soul",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "organ",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "snowman",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "spine",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cap",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "pilot",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "thumb",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "center",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "staff",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "note",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "heart",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "court",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "france",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "loch ness",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "club",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "crown",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:46",
+    "type": "turn_end",
+    "details": {
+      "team": "blue",
+      "reason": "Operative chose to end turn"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:46",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 5,
+      "blue_remaining": 1,
+      "board": [
+        {
+          "word": "hole",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "air",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "wave",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "honey",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "jam",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "police",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "concert",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "marble",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "soul",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "organ",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "snowman",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "spine",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cap",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "pilot",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "thumb",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "center",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "staff",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "note",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "heart",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "court",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "france",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "loch ness",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "club",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "crown",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": true
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:47",
+    "type": "clue",
+    "details": {
+      "team": "red",
+      "player": "Red Spymaster",
+      "word": "Passion",
+      "number": 3,
+      "model": "gpt-4o",
+      "target_words": [
+        "soul",
+        "heart",
+        "france"
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:47",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 5,
+      "blue_remaining": 1,
+      "board": [
+        {
+          "word": "hole",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "air",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "wave",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "honey",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "jam",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "police",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "concert",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "marble",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "soul",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "organ",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "snowman",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "spine",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cap",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "pilot",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "thumb",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "center",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "staff",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "note",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "heart",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "court",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "france",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "loch ness",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "club",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "crown",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:47",
+    "type": "guess",
+    "details": {
+      "team": "red",
+      "player": "Red Operative",
+      "word": "heart",
+      "result": "RED (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:47",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 4,
+      "blue_remaining": 1,
+      "board": [
+        {
+          "word": "hole",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "air",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "wave",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "honey",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "jam",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "police",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "concert",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "marble",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "soul",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "organ",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "snowman",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "spine",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cap",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "pilot",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "thumb",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "center",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "staff",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "note",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "heart",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "court",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "france",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "loch ness",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "club",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "crown",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:48",
+    "type": "guess",
+    "details": {
+      "team": "red",
+      "player": "Red Operative",
+      "word": "soul",
+      "result": "RED (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:48",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 3,
+      "blue_remaining": 1,
+      "board": [
+        {
+          "word": "hole",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "air",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "wave",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "honey",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "jam",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "police",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "concert",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "marble",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "soul",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "organ",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "snowman",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "spine",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cap",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "pilot",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "thumb",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "center",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "staff",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "note",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "heart",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "court",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "france",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "loch ness",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "club",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "crown",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:49",
+    "type": "turn_end",
+    "details": {
+      "team": "red",
+      "reason": "Operative chose to end turn"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:49",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 3,
+      "blue_remaining": 1,
+      "board": [
+        {
+          "word": "hole",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "air",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "wave",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "honey",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "jam",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "police",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "concert",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "marble",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "soul",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "organ",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "snowman",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "spine",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cap",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "pilot",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "thumb",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "center",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "staff",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "note",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "heart",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "court",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "france",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "loch ness",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "club",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "crown",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": true
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:50",
+    "type": "clue",
+    "details": {
+      "team": "blue",
+      "player": "Blue Spymaster",
+      "word": "Golf",
+      "number": 1,
+      "model": "gpt-4o",
+      "target_words": [
+        "club"
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:50",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 3,
+      "blue_remaining": 1,
+      "board": [
+        {
+          "word": "hole",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "air",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "wave",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "honey",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "jam",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "police",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "concert",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "marble",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "soul",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "organ",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "snowman",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "spine",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cap",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "pilot",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "thumb",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "center",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "staff",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "note",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "heart",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "court",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "france",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "loch ness",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "club",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "crown",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:50",
+    "type": "guess",
+    "details": {
+      "team": "blue",
+      "player": "Blue Operative",
+      "word": "hole",
+      "result": "NEUTRAL (Wrong)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:50",
+    "type": "turn_end",
+    "details": {
+      "team": "blue",
+      "reason": "Incorrect guess"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:50",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 3,
+      "blue_remaining": 1,
+      "board": [
+        {
+          "word": "hole",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "air",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "wave",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "honey",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "jam",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "police",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "concert",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "marble",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "soul",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "organ",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "snowman",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "spine",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cap",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "pilot",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "thumb",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "center",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "staff",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "note",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "heart",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "court",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "france",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "loch ness",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "club",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "crown",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": true
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:51",
+    "type": "clue",
+    "details": {
+      "team": "red",
+      "player": "Red Spymaster",
+      "word": "Justice",
+      "number": 2,
+      "model": "gpt-4o",
+      "target_words": [
+        "staff",
+        "court"
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:51",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 3,
+      "blue_remaining": 1,
+      "board": [
+        {
+          "word": "hole",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "air",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "wave",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "honey",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "jam",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "police",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "concert",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "marble",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "soul",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "organ",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "snowman",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "spine",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cap",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "pilot",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "thumb",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "center",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "staff",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "note",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "heart",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "court",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "france",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "loch ness",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "club",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "crown",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:52",
+    "type": "guess",
+    "details": {
+      "team": "red",
+      "player": "Red Operative",
+      "word": "court",
+      "result": "RED (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:52",
+    "type": "board_state",
+    "details": {
+      "current_team": "red",
+      "red_remaining": 2,
+      "blue_remaining": 1,
+      "board": [
+        {
+          "word": "hole",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "air",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "wave",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "honey",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "jam",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "police",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "concert",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "marble",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "soul",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "organ",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "snowman",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "spine",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cap",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "pilot",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "thumb",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "center",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "staff",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "note",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "heart",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "court",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "france",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "loch ness",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "club",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "crown",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:53",
+    "type": "turn_end",
+    "details": {
+      "team": "red",
+      "reason": "Operative chose to end turn"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:53",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 2,
+      "blue_remaining": 1,
+      "board": [
+        {
+          "word": "hole",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "air",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "wave",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "honey",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "jam",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "police",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "concert",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "marble",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "soul",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "organ",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "snowman",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "spine",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cap",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "pilot",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "thumb",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "center",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "staff",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "note",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "heart",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "court",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "france",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "loch ness",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "club",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "crown",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": true
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:55",
+    "type": "clue",
+    "details": {
+      "team": "blue",
+      "player": "Blue Spymaster",
+      "word": "Golf",
+      "number": 1,
+      "model": "gpt-4o",
+      "target_words": [
+        "club"
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:55",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 2,
+      "blue_remaining": 1,
+      "board": [
+        {
+          "word": "hole",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "air",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "wave",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "honey",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "jam",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "police",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "concert",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "marble",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "soul",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "organ",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "snowman",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "spine",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cap",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "pilot",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "thumb",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "center",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "staff",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "note",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "heart",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "court",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "france",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "loch ness",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "club",
+          "type": "blue",
+          "revealed": false
+        },
+        {
+          "word": "crown",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": false
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:56",
+    "type": "guess",
+    "details": {
+      "team": "blue",
+      "player": "Blue Operative",
+      "word": "club",
+      "result": "BLUE (Correct)",
+      "model": "gpt-4o"
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:56",
+    "type": "game_end",
+    "details": {
+      "winner": "blue",
+      "duration": 26.451645851135254,
+      "total_turns": 12
+    }
+  },
+  {
+    "timestamp": "2025-03-11 21:12:56",
+    "type": "board_state",
+    "details": {
+      "current_team": "blue",
+      "red_remaining": 2,
+      "blue_remaining": 0,
+      "board": [
+        {
+          "word": "hole",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "air",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "wave",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "honey",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "jam",
+          "type": "neutral",
+          "revealed": true
+        },
+        {
+          "word": "police",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "concert",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "marble",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "bomb",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "soul",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "organ",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "snowman",
+          "type": "assassin",
+          "revealed": false
+        },
+        {
+          "word": "spine",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "cap",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "pilot",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "thumb",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "center",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "staff",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "note",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "heart",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "court",
+          "type": "red",
+          "revealed": true
+        },
+        {
+          "word": "france",
+          "type": "red",
+          "revealed": false
+        },
+        {
+          "word": "loch ness",
+          "type": "neutral",
+          "revealed": false
+        },
+        {
+          "word": "club",
+          "type": "blue",
+          "revealed": true
+        },
+        {
+          "word": "crown",
+          "type": "neutral",
+          "revealed": false
+        }
+      ],
+      "for_spymaster": true
+    }
+  }
+]

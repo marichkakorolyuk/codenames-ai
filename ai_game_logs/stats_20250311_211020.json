@@ -1,0 +1,230 @@
+{
+  "red_wins": 1,
+  "blue_wins": 0,
+  "game_duration": 41.0228328704834,
+  "total_turns": 9,
+  "red_team": {
+    "correct_guesses": 8,
+    "wrong_guesses": 3
+  },
+  "blue_team": {
+    "correct_guesses": 4,
+    "wrong_guesses": 4
+  },
+  "clues": [
+    {
+      "team": "red",
+      "clue_word": "travel",
+      "clue_number": 3,
+      "model": "gpt-4o",
+      "guesses": [
+        {
+          "word": "alps",
+          "actual_type": "red",
+          "is_correct": true,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:09:47"
+        },
+        {
+          "word": "mexico",
+          "actual_type": "blue",
+          "is_correct": false,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:09:48"
+        }
+      ],
+      "timestamp": "2025-03-11 21:09:45"
+    },
+    {
+      "team": "blue",
+      "clue_word": "music",
+      "clue_number": 2,
+      "model": "gpt-4o",
+      "guesses": [
+        {
+          "word": "band",
+          "actual_type": "blue",
+          "is_correct": true,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:09:51"
+        },
+        {
+          "word": "conductor",
+          "actual_type": "neutral",
+          "is_correct": false,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:09:54"
+        }
+      ],
+      "timestamp": "2025-03-11 21:09:50"
+    },
+    {
+      "team": "red",
+      "clue_word": "explode",
+      "clue_number": 3,
+      "model": "gpt-4o",
+      "guesses": [
+        {
+          "word": "bomb",
+          "actual_type": "red",
+          "is_correct": true,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:09:59"
+        },
+        {
+          "word": "battery",
+          "actual_type": "red",
+          "is_correct": true,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:10:01"
+        },
+        {
+          "word": "compound",
+          "actual_type": "neutral",
+          "is_correct": false,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:10:03"
+        }
+      ],
+      "timestamp": "2025-03-11 21:09:55"
+    },
+    {
+      "team": "blue",
+      "clue_word": "Australia",
+      "clue_number": 2,
+      "model": "gpt-4o",
+      "guesses": [
+        {
+          "word": "platypus",
+          "actual_type": "blue",
+          "is_correct": true,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:10:04"
+        },
+        {
+          "word": "fly",
+          "actual_type": "red",
+          "is_correct": false,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:10:04"
+        }
+      ],
+      "timestamp": "2025-03-11 21:10:03"
+    },
+    {
+      "team": "red",
+      "clue_word": "Thanksgiving",
+      "clue_number": 2,
+      "model": "gpt-4o",
+      "guesses": [
+        {
+          "word": "turkey",
+          "actual_type": "red",
+          "is_correct": true,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:10:06"
+        },
+        {
+          "word": "america",
+          "actual_type": "blue",
+          "is_correct": false,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:10:07"
+        }
+      ],
+      "timestamp": "2025-03-11 21:10:05"
+    },
+    {
+      "team": "blue",
+      "clue_word": "act",
+      "clue_number": 3,
+      "model": "gpt-4o",
+      "guesses": [
+        {
+          "word": "play",
+          "actual_type": "blue",
+          "is_correct": true,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:10:09"
+        },
+        {
+          "word": "part",
+          "actual_type": "blue",
+          "is_correct": true,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:10:10"
+        },
+        {
+          "word": "shadow",
+          "actual_type": "neutral",
+          "is_correct": false,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:10:11"
+        }
+      ],
+      "timestamp": "2025-03-11 21:10:09"
+    },
+    {
+      "team": "red",
+      "clue_word": "fold",
+      "clue_number": 2,
+      "model": "gpt-4o",
+      "guesses": [
+        {
+          "word": "paper",
+          "actual_type": "red",
+          "is_correct": true,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:10:12"
+        },
+        {
+          "word": "back",
+          "actual_type": "red",
+          "is_correct": true,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:10:13"
+        },
+        {
+          "word": "bridge",
+          "actual_type": "red",
+          "is_correct": true,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:10:15"
+        }
+      ],
+      "timestamp": "2025-03-11 21:10:11"
+    },
+    {
+      "team": "blue",
+      "clue_word": "insect",
+      "clue_number": 2,
+      "model": "gpt-4o",
+      "guesses": [
+        {
+          "word": "bug",
+          "actual_type": "neutral",
+          "is_correct": false,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:10:18"
+        }
+      ],
+      "timestamp": "2025-03-11 21:10:17"
+    },
+    {
+      "team": "red",
+      "clue_word": "breeze",
+      "clue_number": 1,
+      "model": "gpt-4o",
+      "guesses": [
+        {
+          "word": "air",
+          "actual_type": "red",
+          "is_correct": true,
+          "model": "gpt-4o",
+          "timestamp": "2025-03-11 21:10:20"
+        }
+      ],
+      "timestamp": "2025-03-11 21:10:19"
+    }
+  ]
+}

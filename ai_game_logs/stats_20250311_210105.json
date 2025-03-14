@@ -1,0 +1,14 @@
+{
+  "red_wins": 1,
+  "blue_wins": 0,
+  "game_duration": 20.288039922714233,
+  "total_turns": 9,
+  "red_team": {
+    "correct_guesses": 6,
+    "wrong_guesses": 4
+  },
+  "blue_team": {
+    "correct_guesses": 6,
+    "wrong_guesses": 5
+  }
+}
