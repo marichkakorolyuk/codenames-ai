@@ -7,8 +7,8 @@ without AI agents or debates. It shows how to:
 
 1. Create a new game
 2. Display the game board
-3. Process clues and guesses
-4. Track game state and turns
+3. Process clues and guesses, including invalid ones
+4. Loop the game until completion
 
 This serves as a simple introduction to the game's core functionality.
 """
@@ -17,201 +17,163 @@ import os
 import sys
 import random
 from typing import List, Dict
+from pprint import pprint
 
 # Add the parent directory to sys.path so Python can find the codenames module
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 # Import core game components
-from codenames.game import CardType, GameEngine, GameState
+from codenames.game import CardType, GameEngine, GameState, print_board
 from codenames.words import WORD_LIST
 
 
-def display_board(game_state: GameState, show_all: bool = False):
-    """
-    Display the game board in the terminal.
+def print_divider():
+    """Print a visual divider for readability"""
+    print("\n" + "-" * 80 + "\n")
+
+
+def get_valid_cards_for_team(game_state, team):
+    """Get list of unrevealed card words for a specific team
     
     Args:
         game_state: Current game state
-        show_all: Whether to show all card types (spymaster view) or only revealed cards
-    """
-    print("\n" + "=" * 50)
-    print(f"GAME: {game_state.game_id}")
-    print(f"Turn: {game_state.turn_count + 1}, Current Team: {game_state.current_team.value.upper()}")
-    print(f"RED remaining: {game_state.red_remaining}, BLUE remaining: {game_state.blue_remaining}")
-    print("=" * 50)
-    
-    # Determine maximum word length for formatting
-    max_length = max(len(card.word) for card in game_state.board)
-    
-    # Display the board as a 5x5 grid
-    for i in range(0, 25, 5):
-        row = game_state.board[i:i+5]
-        
-        # First, print the word row
-        for j, card in enumerate(row):
-            word = card.word.ljust(max_length + 2)
-            print(f"{word}", end=" ")
-        print()
-        
-        # Then, print the card type / status row
-        for j, card in enumerate(row):
-            if card.revealed or show_all:
-                status = f"[{card.type.value.upper()}]".ljust(max_length + 2)
-            else:
-                status = f"[{j+i+1}]".ljust(max_length + 2)
-            print(f"{status}", end=" ")
-        print("\n")
-    
-    # Display recent history
-    if game_state.clue_history:
-        last_clue = game_state.clue_history[-1]
-        # Make the team name more readable
-        team_name = last_clue[0]
-        if hasattr(team_name, 'value'):
-            team_name = f"{team_name.value.upper()} Team"
-        print(f"Last clue: '{last_clue[1]}' {last_clue[2]} (by {team_name})")
-    
-    if game_state.guess_history:
-        print("Recent guesses:")
-        for i in range(min(3, len(game_state.guess_history))):
-            guess = game_state.guess_history[-(i+1)]
-            
-            # Make the team name more readable
-            team = guess[0]
-            if hasattr(team, 'value'):
-                team_name = f"{team.value.upper()} Team"
-            else:
-                team_name = str(team)
-            
-            # Check the format of the card type entry
-            if isinstance(guess[2], CardType):
-                card_type = guess[2].value
-            elif isinstance(guess[2], str):
-                card_type = guess[2]
-            elif isinstance(guess[2], bool):
-                # If it's a boolean, it's probably a result flag, so get the card_type from the result dict
-                # In this case, we'll just display the word's actual card type
-                card = next((c for c in game_state.board if c.word == guess[1] and c.revealed), None)
-                card_type = card.type.value if card else "unknown"
-            else:
-                card_type = str(guess[2])
-                
-            print(f"  - {team_name} guessed '{guess[1]}' ({card_type})")
-    
-    print("=" * 50 + "\n")
-
-
-def get_human_input(prompt: str, options: List[str] = None) -> str:
-    """
-    Get input from a human player with validation.
-    
-    Args:
-        prompt: The prompt to display
-        options: Optional list of valid options
+        team: The team (CardType.RED or CardType.BLUE)
         
     Returns:
-        The validated input
+        List of card words belonging to the team that haven't been revealed yet
     """
-    while True:
-        value = input(prompt).strip()
-        
-        if not options:
-            return value
-        
-        if value.lower() in [opt.lower() for opt in options]:
-            return value
-        
-        print(f"Invalid choice. Please choose from: {', '.join(options)}")
+    valid_cards = []
+    for card in game_state.board:
+        if not card.revealed and card.type == team:
+            valid_cards.append(card.word)
+    return valid_cards
 
 
-def play_simple_game():
-    """
-    Simple game setup and play
-    
-    This example demonstrates how to:
-    - Create a new game with the GameEngine
-    - Access game state
-    - Display the board
-    - Process clues and guesses
-    - End turns and track game progress
-    """
+def main():
+    """Run the simple game example"""
     print("\n\n=== CODENAMES SIMPLE GAME EXAMPLE ===\n")
     
     # Initialize the game engine with the standard word list
     engine = GameEngine(WORD_LIST)
-    
+
     # Create a new game (the engine generates a random game ID)
-    game_id = engine.create_game()
+    game_id = engine.create_game(seed=0)
     print(f"Created new game with ID: {game_id}")
-    
-    # Get the game state
     game_state = engine.get_game(game_id)
+    print_board(game_state)
     
-    # Display the board - spymaster view (showing all card types)
-    print("\nSPYMASTER VIEW:")
-    display_board(game_state, show_all=True)
+    print_divider()
+    print("MAKING INVALID GUESSES")
     
-    # Display the board - operative view (only showing revealed cards)
-    print("\nOPERATIVE VIEW:")
-    display_board(game_state, show_all=False)
-    
-    # Manually process a clue and guess
-    print("\nMANUAL GAMEPLAY EXAMPLE:")
-    
-    # Process a clue for the current team
+    # Example 1: Process a clue with invalid format
     clue_word = "travel"
     clue_number = 2
-    result = engine.process_clue(game_id, clue_word, clue_number, game_state.current_team)
-    print(f"Processing clue '{clue_word}' {clue_number}: {'Success' if result else 'Failed'}")
-    
-    # Find a valid card to guess for the current team
-    team_card = None
+
+    # Those are strings! For simplicity, supposedly :) 
+    selected_cards = []
+
     for card in game_state.board:
-        if card.type == game_state.current_team and not card.revealed:
-            team_card = card
-            break
+        if not (card.revealed) and card.type == game_state.current_team:
+            selected_cards.append(card.word)
+            
+            if len(selected_cards) == clue_number:
+                break
+
+    # Invalid guess with emoji and spacing
+    try:
+        result = engine.process_clue(game_id, clue_word, ['banana 🧐🤙 invalid'], game_state.current_team)
+    except ValueError as e:
+        print(f"Error with invalid card format: {e}")
+
+    # Valid clue
+    result = engine.process_clue(game_id, clue_word, selected_cards, game_state.current_team)
+    print(f"Processing clue '{clue_word}' {selected_cards}: {'Success' if result else 'Failed'}")
     
-    # Process a guess
-    if team_card:
-        guess_result = engine.process_guess(game_id, team_card.word, game_state.current_team)
-        print(f"Guessing '{team_card.word}': {guess_result}")
+    # Example 2: Guess a card that doesn't exist
+    try:
+        result = engine.process_guess(game_id, "nonexistent_card", game_state.current_team)
+        print(f"Result of guessing nonexistent card: {result}")
+    except ValueError as e:
+        print(f"Error guessing nonexistent card: {e}")
+    
+    # Example The Spice Girls: Process a clue with wrong team (not the current team's turn)
+    wrong_team = CardType.BLUE if game_state.current_team == CardType.RED else CardType.RED
+    try:
+        result = engine.process_clue(game_id, "wrong_team_clue", selected_cards, wrong_team)
+    except ValueError as e:
+        print(f"Error with wrong team: {e}")
+    
+    print_divider()
+    print("STARTING GAME LOOP")
+    
+    # Now, loop the game until it's finished
+    # For simplicity, we'll make a single-word clue each turn and guess that word
+    turn_count = 0
+    max_turns = 15  # Safety to avoid infinite loops
+    
+    while not game_state.is_game_over() and turn_count < max_turns:
+        turn_count += 1
+        print(f"\nTurn {turn_count} - {game_state.current_team.value.upper()} TEAM")
+        current_team = game_state.current_team
         
-        # Display the updated board
-        print("\nOPERATIVE VIEW AFTER GUESS:")
-        display_board(game_state, show_all=False)
-    
-    # End the turn
-    current_team = game_state.current_team
-    engine.end_turn(game_id, current_team)
-    print(f"\nEnding turn for {current_team.value.upper()} team")
-    print(f"New current team: {game_state.current_team.value.upper()}")
-    
-    # Process a clue for the next team
-    clue_word = "nature"
-    clue_number = 3
-    result = engine.process_clue(game_id, clue_word, clue_number, game_state.current_team)
-    print(f"\nProcessing clue '{clue_word}' {clue_number} for {game_state.current_team.value.upper()} team: {'Success' if result else 'Failed'}")
-    
-    # Find a card belonging to the other team to demonstrate incorrect guesses
-    opponent_card = None
-    for card in game_state.board:
-        if card.type != game_state.current_team and not card.revealed:
-            opponent_card = card
-            break
-    
-    # Process an incorrect guess
-    if opponent_card:
-        guess_result = engine.process_guess(game_id, opponent_card.word, game_state.current_team)
-        print(f"Guessing '{opponent_card.word}': {guess_result}")
+        # Get valid cards for the current team
+        team_cards = get_valid_cards_for_team(game_state, current_team)
         
-        # Display the updated board
-        print("\nOPERATIVE VIEW AFTER INCORRECT GUESS:")
-        display_board(game_state, show_all=False)
+        if not team_cards:
+            print(f"No more cards for {current_team.value} team!")
+            engine.end_turn(game_id, current_team)
+            continue
+        
+        # Take one card at a time for simplicity
+        selected_card = team_cards[0]
+        
+        # Generate a simple clue (just use the card word itself in this example)
+        # In a real game, the spymaster would give a clever clue related to the word
+        clue_word = f"clue_for_{selected_card}"
+        
+        print(f"Giving clue: '{clue_word}' 1")
+        engine.process_clue(game_id, clue_word, [selected_card], current_team)
+        
+        # Make the guess
+        print(f"Guessing: '{selected_card}'")
+        result = engine.process_guess(game_id, selected_card, current_team)
+        
+        if result["success"]:
+            card_type = result["card_type"]
+            print(f"  Card type: {card_type}")
+            print(f"  Current team guessed {'correctly' if card_type == current_team.value else 'incorrectly'}")
+            
+            if result.get("game_over", False):
+                winner = result.get("winner")
+                print(f"\nGAME OVER! {winner.upper()} team wins!")
+                break
+        else:
+            print(f"  Guess failed: {result}")
+        
+        # If the guess ended the turn or we want to end it manually
+        if result.get("end_turn", False) or card_type != current_team.value:
+            print(f"  Turn ended.")
+        else:
+            # End the turn manually for this example
+            # In a real game, a team might make multiple guesses before ending their turn
+            engine.end_turn(game_id, current_team)
+            print(f"  Manually ending turn.")
+        
+        # Print updated board after each turn
+
+        print(f"Red remaining: {game_state.red_remaining}, Blue remaining: {game_state.blue_remaining}")
+        
+    if not game_state.is_game_over():
+        print("\nMaximum turns reached without a winner.")
     
-    print("\nThis demonstrates the basic game functionality without AI agents.")
-    print("Try creating your own games and gameplay logic using these core components!")
+    print("\nFinal board:")
+    print_board(game_state)
+    
+    if game_state.winner:
+        print(f"\nWinner: {game_state.winner.value.upper()} TEAM")
+    else:
+        print("\nNo winner determined.")
 
 
 if __name__ == "__main__":
-    # Run the simple game example
-    play_simple_game()
+    main()
