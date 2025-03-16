@@ -102,51 +102,63 @@ class TestGameState(unittest.TestCase):
         # Reveal one card
         self.game_state.board[0].revealed = True
         
-        # Get visible state for red team
+        # Get visible state for red team - now returns a GameState object
         visible_state = self.game_state.get_visible_state(CardType.RED)
         
         # Check that the visible state has the correct structure
-        self.assertEqual(visible_state["game_id"], "test_game")
-        self.assertEqual(visible_state["red_remaining"], 2)
-        self.assertEqual(visible_state["blue_remaining"], 1)
-        self.assertEqual(visible_state["current_team"], "red")
-        self.assertIsNone(visible_state["winner"])
+        self.assertEqual(visible_state.game_id, "test_game")
+        self.assertEqual(visible_state.red_remaining, 2)
+        self.assertEqual(visible_state.blue_remaining, 1)
+        self.assertEqual(visible_state.current_team, CardType.RED)
+        self.assertIsNone(visible_state.winner)
         
         # Check that the revealed card shows its type
-        self.assertEqual(visible_state["board"][0]["word"], "apple")
-        self.assertEqual(visible_state["board"][0]["type"], "red")
-        self.assertTrue(visible_state["board"][0]["revealed"])
+        self.assertEqual(visible_state.board[0].word, "apple")
+        self.assertEqual(visible_state.board[0].type, CardType.RED)
+        self.assertTrue(visible_state.board[0].revealed)
         
         # Check that unrevealed cards don't show their type
-        self.assertEqual(visible_state["board"][1]["word"], "banana")
-        self.assertIsNone(visible_state["board"][1]["type"])
-        self.assertFalse(visible_state["board"][1]["revealed"])
+        self.assertEqual(visible_state.board[1].word, "banana")
+        self.assertEqual(visible_state.board[1].type, CardType.UNKNOWN)
+        self.assertFalse(visible_state.board[1].revealed)
+        
+        # Test conversion to dictionary
+        visible_dict = visible_state.to_dict()
+        self.assertEqual(visible_dict["game_id"], "test_game")
+        self.assertEqual(visible_dict["red_remaining"], 2)
+        self.assertEqual(visible_dict["current_team"], CardType.RED)
     
     def test_get_spymaster_state(self):
         """Test getting the game state for spymasters"""
         # Reveal one card
         self.game_state.board[0].revealed = True
         
-        # Get spymaster state for red team
+        # Get spymaster state for red team - now returns a GameState object
         spymaster_state = self.game_state.get_spymaster_state(CardType.RED)
         
         # Check that the state has the correct structure
-        self.assertEqual(spymaster_state["game_id"], "test_game")
-        self.assertEqual(spymaster_state["red_remaining"], 2)
-        self.assertEqual(spymaster_state["blue_remaining"], 1)
-        self.assertEqual(spymaster_state["current_team"], "red")
+        self.assertEqual(spymaster_state.game_id, "test_game")
+        self.assertEqual(spymaster_state.red_remaining, 2)
+        self.assertEqual(spymaster_state.blue_remaining, 1)
+        self.assertEqual(spymaster_state.current_team, CardType.RED)
         
         # Check that all cards show their type to the spymaster
-        self.assertEqual(spymaster_state["board"][0]["word"], "apple")
-        self.assertEqual(spymaster_state["board"][0]["type"], "red")
-        self.assertTrue(spymaster_state["board"][0]["revealed"])
+        self.assertEqual(spymaster_state.board[0].word, "apple")
+        self.assertEqual(spymaster_state.board[0].type, CardType.RED)
+        self.assertTrue(spymaster_state.board[0].revealed)
         
-        self.assertEqual(spymaster_state["board"][1]["word"], "banana")
-        self.assertEqual(spymaster_state["board"][1]["type"], "blue")
-        self.assertFalse(spymaster_state["board"][1]["revealed"])
+        self.assertEqual(spymaster_state.board[1].word, "banana")
+        self.assertEqual(spymaster_state.board[1].type, CardType.BLUE)
+        self.assertFalse(spymaster_state.board[1].revealed)
         
-        self.assertEqual(spymaster_state["board"][3]["word"], "date")
-        self.assertEqual(spymaster_state["board"][3]["type"], "assassin")
+        self.assertEqual(spymaster_state.board[3].word, "date")
+        self.assertEqual(spymaster_state.board[3].type, CardType.ASSASSIN)
+        
+        # Test conversion to dictionary
+        spymaster_dict = spymaster_state.to_dict()
+        self.assertEqual(spymaster_dict["game_id"], "test_game")
+        self.assertEqual(spymaster_dict["current_team"], CardType.RED)
+        self.assertEqual(spymaster_dict["board"][1]["type"], CardType.BLUE)
     
     def test_is_game_over(self):
         """Test the is_game_over method"""

@@ -3,12 +3,13 @@ Core game logic for Codenames.
 This module contains all the core game mechanics, data structures, and rules.
 """
 
-from dataclasses import dataclass, field
+from dataclasses import dataclass, field, replace, asdict
 from enum import Enum
 from typing import Dict, List, Optional, Tuple, Union, Any
 import uuid
 import random
 import time
+import copy
 
 
 class CardType(Enum):
@@ -17,6 +18,7 @@ class CardType(Enum):
     BLUE = "blue"
     NEUTRAL = "neutral"
     ASSASSIN = "assassin"
+    UNKNOWN = "unknown"
 
 
 @dataclass
@@ -49,49 +51,50 @@ class GameState:
     turn_count: int = 0
     clue_history: List[Tuple[CardType, str, int]] = field(default_factory=list)
     guess_history: List[Tuple[CardType, str, bool]] = field(default_factory=list)
+    random_seed: Optional[int] = None
     
-    def get_visible_state(self, team: CardType) -> Dict:
-        """Returns the game state as visible to a specific team's operatives."""
+    
+    def __str__(self) -> str:
+        return board2str(self)
+    
+    
+    def to_dict(self) -> Dict:
+        """Converts the GameState to a dictionary for serialization."""
+        return asdict(self)
+        
+    def get_visible_state(self, team: CardType) -> 'GameState':
+        """Returns the game state as visible to a specific team's operatives.
+        
+        Creates a new GameState object with appropriate information hidden for operatives.
+        """
+        # Create new cards for the visible board
         visible_board = []
         for card in self.board:
             if card.revealed:
-                visible_board.append({"word": card.word, "type": card.type.value, "revealed": True})
+                # If card is revealed, show actual type
+                visible_board.append(Card(
+                    word=card.word,
+                    type=card.type,
+                    revealed=True
+                ))
             else:
-                visible_board.append({"word": card.word, "type": None, "revealed": False})
-        
-        return {
-            "game_id": self.game_id,
-            "board": visible_board,
-            "red_remaining": self.red_remaining,
-            "blue_remaining": self.blue_remaining,
-            "current_team": self.current_team.value,
-            "winner": self.winner.value if self.winner else None,
-            "turn_count": self.turn_count,
-            "clue_history": self.clue_history,
-            "guess_history": self.guess_history
-        }
+                # If card is not revealed, hide the type
+                visible_board.append(Card(
+                    word=card.word,
+                    type=CardType.UNKNOWN,  # Hide the type for unrevealed cards
+                    revealed=False
+                ))
 
-    def get_spymaster_state(self, team: CardType) -> Dict:
-        """Returns the game state as visible to a spymaster of a specific team."""
-        spymaster_board = []
-        for card in self.board:
-            spymaster_board.append({
-                "word": card.word, 
-                "type": card.type.value, 
-                "revealed": card.revealed
-            })
+        # Create a new GameState with the visible board
+        return replace(self, board=visible_board) 
+    
+    def get_spymaster_state(self, team: CardType) -> 'GameState':
+        """Returns the game state as visible to a spymaster of a specific team.
         
-        return {
-            "game_id": self.game_id,
-            "board": spymaster_board,
-            "red_remaining": self.red_remaining,
-            "blue_remaining": self.blue_remaining,
-            "current_team": self.current_team.value,
-            "winner": self.winner.value if self.winner else None,
-            "turn_count": self.turn_count,
-            "clue_history": self.clue_history,
-            "guess_history": self.guess_history
-        }
+        Creates a new GameState object with all information visible (spymasters see everything).
+        """
+        # Create a deep copy of the cards to avoid modifying the original
+        return copy.deepcopy(self)
 
     def is_game_over(self) -> bool:
         """Check if the game is over."""
@@ -154,7 +157,8 @@ class GameEngine:
             board=board,
             red_remaining=first_team_count if first_team == CardType.RED else second_team_count,
             blue_remaining=first_team_count if first_team == CardType.BLUE else second_team_count,
-            current_team=first_team
+            current_team=first_team,
+            random_seed=seed
         )
         
         # Make sure game_id is unique
@@ -361,7 +365,11 @@ class GameEngine:
         return self.games.get(game_id)
 
 
-def print_board(game_state: GameState, show_all: bool = False):
+
+def print_board(*args, **kwargs):
+    print(board2str(*args, **kwargs))
+
+def board2str(game_state: GameState, show_all: bool = True):
     """
     Display the game board in the terminal.
     
@@ -369,11 +377,12 @@ def print_board(game_state: GameState, show_all: bool = False):
         game_state: Current game state
         show_all: Whether to show all card types (spymaster view) or only revealed cards
     """
-    print("\n" + "=" * 50)
-    print(f"GAME: {game_state.game_id}")
-    print(f"Turn: {game_state.turn_count + 1}, Current Team: {game_state.current_team.value.upper()}")
-    print(f"RED remaining: {game_state.red_remaining}, BLUE remaining: {game_state.blue_remaining}")
-    print("=" * 50)
+    result = []
+    result.append("\n" + "=" * 50)
+    result.append(f"GAME: {game_state.game_id} {game_state.random_seed=}")
+    result.append(f"Turn: {game_state.turn_count + 1}, Current Team: {game_state.current_team.value.upper()}")
+    result.append(f"RED remaining: {game_state.red_remaining}, BLUE remaining: {game_state.blue_remaining}")
+    result.append("=" * 50)
     
     # Determine maximum word length for formatting
     max_length = max(len(card.word) for card in game_state.board)
@@ -383,19 +392,21 @@ def print_board(game_state: GameState, show_all: bool = False):
         row = game_state.board[i:i+5]
         
         # First, print the word row
+        word_row = ""
         for j, card in enumerate(row):
             word = card.word.ljust(max_length + 2)
-            print(f"{word}", end=" ")
-        print()
+            word_row += f"{word} "
+        result.append(word_row)
         
         # Then, print the card type / status row
+        status_row = ""
         for j, card in enumerate(row):
             if card.revealed or show_all:
                 status = f"[{card.type.value.upper()}]".ljust(max_length + 2)
             else:
                 status = f"[{j+i+1}]".ljust(max_length + 2)
-            print(f"{status}", end=" ")
-        print("\n")
+            status_row += f"{status} "
+        result.append(status_row + "\n")
     
     # Display recent history
     if game_state.clue_history:
@@ -404,10 +415,10 @@ def print_board(game_state: GameState, show_all: bool = False):
         team_name = last_clue[0]
         if hasattr(team_name, 'value'):
             team_name = f"{team_name.value.upper()} Team"
-        print(f"Last clue: '{last_clue[1]}' {last_clue[2]} (by {team_name})")
+        result.append(f"Last clue: '{last_clue[1]}' {last_clue[2]} (by {team_name})")
     
     if game_state.guess_history:
-        print("Recent guesses:")
+        result.append("Recent guesses:")
         for i in range(min(3, len(game_state.guess_history))):
             guess = game_state.guess_history[-(i+1)]
             
@@ -431,6 +442,8 @@ def print_board(game_state: GameState, show_all: bool = False):
             else:
                 card_type = str(guess[2])
                 
-            print(f"  - {team_name} guessed '{guess[1]}' ({card_type})")
+            result.append(f"  - {team_name} guessed '{guess[1]}' ({card_type})")
     
-    print("=" * 50 + "\n")
+    result.append("=" * 50 + "\n")
+    
+    return "\n".join(result)
