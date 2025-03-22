@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 from typing import List, Dict, Any, Tuple
 import random
 
+
 # Import the game function
 from updated_play_codenames_game_standalone import play_codenames_game, CardType
 
@@ -14,13 +15,13 @@ class ExperimentRunner:
 
     def __init__(self, 
                  red_team_min: int = 2, 
-                 red_team_max: int = 8, 
+                 red_team_max: int = 2, 
                  red_team_step: int = 2,
                  blue_team_min: int = 2, 
-                 blue_team_max: int = 8, 
+                 blue_team_max: int = 4, 
                  blue_team_step: int = 2,
                  iterations: int = 1,
-                 max_turns: int = 20,
+                 max_turns: int = 10,
                  seed: int = None):
         """
         Initialize the experiment runner
@@ -379,6 +380,8 @@ class ExperimentRunner:
             
         plt.show()
 
+
+
 def run_experiment(red_team_min: int = 2, 
                    red_team_max: int = 8, 
                    red_team_step: int = 2,
@@ -407,6 +410,7 @@ def run_experiment(red_team_min: int = 2,
     Returns:
         The experiment runner object containing the results
     """
+
     # Create and run the experiment
     experiment = ExperimentRunner(
         red_team_min=red_team_min,
@@ -440,12 +444,13 @@ def run_experiment(red_team_min: int = 2,
 if __name__ == "__main__":
     # Run an experiment with both RED and BLUE teams varying from 2 to 8 in steps of 2
     # Each configuration runs 3 times
+  
     experiment = run_experiment(
         red_team_min=2,
-        red_team_max=8,
+        red_team_max=2,
         red_team_step=2,
         blue_team_min=2,
-        blue_team_max=8,
+        blue_team_max=4,
         blue_team_step=2,
-        iterations=3
+        iterations=1
     )

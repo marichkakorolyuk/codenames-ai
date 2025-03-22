@@ -3,8 +3,10 @@ unrevealed_words = []
 revealed_words = []
 
 import time
-
-def play_codenames_game(team_red_size=2, team_blue_size=2, max_turns=20, seed=None, debate_rounds=2):
+import weave
+weave.init('codenames-ai')
+@weave.op 
+def play_codenames_game(team_red_size, team_blue_size, max_turns, seed=None, debate_rounds=2):
     """
     Play a complete game of Codenames using the existing agent implementations.
     

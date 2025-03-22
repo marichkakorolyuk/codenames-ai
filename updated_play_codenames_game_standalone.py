@@ -5,6 +5,7 @@ from typing import List, Optional, Dict
 import random
 from enum import Enum
 import time
+import weave
 
 # Token usage tracker class
 class TokenUsageTracker:
@@ -442,8 +443,11 @@ unrevealed_words = []
 revealed_words = []
 
 import time
+import weave
+weave.init('codenames-ai')
 
-def play_codenames_game(team_red_size=2, team_blue_size=2, max_turns=20, seed=None, debate_rounds=2):
+@weave.op 
+def play_codenames_game(team_red_size=2, team_blue_size=2, max_turns=2, seed=None, debate_rounds=2):
     """
     Play a complete game of Codenames using the existing agent implementations.
     
@@ -730,7 +734,7 @@ IMPORTANT: Only consider words from this list: {unrevealed_words}
         print(f"Actual tokens used: {game_outcome['total_tokens']:,} (Input: {game_outcome['total_input_tokens']:,}, Output: {game_outcome['total_output_tokens']:,})")
     
     # Return both the game state and detailed outcome information
-    return game_state, game_outcome
+    return {"game_state": game_state, "game_outcome": game_outcome}
 
 if __name__ == "__main__":
     # Define team sizes

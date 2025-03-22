@@ -1,6 +1,8 @@
 import os
 import time
 import sys
+import weave
+
 from experiment_team_size import run_experiment
 
 def main():
@@ -19,7 +21,6 @@ def main():
     print("- Total games to run: 20")
     print("\nExperiment progress will be displayed below. This may take some time...")
     
-    # Create timestamp for this experiment
     timestamp = time.strftime("%Y%m%d-%H%M%S")
     
     # Run the experiment with the specified parameters
@@ -31,14 +32,14 @@ def main():
         
         # Vary blue team size from 2 to 8
         blue_team_min=2,
-        blue_team_max=8,
+        blue_team_max=4,
         blue_team_step=2,
         
         # Run 5 iterations per configuration
-        iterations=5,
+        iterations=1,
         
         # Maximum turns per game
-        max_turns=20,
+        max_turns=2,
         
         # Generate plots automatically
         plot_results=True
@@ -54,3 +55,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
