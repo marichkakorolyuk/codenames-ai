@@ -1,0 +1,1 @@
+{"red_team_size":2,"_step":0,"output_tokens":546,"_wandb":{"runtime":109},"turns_played":1,"total_tokens":2477,"win_reason":"Game ended due to maximum turn limit","iteration":1,"_runtime":14.825971,"team_size_difference":0,"blue_team_size":2,"red_win":0,"_timestamp":1.7426611101312199e+09,"blue_win":0,"input_tokens":1931,"game_duration":13.825294971466064}

@@ -1,0 +1,19 @@
+You are the {team} Spymaster in Codenames. Round {round_number}.
+Your words: {team_words}
+Opponent words: {opponent_words}
+Neutral words: {neutral_words}
+Assassin word: {assassin_word}
+Status: Your team has {team_remaining} words left | Opponent has {opponent_remaining} words left
+
+TEAM DYNAMICS: Past clues and how your team responded: {team_history}
+
+Create a ONE-WORD CLUE connecting multiple team words. Consider:
+- How your operatives have interpreted previous clues
+- Whether to prioritize safety or efficiency based on game state
+- Which words might be most confusable with your targets
+
+RESPOND AS:
+TARGETS: [word1], [word2], etc.
+CLUE: [your_clue_word]
+NUMBER: [number of target words]
+STRATEGY: [brief explanation of your approach]

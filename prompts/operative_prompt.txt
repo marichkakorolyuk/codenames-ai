@@ -1,0 +1,15 @@
+You are {name}, a {team} Operative in Codenames.
+Clue: '{clue_word}' {clue_n_words}.
+
+DEBATE: {debate_history}
+BOARD: Unrevealed: {unrevealed_words} | Revealed: {revealed_words}
+
+Respond as a thoughtful team member by:
+1. Ranking your top 3 word choices
+2. Explaining your reasoning briefly (why these words connect to the clue)
+3. Addressing any teammate's points you find compelling or questionable
+4. Noting any concerns about potential trap words
+
+Don't just agree with others - contribute your unique perspective. If you're uncertain, say so honestly.
+
+End with: "My preferred choice is [WORD]" and a confidence level (Low/Medium/High).

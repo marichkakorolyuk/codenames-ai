@@ -18,10 +18,12 @@ class ExperimentRunner:
                  red_team_max: int = 2, 
                  red_team_step: int = 2,
                  blue_team_min: int = 2, 
-                 blue_team_max: int = 4, 
+                 blue_team_max: int = 8, 
                  blue_team_step: int = 2,
-                 iterations: int = 1,
-                 max_turns: int = 10,
+                 iterations: int = 10,
+                 max_turns: int = 20,
+                 use_wandb: bool = True,
+                 use_plots: bool = False,
                  seed: int = None):
         """
         Initialize the experiment runner
@@ -47,6 +49,13 @@ class ExperimentRunner:
         self.max_turns = max_turns
         self.seed = seed
         self.results_df = None
+
+        self.use_wandb = use_wandb
+        self.use_plots = use_plots
+        
+        if use_wandb:
+            import wandb
+            wandb.init(project="codenames-ai")
         
     def _get_red_team_sizes(self) -> List[int]:
         """Generate a list of RED team sizes based on min, max, and step"""
@@ -133,11 +142,14 @@ class ExperimentRunner:
                                 'turns_played': game_outcome['turns_played'],
                                 'win_reason': game_outcome['win_reason'],
                                 'game_duration': game_outcome['game_duration_seconds'],
-                                'total_tokens': game_outcome['total_tokens'],
-                                'input_tokens': game_outcome['total_input_tokens'],
-                                'output_tokens': game_outcome['total_output_tokens'],
-                                'seed': game_seed
+
                             }
+
+
+                            if self.use_wandb:
+                                import wandb
+                                print("Logging to Weights & Biases...")
+                                wandb.log(result)
                             
                             results.append(result)
                             
@@ -156,7 +168,12 @@ class ExperimentRunner:
                                 self._save_snapshot(temp_df)
                                 
                         except Exception as e:
+
                             print(f"Error during game execution: {e}")
+                            # print traceback
+                            import traceback
+                            traceback.print_exc()
+                            
                             # Save what we have so far, even on error
                             if results:
                                 temp_df = pd.DataFrame(results)
@@ -266,8 +283,9 @@ class ExperimentRunner:
             return
             
         # Create multiple plots for better analysis
-        self._plot_by_team_difference(save_path)
-        self._plot_by_team_sizes(save_path)
+        if self.use_plots:
+            self._plot_by_team_difference(save_path)
+            self._plot_by_team_sizes(save_path)
             
     def _plot_by_team_difference(self, save_path: str = None):
         """Plot win rates by team size difference"""
@@ -388,10 +406,10 @@ def run_experiment(red_team_min: int = 2,
                    blue_team_min: int = 2, 
                    blue_team_max: int = 8, 
                    blue_team_step: int = 2,
-                   iterations: int = 3,
+                   iterations: int = 10,
                    max_turns: int = 20,
                    seed: int = None,
-                   plot_results: bool = True):
+                   plot_results: bool = False):
     """
     Run a full experiment with the specified parameters
     

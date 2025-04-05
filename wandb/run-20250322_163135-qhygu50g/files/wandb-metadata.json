@@ -1,0 +1,50 @@
+{
+  "os":  "macOS-10.16-x86_64-i386-64bit",
+  "python":  "CPython 3.9.21",
+  "startedAt":  "2025-03-22T16:31:35.306674Z",
+  "args":  [
+    "--max-turns",
+    "1",
+    "--blue-max",
+    "2"
+  ],
+  "program":  "/Users/mariiakoroliuk/codenames-ai/run_team_size_experiment.py",
+  "codePath":  "run_team_size_experiment.py",
+  "git":  {
+    "remote":  "https://github.com/marichkakorolyuk/codenames-ai.git",
+    "commit":  "80f6e70de2cf39b38dc5329aabd5a0e6a2dca82f"
+  },
+  "email":  "maria.koroliuk@gmail.com",
+  "root":  "/Users/mariiakoroliuk/codenames-ai",
+  "host":  "Mariias-Air",
+  "executable":  "/Users/mariiakoroliuk/opt/anaconda3/bin/python",
+  "codePathLocal":  "run_team_size_experiment.py",
+  "cpu_count":  8,
+  "cpu_count_logical":  8,
+  "disk":  {
+    "/":  {
+      "total":  "245107195904",
+      "used":  "212353216512"
+    },
+    "/System/Volumes/Data":  {
+      "total":  "245107195904",
+      "used":  "212353216512"
+    }
+  },
+  "memory":  {
+    "total":  "8589934592"
+  },
+  "cpu":  {
+    "count":  8,
+    "countLogical":  8
+  },
+  "apple":  {
+    "name":  "Unknown",
+    "ecpuCores":  4,
+    "pcpuCores":  4,
+    "gpuCores":  7,
+    "memoryGb":  8,
+    "swapTotalBytes":  "4294967296",
+    "ramTotalBytes":  "8589934592"
+  }
+}

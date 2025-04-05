@@ -1,8 +1,10 @@
 import os
+import pathlib
 from openai import OpenAI
 from pydantic import BaseModel
 from typing import List, Optional, Dict
 import random
+import dotenv
 from enum import Enum
 import time
 import weave
@@ -29,13 +31,16 @@ class TokenUsageTracker:
             "total_tokens": self.total_tokens
         }
 
-# Set OpenAI API key
+# Load environment variables from .env file
+dotenv.load_dotenv()
+
 # Check if the OpenAI API key is available in the environment
 if not os.environ.get("OPENAI_API_KEY"):
     print("Warning: OPENAI_API_KEY environment variable not set.")
-    print("Please set your OpenAI API key as an environment variable before running this script.")
-    print("Example: export OPENAI_API_KEY='your-api-key'")
-    # Don't exit here so the code can still run if already properly set in the environment
+    print("Please ensure your .env file contains the OPENAI_API_KEY variable.")
+    print("Example: OPENAI_API_KEY='your-api-key'")
+    print("Exiting as the API key is required to run this script.")
+    exit(1)
 
 # Importing codenames game engine components
 class CardType(Enum):
@@ -133,10 +138,17 @@ class GameEngine:
         # Select 25 random words for the board
         words = random.sample(self.word_list, 25)
         
-        # Determine which team goes first (randomly)
-        first_team = random.choice([CardType.RED, CardType.BLUE])
+        # Determine which team goes first (alternating between games)
+        global last_starting_team
+        if last_starting_team is None or last_starting_team == CardType.BLUE:
+            first_team = CardType.RED
+        else:
+            first_team = CardType.BLUE
         
-        # Assign card types
+        # Update the global tracking variable
+        last_starting_team = first_team
+        
+        # Assign card types - starting team always gets 9 cards
         card_types = []
         if first_team == CardType.RED:
             card_types = [CardType.RED] * 9 + [CardType.BLUE] * 8
@@ -349,30 +361,58 @@ class SimpleSpymasterAgent:
         for card in game_state.board:
             if not card.revealed and card.type == self.team:
                 my_words.append(card.word)
+        # Define all variables needed for the prompt
+        opponent_team = CardType.RED if self.team == CardType.BLUE else CardType.BLUE
+        team_words = my_words  # Words for this team
+        opponent_words = []    # Words for opposing team
+        neutral_words = []     # Neutral words
+        assassin_word = ""     # The assassin word
+
+        for card in game_state.board:
+            if not card.revealed:
+                if card.type == opponent_team:
+                    opponent_words.append(card.word)
+                elif card.type == CardType.NEUTRAL:
+                    neutral_words.append(card.word)
+                elif card.type == CardType.ASSASSIN:
+                    assassin_word = card.word
+
+        # Count remaining words
+        team_remaining = len(team_words)
+        opponent_remaining = len(opponent_words)
+
+        # Get round number from game state
+        round_number = game_state.turn_count + 1
+
+        # Build team history from previous clues and guesses
+        team_history = ""
+        if game_state.clue_history and game_state.guess_history:
+            history_entries = []
+            for i, (clue, guesses) in enumerate(zip(game_state.clue_history, game_state.guess_history)):
+                if clue.get('team') == self.team.value:
+                    guess_words = ", ".join([g.get('word', '') for g in guesses if g.get('team') == self.team.value])
+                    if guess_words:
+                        history_entries.append(f"Round {i+1}: Clue '{clue.get('word')}' {clue.get('number')} → Selected: {guess_words}")
+            team_history = "; ".join(history_entries)
+
+        # Load the prompt from file
+        prompt_file = pathlib.Path("prompts/spymaster_prompt.txt")
+        with open(prompt_file, "r") as f:
+            prompt_template = f.read()
         
-        # Create the prompt
-        prompt = f"""
-You are playing Codenames as the spymaster for the {self.team.value} team.
+        # Format the prompt with variables
+        prompt = prompt_template.format(
+            team=self.team.value,
+            round_number=round_number,
+            team_words=', '.join(team_words),
+            opponent_words=', '.join(opponent_words),
+            neutral_words=', '.join(neutral_words),
+            assassin_word=assassin_word,
+            team_remaining=team_remaining,
+            opponent_remaining=opponent_remaining,
+            team_history=team_history
+        )
 
-You need to give a one-word clue that relates to as many of your team's words as possible, while avoiding words that might lead your team to select the opposing team's words, neutral words, or especially the assassin. CRITICAL: Games are frequently lost due to revealing the assassin card, so be extremely careful to avoid ANY clue that could be even remotely associated with the assassin word.
-
-Your team's remaining words: {my_words}
-
-All words on the board: 
-{[card.word for card in game_state.board if not card.revealed]}
-
-Rules for your clue:
-1. ONE WORD only
-2. Can't be a word on the board (even partially)
-3. Can't share a root with a word on the board
-4. No proper nouns unless they appear on the board
-5. No phonetically similar words ("knight"/"night")
-6. No invented words
-7. No abbreviations or acronyms
-8. Must be in English
-
-Return your clue and the specific words you are trying to connect. Also include your reasoning.
-"""
 
         # Use OpenAI to generate the clue
         client = OpenAI()
@@ -400,26 +440,24 @@ class SimpleOperativeAgent:
         self.team = team
 
     def generate(self, clue_word, clue_n_words, debate_history, max_completion_tokens=100):
-        prompt = f"""
-        You are participating in a team debate for Codenames as the {self.team.value} Operative. Your name is {self.name}
-        Your Spymaster has given the clue '{clue_word}' {clue_n_words}.
-
-        DEBATE SO FAR:
-        {debate_history}
-
-        CURRENT BOARD:
-        Unrevealed words: {unrevealed_words}
-        Revealed words: {revealed_words}
-
-        As a team member, respond to the ongoing debate. You should:
-        1. State your current opinion about the best guess
-        2. Respond directly to points made by other team members
-        3. Explain your reasoning clearly
-        4. If you've changed your mind based on others' arguments, explain why
-        5. Focus on resolving disagreements on words without support from all operatives.
-
-        You MUST keep your response under {max_completion_tokens} words. Your response should include reasoning and your best guess.
-        """
+        # Access the global variables
+        global unrevealed_words, revealed_words
+        
+        # Load the prompt from file
+        prompt_file = pathlib.Path("prompts/operative_prompt.txt")
+        with open(prompt_file, "r") as f:
+            prompt_template = f.read()
+        
+        # Format the prompt with variables
+        prompt = prompt_template.format(
+            name=self.name,
+            team=self.team.value,
+            clue_word=clue_word,
+            clue_n_words=clue_n_words,
+            debate_history=debate_history,
+            unrevealed_words=', '.join(unrevealed_words),
+            revealed_words=', '.join(revealed_words)
+        )
         client = OpenAI()
         completion = client.chat.completions.create(
             model="gpt-4o-2024-08-06",
@@ -441,6 +479,9 @@ class SimpleOperativeAgent:
 # Global variables for SimpleOperativeAgent to reference
 unrevealed_words = []
 revealed_words = []
+
+# Global variable to track which team started last game (for alternating starts)
+last_starting_team = None
 
 import time
 import weave
@@ -550,6 +591,7 @@ def play_codenames_game(team_red_size=2, team_blue_size=2, max_turns=2, seed=Non
                 try:
                     # SimpleOperativeAgent is designed to use global variables
                     # We've already defined them at the beginning of the function
+
                     reasoning = op.generate(clue_word, clue_n_words, str(debate_history))
                     this_turn_reasoning[op.name] = reasoning
                     
@@ -561,18 +603,22 @@ def play_codenames_game(team_red_size=2, team_blue_size=2, max_turns=2, seed=Non
             
             debate_history.append(this_turn_reasoning)
         
-        # Use the DebateJudge to determine agreed upon words
-        debate_judge_prompt = f"""
-You are participating in a team debate for Codenames Judge.
-You are given responses from operatives affiliated with team {current_team}
-Spymaster has given the clue '{clue_word}' {clue_n_words}.
-
-debate_history={debate_history}
-
-You must return two lists: guesses where operatives agree, and where they disagree. List with words where operatives agree should be sorted by level of their agreement and confidence.
-
-IMPORTANT: Only consider words from this list: {unrevealed_words}
-"""
+        # Define variables needed for the debate judge prompt
+        round_number = game_state.turn_count + 1
+        
+        # Load the prompt from file
+        prompt_file = pathlib.Path("prompts/judge_prompt.txt")
+        with open(prompt_file, "r") as f:
+            prompt_template = f.read()
+        
+        # Format the prompt with variables
+        debate_judge_prompt = prompt_template.format(
+            current_team=current_team.value,
+            round_number=round_number,
+            clue_word=clue_word,
+            clue_n_words=clue_n_words,
+            debate_history=debate_history
+        )
         
         print("Using DebateJudge to resolve the debate...")
         client = OpenAI()
@@ -734,7 +780,7 @@ IMPORTANT: Only consider words from this list: {unrevealed_words}
         print(f"Actual tokens used: {game_outcome['total_tokens']:,} (Input: {game_outcome['total_input_tokens']:,}, Output: {game_outcome['total_output_tokens']:,})")
     
     # Return both the game state and detailed outcome information
-    return {"game_state": game_state, "game_outcome": game_outcome}
+    return game_state, game_outcome
 
 if __name__ == "__main__":
     # Define team sizes

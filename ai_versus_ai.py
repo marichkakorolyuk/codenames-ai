@@ -391,7 +391,7 @@ class AIGameManager:
         self.logger = GameLogger(config.get('log_dir', 'logs'))
         
         # Set up OpenAI client
-        api_key = config.get('openai_api_key', os.environ.get("OPENAI_API_KEY"))
+        api_key =  os.environ.get("OPENAI_API_KEY")
         if not api_key:
             raise ValueError("OpenAI API key is required for AI vs AI game")
         
