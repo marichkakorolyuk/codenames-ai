@@ -9,27 +9,7 @@ from enum import Enum
 import time
 import weave
 
-# Token usage tracker class
-class TokenUsageTracker:
-    def __init__(self):
-        self.prompt_tokens = 0
-        self.completion_tokens = 0
-        self.total_tokens = 0
-        
-    def add_usage(self, usage):
-        """Add token usage from OpenAI API response"""
-        if usage:
-            self.prompt_tokens += usage.prompt_tokens
-            self.completion_tokens += usage.completion_tokens
-            self.total_tokens += usage.total_tokens
-            
-    def get_usage(self):
-        """Get the current token usage statistics"""
-        return {
-            "prompt_tokens": self.prompt_tokens,
-            "completion_tokens": self.completion_tokens,
-            "total_tokens": self.total_tokens
-        }
+# Import necessary libraries
 
 # Load environment variables from .env file
 dotenv.load_dotenv()
@@ -138,15 +118,8 @@ class GameEngine:
         # Select 25 random words for the board
         words = random.sample(self.word_list, 25)
         
-        # Determine which team goes first (alternating between games)
-        global last_starting_team
-        if last_starting_team is None or last_starting_team == CardType.BLUE:
-            first_team = CardType.RED
-        else:
-            first_team = CardType.BLUE
-        
-        # Update the global tracking variable
-        last_starting_team = first_team
+        # Determine which team goes first - 50/50 chance
+        first_team = CardType.RED if random.random() < 0.5 else CardType.BLUE
         
         # Assign card types - starting team always gets 9 cards
         card_types = []
@@ -345,7 +318,7 @@ class SimpleSpymasterAgent:
         self.team = team
         self.name = name or f"Spymaster {team.value}"
         
-    def generate_clue(self, game_state: GameState, max_completion_tokens=200) -> ClueModel:
+    def generate_clue(self, game_state: GameState) -> ClueModel:
         """
         Generate a clue for the operatives.
         
@@ -424,11 +397,7 @@ class SimpleSpymasterAgent:
             response_format=ClueModel,
         )
         
-        # Extract token usage
-        if hasattr(response, 'usage') and response.usage:
-            # Pass usage to tracker if it's available in the context
-            if 'token_tracker' in globals() and globals()['token_tracker']:
-                globals()['token_tracker'].add_usage(response.usage)
+        # Process response and return
                 
         completion = response.choices[0].message.parsed
         return completion
@@ -439,7 +408,7 @@ class SimpleOperativeAgent:
         self.name = str(name)
         self.team = team
 
-    def generate(self, clue_word, clue_n_words, debate_history, max_completion_tokens=100):
+    def generate(self, clue_word, clue_n_words, debate_history):
         # Access the global variables
         global unrevealed_words, revealed_words
         
@@ -464,14 +433,9 @@ class SimpleOperativeAgent:
             messages=[
                 {"role": "user", "content": prompt},
             ],
-            max_tokens=max_completion_tokens
+            max_tokens=200
         )
         
-        # Extract token usage
-        if hasattr(completion, 'usage') and completion.usage:
-            # Pass usage to tracker if it's available in the context
-            if 'token_tracker' in globals() and globals()['token_tracker']:
-                globals()['token_tracker'].add_usage(completion.usage)
 
         response = completion.choices[0].message
         return response.content
@@ -480,15 +444,14 @@ class SimpleOperativeAgent:
 unrevealed_words = []
 revealed_words = []
 
-# Global variable to track which team started last game (for alternating starts)
-last_starting_team = None
+# We don't need to track the last starting team anymore
 
 import time
 import weave
 weave.init('codenames-ai')
 
 @weave.op 
-def play_codenames_game(team_red_size=2, team_blue_size=2, max_turns=2, seed=None, debate_rounds=2):
+def play_codenames_game(team_red_size=2, team_blue_size=2, max_turns=20, seed=None, debate_rounds=2):
     """
     Play a complete game of Codenames using the existing agent implementations.
     
@@ -505,9 +468,7 @@ def play_codenames_game(team_red_size=2, team_blue_size=2, max_turns=2, seed=Non
     # Start tracking game time
     start_time = time.time()
     
-    # Initialize token usage tracker
-    global token_tracker
-    token_tracker = TokenUsageTracker()
+    # Initialize game variables
     
     # Initialize the game engine with the standard word list
     engine = GameEngine(WORD_LIST)
@@ -739,17 +700,12 @@ def play_codenames_game(team_red_size=2, team_blue_size=2, max_turns=2, seed=Non
     end_time = time.time()
     game_duration = end_time - start_time
     
-    # Use actual token counts from the tracker
-    token_usage = token_tracker.get_usage()
     
     game_outcome = {
         "turns_played": turn_count,
         "winner": None,
         "win_reason": None,
-        "game_duration_seconds": game_duration,
-        "total_input_tokens": token_usage["prompt_tokens"],
-        "total_output_tokens": token_usage["completion_tokens"],
-        "total_tokens": token_usage["total_tokens"]
+        "game_duration_seconds": game_duration
     }
     
     # Game over
@@ -771,13 +727,11 @@ def play_codenames_game(team_red_size=2, team_blue_size=2, max_turns=2, seed=Non
         print(f"Reason: {win_reason}")
         print(f"Game completed in {turn_count} turns")
         print(f"Game duration: {game_duration:.2f} seconds")
-        print(f"Actual tokens used: {game_outcome['total_tokens']:,} (Input: {game_outcome['total_input_tokens']:,}, Output: {game_outcome['total_output_tokens']:,})")
     else:
         game_outcome["win_reason"] = "Game ended due to maximum turn limit"
         print("\nGame ended due to maximum turn limit")
         print(f"Game played for maximum {turn_count} turns")
         print(f"Game duration: {game_duration:.2f} seconds")
-        print(f"Actual tokens used: {game_outcome['total_tokens']:,} (Input: {game_outcome['total_input_tokens']:,}, Output: {game_outcome['total_output_tokens']:,})")
     
     # Return both the game state and detailed outcome information
     return game_state, game_outcome
@@ -798,6 +752,3 @@ if __name__ == "__main__":
         print(f"Winner: {game_outcome['winner']} team")
     print(f"Outcome: {game_outcome['win_reason']}")
     print(f"Total game time: {game_outcome['game_duration_seconds']:.2f} seconds")
-    print(f"Actual tokens used: {game_outcome['total_tokens']:,}")
-    print(f"  - Input tokens: {game_outcome['total_input_tokens']:,}")
-    print(f"  - Output tokens: {game_outcome['total_output_tokens']:,}")
