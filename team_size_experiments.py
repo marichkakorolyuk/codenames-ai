@@ -113,7 +113,7 @@ if __name__ == "__main__":
         blue_team_min=2,
         blue_team_max=10,
         blue_team_step=2,
-        iterations=5,
+        iterations=1,
         max_turns=20,
         output_file="team_size_results.csv"
     )

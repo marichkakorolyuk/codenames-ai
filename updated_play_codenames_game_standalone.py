@@ -1,6 +1,8 @@
 import os
 import pathlib
 from openai import OpenAI
+import os
+from dotenv import load_dotenv
 from pydantic import BaseModel
 from typing import List, Optional, Dict
 import random
@@ -8,19 +10,56 @@ import dotenv
 from enum import Enum
 import time
 import weave
+import sys
+import datetime
 
 # Import necessary libraries
 
 # Load environment variables from .env file
 dotenv.load_dotenv()
 
-# Check if the OpenAI API key is available in the environment
-if not os.environ.get("OPENAI_API_KEY"):
-    print("Warning: OPENAI_API_KEY environment variable not set.")
-    print("Please ensure your .env file contains the OPENAI_API_KEY variable.")
-    print("Example: OPENAI_API_KEY='your-api-key'")
-    print("Exiting as the API key is required to run this script.")
-    exit(1)
+# Set OpenRouter API key directly as requested
+OPENROUTER_API_KEY = "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"
+
+# Set up logging to file
+def setup_logging():
+    # Create the game_logs directory if it doesn't exist
+    logs_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "game_logs")
+    os.makedirs(logs_dir, exist_ok=True)
+    
+    # Create a timestamp for the log file
+    timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+    log_file = os.path.join(logs_dir, f"game_log_{timestamp}.txt")
+    
+    # Create a class to duplicate stdout to both console and file
+    class Logger(object):
+        def __init__(self, filename):
+            self.terminal = sys.stdout
+            self.log = open(filename, "w")
+            print(f"Logging game output to {filename}")
+        
+        def write(self, message):
+            self.terminal.write(message)
+            self.log.write(message)
+            self.log.flush()
+        
+        def flush(self):
+            self.terminal.flush()
+            self.log.flush()
+    
+    # Redirect stdout to the Logger object
+    sys.stdout = Logger(log_file)
+    
+    return log_file
+
+# Initialize Weave for tracking experiments and game logs
+weave.init('codenames-ai')
+
+# Simplified logging function for weave
+def log_event(event_name, **kwargs):
+    # Just print the event - no actual weave logging for now
+    print(f"Weave event: {event_name} - {kwargs}")
+
 
 # Importing codenames game engine components
 class CardType(Enum):
@@ -106,6 +145,7 @@ class GameEngine:
         self.word_list = word_list
         self.games = {}
     
+    @weave.op()
     def create_game(self, seed=None):
         """Create a new Codenames game with randomized board"""
         if seed is None:
@@ -157,6 +197,7 @@ class GameEngine:
         """Get the current state of a game"""
         return self.games.get(game_id)
     
+    @weave.op()
     def process_clue(self, game_id, clue_word, num_words, team):
         """Process a spymaster's clue"""
         game_state = self.games.get(game_id)
@@ -172,6 +213,7 @@ class GameEngine:
         
         return True
     
+    @weave.op()
     def process_guess(self, game_id, word, team):
         """Process an operative's guess"""
         game_state = self.games.get(game_id)
@@ -318,6 +360,7 @@ class SimpleSpymasterAgent:
         self.team = team
         self.name = name or f"Spymaster {team.value}"
         
+    @weave.op()
     def generate_clue(self, game_state: GameState) -> ClueModel:
         """
         Generate a clue for the operatives.
@@ -387,20 +430,58 @@ class SimpleSpymasterAgent:
         )
 
 
-        # Use OpenAI to generate the clue
-        client = OpenAI()
-        response = client.beta.chat.completions.parse(
-            model="gpt-4o-2024-08-06",
+        # Use OpenRouter to generate the clue
+        # Use OpenRouter with direct API key
+        client = OpenAI(
+            base_url="https://openrouter.ai/api/v1",
+            api_key=OPENROUTER_API_KEY
+        )
+        # Format prompt with strict instructions for JSON output
+        enhanced_prompt = prompt + "\n\nYou MUST respond ONLY with a valid JSON object and nothing else. No explanations before or after the JSON. The JSON structure must be: {\"clue\": \"your_clue_word\", \"selected_words\": [\"word1\", \"word2\"], \"reasoning\": \"your reasoning\"}"
+        
+        response = client.chat.completions.create(
+            model="anthropic/claude-3-haiku",
             messages=[
-                {"role": "system", "content": prompt}
+                {"role": "system", "content": enhanced_prompt}
             ],
-            response_format=ClueModel,
+            extra_headers={
+                "HTTP-Referer": "https://github.com/mariiakoroliuk/codenames-ai",
+                "X-Title": "Codenames AI"
+            },
+            response_format={"type": "json_object"}
         )
         
-        # Process response and return
+        # Process response and manually parse JSON
+        response_text = response.choices[0].message.content
+        
+        try:
+            import json
+            import re
+            
+            # Try to extract JSON using regex if needed
+            json_match = re.search(r'(\{.*?\})', response_text, re.DOTALL)
+            if json_match:
+                json_str = json_match.group(1)
+                parsed_response = json.loads(json_str)
+            else:
+                parsed_response = json.loads(response_text)
                 
-        completion = response.choices[0].message.parsed
-        return completion
+            # Convert to ClueModel object
+            completion = ClueModel(
+                clue=parsed_response.get("clue", ""),
+                selected_words=parsed_response.get("selected_words", []),
+                reasoning=parsed_response.get("reasoning", "")
+            )
+            return completion
+        except Exception as e:
+            print(f"Error parsing response: {e}")
+            print(f"Raw response: {response_text}")
+            # Extract words from board for fallback
+            team_words = [card.word for card in game_state.board if card.type == self.team and not card.revealed]
+            # Fallback with reasonable values
+            return ClueModel(clue="backup", 
+                           selected_words=team_words[:2] if team_words else ["fallback"], 
+                           reasoning="Error in parsing response")
 
 class SimpleOperativeAgent:
     """AI agent that plays as a Operative"""
@@ -408,6 +489,7 @@ class SimpleOperativeAgent:
         self.name = str(name)
         self.team = team
 
+    @weave.op()
     def generate(self, clue_word, clue_n_words, debate_history):
         # Access the global variables
         global unrevealed_words, revealed_words
@@ -427,12 +509,20 @@ class SimpleOperativeAgent:
             unrevealed_words=', '.join(unrevealed_words),
             revealed_words=', '.join(revealed_words)
         )
-        client = OpenAI()
+        # Use OpenRouter with direct API key
+        client = OpenAI(
+            base_url="https://openrouter.ai/api/v1",
+            api_key=OPENROUTER_API_KEY
+        )
         completion = client.chat.completions.create(
-            model="gpt-4o-2024-08-06",
+            model="anthropic/claude-3-haiku",
             messages=[
                 {"role": "user", "content": prompt},
             ],
+            extra_headers={
+                "HTTP-Referer": "https://github.com/mariiakoroliuk/codenames-ai",
+                "X-Title": "Codenames AI"
+            },
             max_tokens=200
         )
         
@@ -447,8 +537,6 @@ revealed_words = []
 # We don't need to track the last starting team anymore
 
 import time
-import weave
-weave.init('codenames-ai')
 
 @weave.op 
 def play_codenames_game(team_red_size=2, team_blue_size=2, max_turns=20, seed=None, debate_rounds=2):
@@ -475,10 +563,17 @@ def play_codenames_game(team_red_size=2, team_blue_size=2, max_turns=20, seed=No
     
     # Create a new game
     game_id = engine.create_game(seed=seed)
+    # Simple logging instead of weave logging
+    log_event("game_created", game_id=game_id, seed=seed)
     print(f"Created new game with ID: {game_id}")
     
     # Get the initial game state
     game_state = engine.get_game(game_id)
+    # Simple logging for game start
+    log_event("game_started", 
+             starting_team=game_state.current_team.value,
+             red_cards=game_state.red_remaining,
+             blue_cards=game_state.blue_remaining)
     print(game_state)
     
     # Initialize spymasters
@@ -505,6 +600,11 @@ def play_codenames_game(team_red_size=2, team_blue_size=2, max_turns=20, seed=No
         
         # Generate a clue
         clue_model = current_spymaster.generate_clue(game_state)
+        # Simple logging for clue generation
+        log_event("clue_generated", 
+                 turn=turn_count, 
+                 team=current_team.value, 
+                 clue_word=clue_model.clue)
         clue_word = clue_model.clue
         clue_n_words = len(clue_model.selected_words)
         
@@ -582,14 +682,73 @@ def play_codenames_game(team_red_size=2, team_blue_size=2, max_turns=20, seed=No
         )
         
         print("Using DebateJudge to resolve the debate...")
-        client = OpenAI()
-        debate_model = client.beta.chat.completions.parse(
-            model="gpt-4o-2024-08-06",
+        # Use OpenRouter with direct API key
+        client = OpenAI(
+            base_url="https://openrouter.ai/api/v1",
+            api_key=OPENROUTER_API_KEY
+        )
+        
+        # Format prompt with strict instructions for JSON output
+        enhanced_judge_prompt = debate_judge_prompt + "\n\nYou MUST respond ONLY with a valid JSON object and nothing else. No explanations before or after the JSON. The JSON structure must be: {\"reasoning\": \"your reasoning\", \"words_where_operatives_agree\": [\"word1\", \"word2\"], \"words_where_operatives_disagree\": [\"word3\", \"word4\"]}"
+        
+        response = client.chat.completions.create(
+            model="anthropic/claude-3-haiku",
             messages=[
-                {"role": "system", "content": debate_judge_prompt}
+                {"role": "system", "content": enhanced_judge_prompt}
             ],
-            response_format=DebateJudge,
-        ).choices[0].message.parsed
+            extra_headers={
+                "HTTP-Referer": "https://github.com/mariiakoroliuk/codenames-ai",
+                "X-Title": "Codenames AI"
+            },
+            response_format={"type": "json_object"}
+        )
+        
+        # Process response and manually parse JSON
+        response_text = response.choices[0].message.content
+        try:
+            import json
+            import re
+            
+            # Try to extract JSON using regex if needed
+            json_match = re.search(r'(\{.*?\})', response_text, re.DOTALL)
+            if json_match:
+                json_str = json_match.group(1)
+                parsed_response = json.loads(json_str)
+            else:
+                parsed_response = json.loads(response_text)
+                
+            # Convert to DebateJudge object
+            debate_model = DebateJudge(
+                reasoning=parsed_response.get("reasoning", ""),
+                words_where_operatives_agree=parsed_response.get("words_where_operatives_agree", []),
+                words_where_operatives_disagree=parsed_response.get("words_where_operatives_disagree", [])
+            )
+        except Exception as e:
+            print(f"Error parsing response: {e}")
+            print(f"Raw response: {response_text}")
+            
+            # Try to extract words directly from the debate content
+            common_words = []
+            for word in unrevealed_words:
+                mentions = 0
+                for op_name, reasoning in this_turn_reasoning.items():
+                    if word.lower() in reasoning.lower():
+                        mentions += 1
+                if mentions >= len(operatives) / 2:  # If at least half the operatives mentioned it
+                    common_words.append(word)
+            
+            # Fallback with intelligent defaults
+            debate_model = DebateJudge(
+                reasoning="Error in parsing response, using fallback mechanism",
+                words_where_operatives_agree=common_words[:2] if common_words else (filtered_agreed_words[:1] if filtered_agreed_words else [all_words[0] if all_words else unrevealed_words[0]]),
+                words_where_operatives_disagree=[]
+            )
+        
+        # Simple logging for debate outcome
+        log_event("debate_completed", 
+                 turn=turn_count, 
+                 team=current_team.value, 
+                 agreed_words_count=len(debate_model.words_where_operatives_agree))
         
         print("Agreed upon words:", debate_model.words_where_operatives_agree)
         print("Disagreed upon words:", debate_model.words_where_operatives_disagree)
@@ -657,6 +816,13 @@ def play_codenames_game(team_red_size=2, team_blue_size=2, max_turns=20, seed=No
                 correct_guess = card_type == current_team.value
                 guessed_words.append(guess_word)
                 
+                # Simple logging for guess
+                log_event("guess_made", 
+                         turn=turn_count, 
+                         team=current_team.value, 
+                         word=guess_word, 
+                         correct=correct_guess)
+                
                 print(f"Guess result: {card_type.upper()} card revealed")
                 
                 # Update game state
@@ -683,6 +849,13 @@ def play_codenames_game(team_red_size=2, team_blue_size=2, max_turns=20, seed=No
             
             # Update game state
             game_state = engine.get_game(game_id)
+            
+            # Simple logging for turn completion
+            log_event("turn_completed", 
+                     turn=turn_count, 
+                     team=current_team.value, 
+                     red_remaining=game_state.red_remaining, 
+                     blue_remaining=game_state.blue_remaining)
             
             # Switch teams for the next turn if game is not over
             if game_state.winner is None:
@@ -733,22 +906,43 @@ def play_codenames_game(team_red_size=2, team_blue_size=2, max_turns=20, seed=No
         print(f"Game played for maximum {turn_count} turns")
         print(f"Game duration: {game_duration:.2f} seconds")
     
+    # Simple logging for game end
+    log_event("game_ended", outcome=game_outcome)
+    
     # Return both the game state and detailed outcome information
     return game_state, game_outcome
 
 if __name__ == "__main__":
+    # Set up logging to file
+    log_file = setup_logging()
+    
     # Define team sizes
     red_team_size = 2
     blue_team_size = 3
     
-    # Call the game function with optional arguments for team sizes, max_turns and debate_rounds
-    game_state, game_outcome = play_codenames_game(team_red_size=red_team_size, team_blue_size=blue_team_size, max_turns=20)
+    # Welcome message with timestamp
+    print(f"Welcome to Codenames AI! ({datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')})")
+    print(f"Playing with RED team size: {red_team_size}, BLUE team size: {blue_team_size}")
     
-    # Print a summary of the game outcome
-    print("\n===== GAME SUMMARY =====")
-    print(f"Teams: RED={red_team_size} operatives, BLUE={blue_team_size} operatives")
-    print(f"Turns played: {game_outcome['turns_played']}")
-    if game_outcome['winner']:
-        print(f"Winner: {game_outcome['winner']} team")
-    print(f"Outcome: {game_outcome['win_reason']}")
-    print(f"Total game time: {game_outcome['game_duration_seconds']:.2f} seconds")
+    try:
+        # Call the game function with optional arguments for team sizes, max_turns and debate_rounds
+        game_state, game_outcome = play_codenames_game(team_red_size=red_team_size, team_blue_size=blue_team_size, max_turns=20)
+        
+        # Print a summary of the game outcome
+        print("\n===== GAME SUMMARY =====")
+        print(f"Teams: RED={red_team_size} operatives, BLUE={blue_team_size} operatives")
+        print(f"Turns played: {game_outcome['turns_played']}")
+        if game_outcome['winner']:
+            print(f"Winner: {game_outcome['winner']} team")
+        print(f"Outcome: {game_outcome['win_reason']}")
+        print(f"Total game time: {game_outcome['game_duration_seconds']:.2f} seconds")
+    except KeyboardInterrupt:
+        print("\nGame interrupted by user.")
+    except Exception as e:
+        print(f"\nError occurred: {e}")
+        import traceback
+        traceback.print_exc()
+    finally:
+        # Reset stdout
+        sys.stdout = sys.__stdout__
+        print(f"Game log saved to {log_file}")

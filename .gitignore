@@ -1,5 +1,6 @@
 # ai_game_logs/
 logs/
+game_logs/
 *.csv
 
 # Byte-compiled / optimized / DLL files

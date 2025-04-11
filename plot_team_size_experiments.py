@@ -145,4 +145,4 @@ if __name__ == "__main__":
             turnscsv_file = default_csv
         
     # Plot the win rates
-    plot_win_rates_by_team_difference(csv_file)
+    plot_win_rates_by_team_difference('team_size_results.csv')

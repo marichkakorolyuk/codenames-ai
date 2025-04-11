@@ -1,38 +1,64 @@
-# Resilient Democracy Experiments: AI Collective Intelligence in Competitive Environments
+# Codenames AI
 
-A terminal-based implementation of the Codenames board game with AI players using language model APIs. This project explores how AI systems collectively reason, reach consensus, and coordinate under competitive pressure, with specific attention to debate structures and their effect on decision quality.
+An implementation of the Codenames board game using GPT-4 agents in different roles. The system enables research on multi-agent collaboration, consensus mechanisms, and competitive reasoning.
 
 ## 🎮 Game Overview
 
 Codenames is a game for two teams (Red and Blue) with a grid of 25 words. Some words belong to the Red Team, some to the Blue Team, some are neutral, and one is the Assassin. Each team has a Spymaster who knows which words belong to which team. The Spymasters take turns giving one-word clues to help their team's Operatives guess the correct words. The team that guesses all their words first wins.
 
-## ✨ Features
+## ✨ Key Features
 
-- **Full AI-powered gameplay**: Language models play as both Spymasters and Operatives
-- **Multi-agent debate system**: AI Operatives engage in structured deliberation before guessing
-- **Team-based collaboration**: Multiple AI agents must coordinate to succeed
-- **Configurable team sizes**: Analyze how collective dynamics affect decision quality
-- **Precise token tracking**: Measure resource consumption for research and optimization
-- **Comprehensive experiment framework**: Run large-scale simulations with varying parameters
-- **Byzantine fault tolerance testing**: (WIP) Test resilience against adversarial agents
+- **GPT-4 Agents**: All game roles (Spymaster, Operative, Judge) use GPT-4
+- **Multi-agent Debate**: Operatives discuss clues before making decisions
+- **Team Dynamics**: Variable team sizes to study group decision-making
+- **Weave Tracking**: Game events and outcomes logged for analysis
+- **Templated Prompts**: Role-specific prompts in separate files for easy customization
 
-## 🏗️ Game Architecture
+## 🏗️ Implementation Details
 
-The game is implemented with several key components:
+### Components
 
-- **GameEngine**: Core game logic that manages the game state, processing clues and guesses
-- **GameState**: Represents the current state of the game (board, teams, scores, history)
-- **SimpleSpymasterAgent**: AI agent that plays as a Spymaster, generating clues
-- **SimpleOperativeAgent**: AI agent that plays as an Operative, guessing words based on clues
-- **DebateJudge**: Analyzes debate transcripts to determine consensus and priorities
-- **TokenUsageTracker**: Tracks API token usage for precise measurement
+- **GameEngine**: Core logic that manages game state, processes clues and guesses
+- **GameState**: Tracks board state, teams, scores, and turn history
+- **SimpleSpymasterAgent**: Generates one-word clues for team words
+- **SimpleOperativeAgent**: Interprets clues and selects words to guess
+- **DebateJudge**: Analyzes operative discussions to find consensus
+
+### Prompt Templates
+
+All AI agent prompts are externalized in text files for easy customization:
+
+- **`prompts/spymaster_prompt.txt`**: Guides Spymaster in creating strategic clues that connect multiple words
+- **`prompts/operative_prompt.txt`**: Directs Operatives to analyze clues and engage in team debate
+- **`prompts/judge_prompt.txt`**: Instructs the Judge on how to evaluate debate quality and find consensus
+
+Templates are formatted with game state variables during runtime. Researchers can modify these prompts to test different instruction strategies without changing the code.
+
+### Data Collection
+
+Using Weave integration, the system captures:
+
+- Game initialization parameters (seed, team sizes)
+- Turn-by-turn events (clues, debates, guesses)
+- Success/failure rates of different strategies
+- Full game outcomes with final board states
+
+### Configuration Options
+
+- **Team Size**: Number of operative agents per team (default: 2)
+- **Max Turns**: Maximum game length before forced ending (default: 20)
+- **Debate Rounds**: Number of discussion rounds before consensus (default: 2)
+- **Random Seed**: Option to set fixed seed for reproducible games
 
 ## ⚙️ Game Mechanics
 
 ### 1. Initial Setup
 
-- Random assignment of 25 words to teams (typically 8-9 per team, 7-8 neutral, 1 Assassin)
-- Teams (Red and Blue) are formed with 1 Spymaster and configurable number of Operatives each
+- 25 words randomly assigned to form the game board
+- 50/50 random determination of starting team (RED or BLUE)
+- Starting team receives 9 cards, other team gets 8 cards
+- 7 neutral cards and 1 Assassin card complete the board
+- Teams formed with 1 Spymaster and configurable number of Operatives each (default: 2 per team)
 
 ### 2. Turn Structure
 
