@@ -18,9 +18,6 @@ import datetime
 # Load environment variables from .env file
 dotenv.load_dotenv()
 
-# Set OpenRouter API key directly as requested
-OPENROUTER_API_KEY = "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"
-
 # Set up logging to file
 def setup_logging():
     # Create the game_logs directory if it doesn't exist
