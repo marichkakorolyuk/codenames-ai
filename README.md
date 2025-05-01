@@ -47,7 +47,42 @@ Using Weave integration, the system captures:
 
 - **Team Size**: Number of operative agents per team (default: 2)
 - **Max Turns**: Maximum game length before forced ending (default: 20)
-- **Debate Rounds**: Number of discussion rounds before consensus (default: 2)
+- **Debate Rounds**: Number of discussion rounds between operatives (default: 2)
+- **AI Models**: Configurable AI models for each team and the debate judge
+
+### AI Models
+
+You can configure different AI models for the Red team, Blue team, and the debate judge. Available models include:
+
+- `anthropic/claude-3-opus` - Most powerful Claude model (highest quality, slower)
+- `anthropic/claude-3-sonnet` - Mid-tier Claude model (balanced quality/speed)
+- `anthropic/claude-3-haiku` - Smaller, faster Claude model (default)
+- `openai/gpt-4-turbo` - OpenAI's GPT-4 model
+- `google/gemini-1.5-pro` - Google's Gemini model
+- `meta-llama/llama-3-70b-instruct` - Meta's Llama 3 model
+
+## 🚀 Running the Game
+
+To run the game with default settings:
+
+```bash
+python updated_play_codenames_game_standalone.py
+```
+
+To run with custom team sizes and models:
+
+```bash
+python updated_play_codenames_game_standalone.py --red-size 3 --blue-size 2 --red-model "openai/gpt-4-turbo" --blue-model "anthropic/claude-3-haiku" --judge-model "anthropic/claude-3-sonnet"
+```
+
+Available command line options:
+- `--red-size`: Number of RED team operatives
+- `--blue-size`: Number of BLUE team operatives
+- `--red-model`: AI model for RED team
+- `--blue-model`: AI model for BLUE team
+- `--judge-model`: AI model for debate judge
+- `--max-turns`: Maximum number of turns
+
 - **Random Seed**: Option to set fixed seed for reproducible games
 
 ## ⚙️ Game Mechanics
@@ -183,89 +218,79 @@ Guessing word: microscope
 Guess result: NEUTRAL card revealed
 Incorrect guess - ending turn
 ```
-## 🚀 Getting Started
 
-### Prerequisites
+## 🧠 Interesting Examples
 
-- Python 3.6+
-- OpenAI API key (or alternative language model API key)
+### Successful Decodings
 
-### Installation
+#### Example 1: Mechanical Reasoning
 
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/your-username/codenames-ai.git
-   cd codenames-ai
-   ```
+The spymaster gave the clue "gear" and the operatives had an interesting debate about what it could refer to:
 
-2. Install the required dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. Set your API key:
-   ```bash
-   export OPENAI_API_KEY="your-api-key-here"
-   ```
-
-### Running the Game
-
-#### Single Game
-
-To run a single game with default settings (2 operatives per team):
-```bash
-python updated_play_codenames_game_standalone.py
+```
+Operative 1: "Suit is a type of clothing that often has mechanical components like buttons, zippers, and fasteners - all part of a 'gear' system."
+Operative 2: "Weapon: Weapons often have mechanical components and could be considered a type of gear."
+Operative 3: "Time - Time is a key component of machinery and can be thought of as an integral 'gear' in the overall system."
 ```
 
-The default implementation doesn't support command-line arguments for team sizes, but you can modify the team sizes by editing the variables at the bottom of the script:
+Notably, "time" was indeed a blue card that the spymaster intended to connect with the "gear" clue, demonstrating how the AI operatives can make logical connections that mirror human reasoning.
 
-```python
-# Define team sizes
-red_team_size = 2
-blue_team_size = 3
+#### Example 2: Geographical Reasoning
+
+This example shows how the AI spymaster can create complex associations that the operatives are able to successfully decode:
+
+```
+Spymaster gives clue: "india 3"
+
+Operative 1: "'sub' - A submarine is an ocean-faring vessel, which connects to the 'india' clue as India is a peninsular country surrounded by oceans."
+Operative 2: "'sub' is a clear geographic connection to 'india' and fits the numerical clue of 3."
 ```
 
-#### Running Experiments
+This showcases the system's ability to reason through multi-step connections (india → geography → submarine) that require sophisticated understanding of world knowledge.
 
-To run team size experiments with the experiment framework:
+### Unsuccessful Decodings
 
-```python
-# From experiment_team_size.py
-experiment = run_experiment(
-    red_team_min=2,
-    red_team_max=8,
-    red_team_step=2,
-    blue_team_min=2,
-    blue_team_max=8,
-    blue_team_step=2,
-    iterations=3  # Number of games per configuration
-)
+#### Example: "Natural" Clue Misinterpretation
+
+The BLUE team's operatives debated about the clue "natural 3" and ended up making a reasonable but incorrect guess:
+
+```
+Operative 1: "GRACE can refer to a natural, elegant movement or state of being."
+Operative 3: "GRACE - This word has a strong natural and organic connotation, fitting well with the 'natural' clue."
 ```
 
-To execute the experiment script:
+They guessed "grace" which turned out to be a RED card. This shows how even well-reasoned interpretations can sometimes lead to incorrect guesses, mimicking the challenges human players face.
 
-```bash
-python experiment_team_size.py
-```
+## 📊 Experimental Results
 
-#### Example Experiment: How Team Size Impact on Win Rates
+### Team Size Experiment
 
 We investigated how varying the number of operative agents on each team affects win rates. The experiment framework runs simulations with different team size configurations and records outcomes for analysis.
+
+![Team Size Experiment Results](team_size_plot_20250412_231553.png)
+
+This experiment demonstrates how the framework can quantitatively measure the impact of collective intelligence variables (like team size) on decision quality in competitive settings. For this experiment, we ran 50 game iterations for each team size combination to ensure statistical reliability.
+
+Interestingly, we didn't find significant impact of team size on win rates, especially when accounting for the additional tokens used by larger teams. This suggests that simply adding more AI agents to a team may not necessarily improve performance in a collaborative reasoning task like Codenames.
 
 **Research Question**: How does the relative team size difference (Blue - Red) affect Blue team's win percentage?
 
 **Method**:
 - Fixed Red team size at 2 operatives
 - Varied Blue team size (2 or 4 operatives)
-- Ran multiple game iterations per configuration
-- Tracked win rates and calculated 95% confidence intervals
+- Ran 50 iterations per configuration
+- Measured win rate, gameplay duration, and debate consensus
 
 **Results**:
+- Increasing Blue team size from 2 to 4 shows only a modest improvement in win rate
+- Larger teams took longer to reach consensus, affecting overall efficiency
+- The quality of reasoning in debates seemed more important than team size
 
-![Team Size Experiment Results](assets/team_size_experiment.png)
-
-
-This experiment demonstrates how the framework can quantitatively measure the impact of collective intelligence variables (like team size) on decision quality in competitive settings.
+**Implications**:
+- Quality of AI agents may matter more than quantity
+- Optimal team sizes might depend on the specific cognitive task
+- Efficiency of debate mechanisms in reaching consensus
+- Most common win conditions and their relationship to team dynamics
 
 ## 📈 Analysis Capabilities
 
@@ -275,7 +300,6 @@ The experiment framework provides insights into:
 - Average game duration and token usage by team configuration
 - Efficiency of debate mechanisms in reaching consensus
 - Most common win conditions and their relationship to team dynamics
-
 
 ## 📄 License
 

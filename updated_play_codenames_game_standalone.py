@@ -13,6 +13,7 @@ import weave
 import sys
 import datetime
 
+
 # Import necessary libraries
 
 # Load environment variables from .env file
@@ -334,7 +335,7 @@ WORD_LIST = [
 
 # AI Agents
 
-class DebateJudge(BaseModel):
+class DebateJudgeResult(BaseModel):
     reasoning: str
     words_where_operatives_agree: List[str]
     words_where_operatives_disagree: List[str]
@@ -346,16 +347,18 @@ class ClueModel(BaseModel):
 
 class SimpleSpymasterAgent:
     """AI agent that plays as a Spymaster"""
-    def __init__(self, team: CardType, name=None):
+    def __init__(self, team: CardType, name=None, model="anthropic/claude-3-haiku"):
         """
         Initialize a new spymaster agent.
         
         Args:
             team: The team this agent belongs to
             name: Optional name for the agent
+            model: The AI model to use for this agent
         """
         self.team = team
-        self.name = name or f"Spymaster {team.value}"
+        self.name = name or f"Spymaster"
+        self.model = model
         
     @weave.op()
     def generate_clue(self, game_state: GameState) -> ClueModel:
@@ -437,7 +440,7 @@ class SimpleSpymasterAgent:
         enhanced_prompt = prompt + "\n\nYou MUST respond ONLY with a valid JSON object and nothing else. No explanations before or after the JSON. The JSON structure must be: {\"clue\": \"your_clue_word\", \"selected_words\": [\"word1\", \"word2\"], \"reasoning\": \"your reasoning\"}"
         
         response = client.chat.completions.create(
-            model="anthropic/claude-3-haiku",
+            model=self.model,
             messages=[
                 {"role": "system", "content": enhanced_prompt}
             ],
@@ -482,9 +485,10 @@ class SimpleSpymasterAgent:
 
 class SimpleOperativeAgent:
     """AI agent that plays as a Operative"""
-    def __init__(self, team: CardType, name = 'Smith'):
+    def __init__(self, team: CardType, name = 'Smith', model="anthropic/claude-3-haiku"):
         self.name = str(name)
         self.team = team
+        self.model = model
 
     @weave.op()
     def generate(self, clue_word, clue_n_words, debate_history):
@@ -512,7 +516,7 @@ class SimpleOperativeAgent:
             api_key=OPENROUTER_API_KEY
         )
         completion = client.chat.completions.create(
-            model="anthropic/claude-3-haiku",
+            model=self.model,
             messages=[
                 {"role": "user", "content": prompt},
             ],
@@ -527,6 +531,85 @@ class SimpleOperativeAgent:
         response = completion.choices[0].message
         return response.content
 
+class DebateJudge:
+    """AI agent that judges debates between operatives"""
+    def __init__(self, model="anthropic/claude-3-haiku"):
+        self.model = model
+
+    @weave.op()
+    def generate(self, debate_history, clue_word, clue_n_words, round_number=1, current_team="unknown"):
+        # Load the prompt from file
+        prompt_file = pathlib.Path("prompts/judge_prompt.txt")
+        with open(prompt_file, "r") as f:
+            prompt_template = f.read()
+        
+        # Format the prompt with variables
+        debate_judge_prompt = prompt_template.format(
+            current_team=current_team,
+            round_number=round_number,
+            clue_word=clue_word,
+            clue_n_words=clue_n_words,
+            debate_history=debate_history
+        )
+        
+        print("Using DebateJudge to resolve the debate...")
+        print(f"Using model: {self.model}")
+        
+        # Use OpenRouter with direct API key
+        client = OpenAI(
+            base_url="https://openrouter.ai/api/v1",
+            api_key=OPENROUTER_API_KEY
+        )
+        
+        # Format prompt with strict instructions for JSON output
+        enhanced_prompt = debate_judge_prompt + "\n\nYou MUST respond ONLY with a valid JSON object and nothing else. No explanations before or after the JSON. The JSON structure must be: {\"reasoning\": \"your reasoning\", \"words_where_operatives_agree\": [\"word1\", \"word2\"], \"words_where_operatives_disagree\": [\"word3\", \"word4\"]}"
+        
+        # Make API call with the model specified during initialization
+        response = client.chat.completions.create(
+            model=self.model,
+            messages=[
+                {"role": "system", "content": enhanced_prompt}
+            ],
+            extra_headers={
+                "HTTP-Referer": "https://github.com/mariiakoroliuk/codenames-ai",
+                "X-Title": "Codenames AI"
+            },
+            response_format={"type": "json_object"},
+            max_tokens=1000
+        )
+        
+        # Extract reasoning from the response
+        response_text = response.choices[0].message.content
+        
+        try:
+            import json
+            import re
+            
+            # Try to extract JSON using regex if needed
+            json_match = re.search(r'(\{.*?\})', response_text, re.DOTALL)
+            if json_match:
+                json_str = json_match.group(1)
+                parsed_response = json.loads(json_str)
+            else:
+                parsed_response = json.loads(response_text)
+            
+            # Create and return the result
+            return DebateJudgeResult(
+                reasoning=parsed_response.get("reasoning", ""),
+                words_where_operatives_agree=parsed_response.get("words_where_operatives_agree", []),
+                words_where_operatives_disagree=parsed_response.get("words_where_operatives_disagree", [])
+            )
+            
+        except Exception as e:
+            print(f"Error parsing judge response: {e}")
+            print(f"Raw response: {response_text}")
+            # Return empty result as fallback
+            return DebateJudgeResult(
+                reasoning="Error parsing response",
+                words_where_operatives_agree=[],
+                words_where_operatives_disagree=[]
+            )
+
 # Global variables for SimpleOperativeAgent to reference
 unrevealed_words = []
 revealed_words = []
@@ -536,7 +619,9 @@ revealed_words = []
 import time
 
 @weave.op 
-def play_codenames_game(team_red_size=2, team_blue_size=2, max_turns=20, seed=None, debate_rounds=2):
+def play_codenames_game(team_red_size=2, team_blue_size=2, max_turns=20, seed=None, debate_rounds=2, 
+                      red_model="anthropic/claude-3-haiku", blue_model="anthropic/claude-3-haiku", 
+                      judge_model="anthropic/claude-3-haiku"):
     """
     Play a complete game of Codenames using the existing agent implementations.
     
@@ -546,6 +631,9 @@ def play_codenames_game(team_red_size=2, team_blue_size=2, max_turns=20, seed=No
         max_turns: Maximum number of turns before ending the game
         seed: Random seed for reproducibility
         debate_rounds: Number of rounds of debate for each turn
+        red_model: The model to use for RED team agents
+        blue_model: The model to use for BLUE team agents
+        judge_model: The model to use for the debate judge
         
     Returns:
         The final game state
@@ -573,9 +661,11 @@ def play_codenames_game(team_red_size=2, team_blue_size=2, max_turns=20, seed=No
              blue_cards=game_state.blue_remaining)
     print(game_state)
     
-    # Initialize spymasters
-    blue_spymaster = SimpleSpymasterAgent(CardType.BLUE)
-    red_spymaster = SimpleSpymasterAgent(CardType.RED)
+    # Initialize spymasters with team-specific models
+    blue_spymaster = SimpleSpymasterAgent(CardType.BLUE, model=blue_model)
+    red_spymaster = SimpleSpymasterAgent(CardType.RED, model=red_model)
+    print(f"Created RED spymaster using {red_model}")
+    print(f"Created BLUE spymaster using {blue_model}")
     
     # Helper function to get the current spymaster
     def get_current_spymaster_agent(game_state):
@@ -632,8 +722,13 @@ def play_codenames_game(team_red_size=2, team_blue_size=2, max_turns=20, seed=No
         else:  # BLUE team
             team_size = team_blue_size
             
-        operatives = [SimpleOperativeAgent(current_team, f"Operative {i+1}") 
-                     for i in range(team_size)]
+        # Create operatives with the appropriate model for the current team
+        if current_team == CardType.RED:
+            operatives = [SimpleOperativeAgent(current_team, f"Operative {i+1}", model=red_model)
+                          for i in range(team_size)]
+        else:  # BLUE team
+            operatives = [SimpleOperativeAgent(current_team, f"Operative {i+1}", model=blue_model)
+                          for i in range(team_size)]
         
         # Print available words for debugging
         print(f"Available words for operatives: {unrevealed_words}")
@@ -679,67 +774,17 @@ def play_codenames_game(team_red_size=2, team_blue_size=2, max_turns=20, seed=No
         )
         
         print("Using DebateJudge to resolve the debate...")
-        # Use OpenRouter with direct API key
-        client = OpenAI(
-            base_url="https://openrouter.ai/api/v1",
-            api_key=OPENROUTER_API_KEY
+        # Create a debate judge with the specified model
+        judge = DebateJudge(model=judge_model)
+        
+        # Use the judge to analyze the debate and get results
+        debate_model = judge.generate(
+            debate_history=debate_history,
+            clue_word=clue_word,
+            clue_n_words=clue_n_words,
+            round_number=round_number,
+            current_team=current_team.value
         )
-        
-        # Format prompt with strict instructions for JSON output
-        enhanced_judge_prompt = debate_judge_prompt + "\n\nYou MUST respond ONLY with a valid JSON object and nothing else. No explanations before or after the JSON. The JSON structure must be: {\"reasoning\": \"your reasoning\", \"words_where_operatives_agree\": [\"word1\", \"word2\"], \"words_where_operatives_disagree\": [\"word3\", \"word4\"]}"
-        
-        response = client.chat.completions.create(
-            model="anthropic/claude-3-haiku",
-            messages=[
-                {"role": "system", "content": enhanced_judge_prompt}
-            ],
-            extra_headers={
-                "HTTP-Referer": "https://github.com/mariiakoroliuk/codenames-ai",
-                "X-Title": "Codenames AI"
-            },
-            response_format={"type": "json_object"}
-        )
-        
-        # Process response and manually parse JSON
-        response_text = response.choices[0].message.content
-        try:
-            import json
-            import re
-            
-            # Try to extract JSON using regex if needed
-            json_match = re.search(r'(\{.*?\})', response_text, re.DOTALL)
-            if json_match:
-                json_str = json_match.group(1)
-                parsed_response = json.loads(json_str)
-            else:
-                parsed_response = json.loads(response_text)
-                
-            # Convert to DebateJudge object
-            debate_model = DebateJudge(
-                reasoning=parsed_response.get("reasoning", ""),
-                words_where_operatives_agree=parsed_response.get("words_where_operatives_agree", []),
-                words_where_operatives_disagree=parsed_response.get("words_where_operatives_disagree", [])
-            )
-        except Exception as e:
-            print(f"Error parsing response: {e}")
-            print(f"Raw response: {response_text}")
-            
-            # Try to extract words directly from the debate content
-            common_words = []
-            for word in unrevealed_words:
-                mentions = 0
-                for op_name, reasoning in this_turn_reasoning.items():
-                    if word.lower() in reasoning.lower():
-                        mentions += 1
-                if mentions >= len(operatives) / 2:  # If at least half the operatives mentioned it
-                    common_words.append(word)
-            
-            # Fallback with intelligent defaults
-            debate_model = DebateJudge(
-                reasoning="Error in parsing response, using fallback mechanism",
-                words_where_operatives_agree=common_words[:2] if common_words else (filtered_agreed_words[:1] if filtered_agreed_words else [all_words[0] if all_words else unrevealed_words[0]]),
-                words_where_operatives_disagree=[]
-            )
         
         # Simple logging for debate outcome
         log_event("debate_completed", 
@@ -917,13 +962,51 @@ if __name__ == "__main__":
     red_team_size = 2
     blue_team_size = 3
     
+    # Define models for each team - can be customized
+    # Available models include:
+    # - "anthropic/claude-3-opus" (powerful Claude model)
+    # - "anthropic/claude-3-sonnet" (mid-tier Claude model)
+    # - "anthropic/claude-3-haiku" (faster, smaller Claude model)
+    # - "openai/gpt-4-turbo" (OpenAI's GPT-4 model)
+    # - "google/gemini-1.5-pro" (Google's Gemini model)
+    # - "meta-llama/llama-3-70b-instruct" (Meta's Llama model)
+    red_model = "anthropic/claude-3-haiku"
+    blue_model = "anthropic/claude-3-haiku"
+    judge_model = "anthropic/claude-3-haiku"
+    
+    # Allow command line arguments to override defaults
+    import argparse
+    parser = argparse.ArgumentParser(description="Run Codenames AI game with customizable models")
+    parser.add_argument("--red-size", type=int, default=red_team_size, help="Number of RED team operatives")
+    parser.add_argument("--blue-size", type=int, default=blue_team_size, help="Number of BLUE team operatives")
+    parser.add_argument("--red-model", type=str, default=red_model, help="AI model for RED team")
+    parser.add_argument("--blue-model", type=str, default=blue_model, help="AI model for BLUE team")
+    parser.add_argument("--judge-model", type=str, default=judge_model, help="AI model for debate judge")
+    parser.add_argument("--max-turns", type=int, default=20, help="Maximum number of turns")
+    
+    args = parser.parse_args()
+    red_team_size = args.red_size
+    blue_team_size = args.blue_size
+    red_model = args.red_model
+    blue_model = args.blue_model
+    judge_model = args.judge_model
+    max_turns = args.max_turns
+    
     # Welcome message with timestamp
     print(f"Welcome to Codenames AI! ({datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')})")
     print(f"Playing with RED team size: {red_team_size}, BLUE team size: {blue_team_size}")
+    print(f"Models: RED={red_model}, BLUE={blue_model}, JUDGE={judge_model}")
     
     try:
         # Call the game function with optional arguments for team sizes, max_turns and debate_rounds
-        game_state, game_outcome = play_codenames_game(team_red_size=red_team_size, team_blue_size=blue_team_size, max_turns=20)
+        game_state, game_outcome = play_codenames_game(
+            team_red_size=red_team_size, 
+            team_blue_size=blue_team_size, 
+            max_turns=max_turns,
+            red_model=red_model,
+            blue_model=blue_model,
+            judge_model=judge_model
+        )
         
         # Print a summary of the game outcome
         print("\n===== GAME SUMMARY =====")
