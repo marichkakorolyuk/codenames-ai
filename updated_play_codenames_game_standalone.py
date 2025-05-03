@@ -437,7 +437,7 @@ class SimpleSpymasterAgent:
             api_key=OPENROUTER_API_KEY
         )
         # Format prompt with strict instructions for JSON output
-        enhanced_prompt = prompt + "\n\nYou MUST respond ONLY with a valid JSON object and nothing else. No explanations before or after the JSON. The JSON structure must be: {\"clue\": \"your_clue_word\", \"selected_words\": [\"word1\", \"word2\"], \"reasoning\": \"your reasoning\"}"
+        enhanced_prompt = prompt + "\n\nYou MUST respond ONLY with a valid JSON object and nothing else. No explanations before or after the JSON. The JSON structure must be: {\"reasoning\": \"your reasoning\", \"clue\": \"your_clue_word\", \"selected_words\": [\"word1\", \"word2\"]}"
         
         response = client.chat.completions.create(
             model=self.model,
