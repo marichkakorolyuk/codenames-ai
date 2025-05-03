@@ -18,6 +18,7 @@ import datetime
 
 # Load environment variables from .env file
 dotenv.load_dotenv()
+OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
 
 # Set up logging to file
 def setup_logging():
@@ -51,6 +52,7 @@ def setup_logging():
     return log_file
 
 # Initialize Weave for tracking experiments and game logs
+
 weave.init('codenames-ai')
 
 # Simplified logging function for weave
@@ -485,10 +487,11 @@ class SimpleSpymasterAgent:
 
 class SimpleOperativeAgent:
     """AI agent that plays as a Operative"""
-    def __init__(self, team: CardType, name = 'Smith', model="anthropic/claude-3-haiku"):
+    def __init__(self, team: CardType, name = 'Smith', model="anthropic/claude-3-haiku", max_tokens=400):
         self.name = str(name)
         self.team = team
         self.model = model
+        self.max_tokens = max_tokens
 
     @weave.op()
     def generate(self, clue_word, clue_n_words, debate_history):
@@ -524,7 +527,7 @@ class SimpleOperativeAgent:
                 "HTTP-Referer": "https://github.com/mariiakoroliuk/codenames-ai",
                 "X-Title": "Codenames AI"
             },
-            max_tokens=200
+            max_tokens=self.max_tokens
         )
         
 
@@ -533,8 +536,9 @@ class SimpleOperativeAgent:
 
 class DebateJudge:
     """AI agent that judges debates between operatives"""
-    def __init__(self, model="anthropic/claude-3-haiku"):
+    def __init__(self, model="anthropic/claude-3-haiku", max_tokens=1000):
         self.model = model
+        self.max_tokens = max_tokens
 
     @weave.op()
     def generate(self, debate_history, clue_word, clue_n_words, round_number=1, current_team="unknown"):
@@ -575,7 +579,7 @@ class DebateJudge:
                 "X-Title": "Codenames AI"
             },
             response_format={"type": "json_object"},
-            max_tokens=1000
+            max_tokens=self.max_tokens
         )
         
         # Extract reasoning from the response
@@ -619,9 +623,18 @@ revealed_words = []
 import time
 
 @weave.op 
-def play_codenames_game(team_red_size=2, team_blue_size=2, max_turns=20, seed=None, debate_rounds=2, 
-                      red_model="anthropic/claude-3-haiku", blue_model="anthropic/claude-3-haiku", 
-                      judge_model="anthropic/claude-3-haiku"):
+def play_codenames_game(
+    team_red_size=2, 
+    team_blue_size=2, 
+    max_turns=20, 
+    seed=None, 
+    debate_rounds=2, 
+    red_model="anthropic/claude-3-haiku", 
+    blue_model="anthropic/claude-3-haiku", 
+    judge_model="anthropic/claude-3-haiku",
+    red_models=None,
+    blue_models=None,
+    ):
     """
     Play a complete game of Codenames using the existing agent implementations.
     
@@ -638,6 +651,18 @@ def play_codenames_game(team_red_size=2, team_blue_size=2, max_turns=20, seed=No
     Returns:
         The final game state
     """
+    
+    # Backward compatibility: If no models are provided, use the default model for each team
+    # The +1 is for the spymaster
+    if red_models is None:
+        red_models = [red_model] * (team_red_size)
+    else:
+        team_red_size = len(red_models)
+    if blue_models is None:
+        blue_models = [blue_model] * (team_blue_size)
+    else:
+        team_blue_size = len(blue_models)
+    
     # Start tracking game time
     start_time = time.time()
     
@@ -662,10 +687,10 @@ def play_codenames_game(team_red_size=2, team_blue_size=2, max_turns=20, seed=No
     print(game_state)
     
     # Initialize spymasters with team-specific models
-    blue_spymaster = SimpleSpymasterAgent(CardType.BLUE, model=blue_model)
-    red_spymaster = SimpleSpymasterAgent(CardType.RED, model=red_model)
-    print(f"Created RED spymaster using {red_model}")
-    print(f"Created BLUE spymaster using {blue_model}")
+    blue_spymaster = SimpleSpymasterAgent(CardType.BLUE, model=blue_models[0])
+    red_spymaster = SimpleSpymasterAgent(CardType.RED, model=red_models[0])
+    print(f"Created RED spymaster using {red_models[0]}")
+    print(f"Created BLUE spymaster using {blue_models[0]}")
     
     # Helper function to get the current spymaster
     def get_current_spymaster_agent(game_state):
@@ -724,11 +749,11 @@ def play_codenames_game(team_red_size=2, team_blue_size=2, max_turns=20, seed=No
             
         # Create operatives with the appropriate model for the current team
         if current_team == CardType.RED:
-            operatives = [SimpleOperativeAgent(current_team, f"Operative {i+1}", model=red_model)
-                          for i in range(team_size)]
+            operatives = [SimpleOperativeAgent(current_team, f"Operative {i}", model=red_models[i])
+                          for i in range(1, team_size)]
         else:  # BLUE team
-            operatives = [SimpleOperativeAgent(current_team, f"Operative {i+1}", model=blue_model)
-                          for i in range(team_size)]
+            operatives = [SimpleOperativeAgent(current_team, f"Operative {i}", model=blue_models[i])
+                          for i in range(1, team_size)]
         
         # Print available words for debugging
         print(f"Available words for operatives: {unrevealed_words}")
