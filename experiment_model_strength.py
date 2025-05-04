@@ -342,9 +342,9 @@ if __name__ == "__main__":
         stronger_model="anthropic/claude-3.7-sonnet",  # Stronger model
         judge_model="anthropic/claude-3.7-sonnet",  # Judge model (smartest)
         weaker_team_min=2,  # Start with 2 agents on the weaker team
-        weaker_team_max=3,  # Test up to 3 agents on the weaker team
+        weaker_team_max=6,  # Test up to 3 agents on the weaker team
         weaker_team_step=1,  # Increase by 1
         stronger_team_size=2,  # Fixed 2 agents on the stronger team
-        iterations=5,  # Just 1 iteration for testing
+        iterations=7,  # Just 1 iteration for testing
         weaker_team_color="RED"  # Assign the weaker model to RED team
     )
