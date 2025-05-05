@@ -5,9 +5,11 @@ import numpy as np
 from typing import List, Dict, Any, Tuple, Optional
 import random
 import os
+import argparse # Added argparse
 
 # Import the game function
 from updated_play_codenames_game_standalone import play_codenames_game, CardType
+from our_utils import set_stdout_dup_to_file # Added import for logging
 
 class TeamDiversityExperiment:
     """Class to run Codenames experiments with varying model strengths and team sizes"""
@@ -361,33 +363,46 @@ class TeamDiversityExperiment:
 
 # Example of how to potentially use the updated class (replace the old main block)
 if __name__ == "__main__":
-    # Example configuration: 2 vs 3 game with diverse models on blue team
+    parser = argparse.ArgumentParser(description="Run Codenames team diversity experiments.")
+    
+    parser.add_argument("--red-models", nargs='+', required=True, help="List of model identifiers for the red team.")
+    parser.add_argument("--blue-models", nargs='+', required=True, help="List of model identifiers for the blue team.")
+    parser.add_argument("--judge-model", required=True, help="Model identifier for the judge.")
+    parser.add_argument("--num-games", type=int, default=5, help="Number of games to run per configuration.")
+    parser.add_argument("--max-turns", type=int, default=20, help="Maximum number of turns per game.")
+    parser.add_argument("--seed", type=int, default=None, help="Random seed for reproducibility.")
+    parser.add_argument("--out-filename", default="team_diversity_results.csv", help="Name of the CSV file to save results.")
+    parser.add_argument("--log-file", type=str, default=None, help="Optional path to redirect stdout/stderr to a log file.")
+
+    args = parser.parse_args()
+
+    # Setup logging if log file is specified
+    if args.log_file:
+        print(f"Redirecting stdout/stderr to {args.log_file}")
+        set_stdout_dup_to_file(args.log_file)
+
+    # Print the configuration being run
+    print("=== Experiment Configuration ===")
+    print(f"Red Models: {args.red_models}")
+    print(f"Blue Models: {args.blue_models}")
+    print(f"Judge Model: {args.judge_model}")
+    print(f"Number of Games: {args.num_games}")
+    print(f"Max Turns: {args.max_turns}")
+    print(f"Seed: {args.seed}")
+    print(f"Output File: {args.out_filename}")
+    if args.log_file:
+        print(f"Log File: {args.log_file}")
+    print("==============================")
+
+    # Create and run the experiment
     experiment = TeamDiversityExperiment(
-        red_models=["anthropic/claude-3-haiku", "anthropic/claude-3-haiku"],  # Red team: 2 Haiku models
-        blue_models=["anthropic/claude-3-sonnet", "anthropic/claude-3-opus", "anthropic/claude-3-sonnet"], # Blue team: 2 Sonnet, 1 Opus
-        judge_model="anthropic/claude-3-opus",      # Judge model
-        num_games=5,                                 # Run 5 games for this config
-        max_turns=20,
-        seed=42,                                     # Optional seed
-        out_filename="team_diversity_test_results.csv" # Specific output file
+        red_models=args.red_models,
+        blue_models=args.blue_models,
+        judge_model=args.judge_model,
+        num_games=args.num_games,
+        max_turns=args.max_turns,
+        seed=args.seed,
+        out_filename=args.out_filename
     )
     
-    # Run the experiments
-    results_df = experiment.run_experiments()
-    
-    # You can access the results dataframe if needed
-    # if results_df is not None:
-    #    print("DataFrame from the last run:")
-    #    print(results_df)
-
-    # Example configuration: 3 vs 3 game, different models
-    # experiment_2 = TeamDiversityExperiment(
-    #     red_models=["anthropic/claude-3-sonnet"] * 3, # Team of 3 Sonnets
-    #     blue_models=["anthropic/claude-3-haiku"] * 3, # Team of 3 Haikus
-    #     judge_model="anthropic/claude-3-opus",
-    #     num_games=3,                                
-    #     max_turns=20,
-    #     seed=123,                                    
-    #     out_filename="team_diversity_test_results.csv" # Append to the same file
-    # )
-    # experiment_2.run_experiments()
+    experiment.run_experiments()

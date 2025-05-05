@@ -292,6 +292,20 @@ Interestingly, we didn't find significant impact of team size on win rates, espe
 - Efficiency of debate mechanisms in reaching consensus
 - Most common win conditions and their relationship to team dynamics
 
+### Team Diversity Experiment
+
+```bash
+python experiment_team_diversity.py \
+    --red-models "openai/gpt-4o" "openai/gpt-4o" \
+    --blue-models "anthropic/claude-3.7-sonnet" "anthropic/claude-3.7-sonnet" "anthropic/claude-3.7-sonnet" \
+    --judge-model "anthropic/claude-3.7-sonnet" \
+    --num-games 10 \
+    --max-turns 20 \
+    --seed 42 \
+    --out-filename "results_gpt4o-x2_vs_sonnet-x3_$(date +%Y%m%d-%H%M%S).csv" \
+    --log-file "ai_game_logs/log_gpt4o-x2_vs_sonnet-x3_$(date +%Y%m%d-%H%M%S).txt" 
+```
+
 ## 📈 Analysis Capabilities
 
 The experiment framework provides insights into:
