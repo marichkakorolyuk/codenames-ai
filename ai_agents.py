@@ -186,9 +186,20 @@ class OperativeAgent(AIAgent):
         self.role = "operative"
     
     def generate_guess(self, game_state: GameState, clue: str, number: int, 
-                       correct_guesses: int, previous_guesses: List[Dict]) -> Tuple[str, str]:
+                       correct_guesses: int, previous_guesses: List[Dict], is_bonus_guess: bool = False) -> Tuple[str, str, float]:
         """Generate a guess based on the clue and game state
-        Returns a tuple of (guess_word, reasoning)
+        
+        Args:
+            game_state: Current state of the game
+            clue: The clue word from the spymaster
+            number: Number associated with the clue
+            correct_guesses: Number of correct guesses made so far for this clue
+            previous_guesses: List of previous guesses for this clue
+            is_bonus_guess: Whether this is a bonus guess (N+1)
+            
+        Returns:
+            Tuple of (guess_word, reasoning, confidence)
+            where confidence is a float between 0 and 1
         """
         board_state = game_state.get_visible_state(self.team)
         
@@ -200,6 +211,12 @@ class OperativeAgent(AIAgent):
                 unrevealed_words.append(card.word)
             else:
                 revealed_words.append({"word": card.word, "type": card.type.value})
+                
+        # If this is a bonus guess and we've already made the specified number of guesses,
+        # we need to be more careful and only proceed if we're confident
+        bonus_guess_str = ""
+        if is_bonus_guess:
+            bonus_guess_str = "\nThis is your bonus guess (beyond the number specified by the clue).\nOnly guess if you are VERY confident in your choice. Otherwise, respond with 'END' to end your turn."
         
         # Include info about previous guesses for this clue
         previous_guesses_str = ""
@@ -219,15 +236,17 @@ The unrevealed words on the board are: {', '.join(unrevealed_words)}
 
 Previously revealed words: {', '.join([f"{w['word']} ({w['type']})" for w in revealed_words])}
 
-{previous_guesses_str}
+{previous_guesses_str}{bonus_guess_str}
 
 INSTRUCTIONS:
 1. Analyze how the clue "{clue}" might relate to the unrevealed words.
 2. Provide a detailed explanation of your reasoning.
 3. End with your guess or a decision to end the turn.
+4. Include your confidence level (0-100%) in your chosen word.
 
 Respond in this format:
 REASONING: [Your detailed analysis of the clue and possible words]
+CONFIDENCE: [A number between 0-100 indicating your confidence level]
 DECISION: [ONE specific word from the board OR "END" to end your turn]
 """
         
@@ -236,13 +255,21 @@ DECISION: [ONE specific word from the board OR "END" to end your turn]
             prompt
         )
         
-        # Extract reasoning and decision
+        # Extract reasoning, confidence and decision
         reasoning = ""
         decision = ""
+        confidence = 0.0
         
-        reasoning_match = re.search(r"REASONING:\s*(.*?)(?:DECISION:|$)", response_text, re.DOTALL | re.IGNORECASE)
+        reasoning_match = re.search(r"REASONING:\s*(.*?)(?:CONFIDENCE:|DECISION:|$)", response_text, re.DOTALL | re.IGNORECASE)
         if reasoning_match:
             reasoning = reasoning_match.group(1).strip()
+        
+        confidence_match = re.search(r"CONFIDENCE:\s*(\d+)", response_text, re.IGNORECASE)
+        if confidence_match:
+            try:
+                confidence = float(confidence_match.group(1)) / 100.0
+            except ValueError:
+                confidence = 0.0
         
         decision_match = re.search(r"DECISION:\s*(.*?)(?:\n|$)", response_text, re.IGNORECASE)
         if decision_match:
@@ -251,6 +278,28 @@ DECISION: [ONE specific word from the board OR "END" to end your turn]
         # If we couldn't parse properly, use fallbacks
         if not reasoning:
             reasoning = response_text
+            
+        # If no confidence was provided, try to extract it from the reasoning
+        if confidence == 0.0:
+            # Look for confidence expressions in the reasoning
+            confidence_terms = {
+                "very confident": 0.8,
+                "confident": 0.7,
+                "fairly confident": 0.6,
+                "somewhat confident": 0.5,
+                "unsure": 0.3,
+                "not confident": 0.2,
+                "uncertain": 0.25
+            }
+            
+            for term, value in confidence_terms.items():
+                if term in reasoning.lower():
+                    confidence = value
+                    break
+            
+            # Default moderate confidence if we couldn't extract it
+            if confidence == 0.0:
+                confidence = 0.5
         
         if not decision:
             # Check for a word or "end" in the last line
@@ -289,6 +338,11 @@ DECISION: [ONE specific word from the board OR "END" to end your turn]
                     # If no match found, default to random
                     decision = random.choice(valid_words)
         
+        # If this is a bonus guess and confidence is low, end the turn
+        if is_bonus_guess and confidence < 0.6 and decision != "end":
+            print(f"Confidence too low ({confidence:.2f}) for bonus guess. Ending turn.")
+            decision = "end"
+        
         # Log the decision
         self.decisions.append({
             "type": "guess",
@@ -296,11 +350,12 @@ DECISION: [ONE specific word from the board OR "END" to end your turn]
             "response": response_text,
             "parsed": {
                 "reasoning": reasoning,
+                "confidence": confidence,
                 "decision": decision
             }
         })
         
-        return decision, reasoning
+        return decision, reasoning, confidence
 
     def debate_response(self, debate_history: List[Dict], game_state: GameState, 
                         clue: str, number: int) -> str:

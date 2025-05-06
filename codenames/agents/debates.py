@@ -41,13 +41,14 @@ class DebateManager:
         print("\n--- ROUND 1: INITIAL PROPOSALS ---")
         proposals = {}
         for agent in agents:
-            guess, reasoning = agent.generate_guess(
-                game_state, clue, number, correct_guesses, previous_guesses
+            guess, reasoning, confidence = agent.generate_guess(
+                game_state, clue, number, correct_guesses, previous_guesses, is_bonus_guess=False
             )
             
             proposals[agent.name] = {
                 "guess": guess,
-                "reasoning": reasoning
+                "reasoning": reasoning,
+                "confidence": confidence
             }
             
             message = f"I suggest we guess '{guess}'.\nMy reasoning: {reasoning}"

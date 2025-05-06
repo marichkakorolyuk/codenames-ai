@@ -228,10 +228,23 @@ Respond with only the clue word and number, separated by a space. For example: "
             # Fallback to a random clue if API fails
             return random.choice(["fallback", "emergency", "backup"]), 1
     
-    def _get_ai_guess(self, operative: Player, clue: str, number: int) -> str:
-        """Get a guess from an AI operative"""
+    def _get_ai_guess(self, operative: Player, clue: str, number: int, guesses_made: int = 0) -> Tuple[str, float]:
+        """Get a guess from an AI operative
+        
+        Args:
+            operative: The operative player
+            clue: The clue word
+            number: Number associated with the clue
+            guesses_made: Number of guesses already made for this clue
+            
+        Returns:
+            Tuple of (guess_word, confidence)
+        """
         game_state = self.engine.get_game(self.game_id)
         board_state = game_state.get_visible_state(operative.team)
+        
+        # Check if this is a bonus guess
+        is_bonus_guess = guesses_made >= number
         
         # Create a list of unrevealed words
         unrevealed_words = []
@@ -264,18 +277,34 @@ Choose exactly one word from the list. Respond with only that word.
             
             guess = response.choices[0].message.content.strip().lower()
             
+            # Extract confidence from the response if possible
+            confidence = 0.5  # Default confidence
+            confidence_match = re.search(r"confidence:?\s*(\d+)[%]?", response.choices[0].message.content, re.IGNORECASE)
+            if confidence_match:
+                try:
+                    confidence = float(confidence_match.group(1)) / 100.0
+                except ValueError:
+                    pass
+            
+            # If this is a bonus guess and confidence is low, end turn
+            if is_bonus_guess and confidence < 0.6:
+                print(f"AI operative decides to end turn (low confidence: {confidence:.2f})")
+                return "end", confidence
+            
             # Check if the guess is in the list of unrevealed words
-            if guess in [card.word.lower() for card in game_state.board if not card.revealed]:
-                return guess
+            if guess == "end":
+                return "end", confidence
+            elif guess in [card.word.lower() for card in game_state.board if not card.revealed]:
+                return guess, confidence
             else:
                 # If AI returns an invalid word, choose randomly from unrevealed words
                 print(f"AI made an invalid guess: {guess}")
-                return random.choice(unrevealed_words)
+                return random.choice(unrevealed_words), 0.3
                 
         except Exception as e:
             print(f"Error getting AI guess: {e}")
             # Fallback to a random guess if API fails
-            return random.choice(unrevealed_words)
+            return random.choice(unrevealed_words), 0.3
     
     def play_game(self):
         """Main game loop"""
@@ -343,8 +372,17 @@ Choose exactly one word from the list. Respond with only that word.
                 else:
                     print(f"\n{current_operative.name} (AI) is thinking...")
                     self._display_board(for_spymaster=False)
-                    guess_word = self._get_ai_guess(current_operative, clue_word, clue_number)
-                    print(f"{current_operative.name} guesses: {guess_word}")
+                    # Pass the number of guesses already made to determine if this is a bonus guess
+                    guesses_made = clue_number - guesses_left + 1
+                    guess_word, confidence = self._get_ai_guess(current_operative, clue_word, clue_number, guesses_made)
+                    
+                    if guess_word == "end":
+                        print(f"{current_operative.name} decides to end the turn.")
+                        continue_guessing = False
+                        self.engine.end_turn(self.game_id, current_team)
+                        break
+                        
+                    print(f"{current_operative.name} guesses: {guess_word} (confidence: {confidence:.2f})")
                 
                 # Process the guess
                 result = self.engine.process_guess(self.game_id, guess_word, current_team)

@@ -7,13 +7,10 @@ Status: Your team has {team_remaining} words left | Opponent has {opponent_remai
 
 TEAM DYNAMICS: Past clues and how your team responded: {team_history}
 
-Create a ONE-WORD CLUE connecting multiple team words. Consider:
-- How your operatives have interpreted previous clues
-- Whether to prioritize safety or efficiency based on game state
-- Which words might be most confusable with your targets
+Create a ONE-WORD CLUE connecting multiple team words while ensuring your clue has no association with opponent words, neutral words, or especially the assassin word (which causes immediate loss if selected). 
+Never use words from the board directly or sharing the same root as your team words. Be ambitious in selecting more target words to help your team win quickly, balancing between maximizing connections and maintaining clarity for your operatives.
 
 RESPOND AS:
 TARGETS: [word1], [word2], etc.
 CLUE: [your_clue_word]
 NUMBER: [number of target words]
-STRATEGY: [brief explanation of your approach]

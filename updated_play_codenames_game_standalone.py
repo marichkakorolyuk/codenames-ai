@@ -468,6 +468,12 @@ class SimpleSpymasterAgent:
             else:
                 parsed_response = json.loads(response_text)
                 
+            # Log the full reasoning from the spymaster
+            full_reasoning = parsed_response.get("reasoning", "No reasoning provided")
+            print("\n=== SPYMASTER REASONING ===\n")
+            print(full_reasoning)
+            print("\n=== END SPYMASTER REASONING ===\n")
+            
             # Convert to ClueModel object
             completion = ClueModel(
                 clue=parsed_response.get("clue", ""),
@@ -487,7 +493,7 @@ class SimpleSpymasterAgent:
 
 class SimpleOperativeAgent:
     """AI agent that plays as a Operative"""
-    def __init__(self, team: CardType, name = 'Smith', model="anthropic/claude-3-haiku", max_tokens=400):
+    def __init__(self, team: CardType, name = 'Smith', model="anthropic/claude-3-haiku", max_tokens=800):
         self.name = str(name)
         self.team = team
         self.model = model
@@ -536,7 +542,7 @@ class SimpleOperativeAgent:
 
 class DebateJudge:
     """AI agent that judges debates between operatives"""
-    def __init__(self, model="anthropic/claude-3-haiku", max_tokens=1000):
+    def __init__(self, model="anthropic/claude-3-haiku", max_tokens=1200):
         self.model = model
         self.max_tokens = max_tokens
 
@@ -597,6 +603,12 @@ class DebateJudge:
             else:
                 parsed_response = json.loads(response_text)
             
+            # Log the full reasoning from the judge
+            full_reasoning = parsed_response.get("reasoning", "No reasoning provided")
+            print("\n=== JUDGE REASONING ===\n")
+            print(full_reasoning)
+            print("\n=== END JUDGE REASONING ===\n")
+            
             # Create and return the result
             return DebateJudgeResult(
                 reasoning=parsed_response.get("reasoning", ""),
@@ -624,16 +636,16 @@ import time
 
 @weave.op 
 def play_codenames_game(
-    team_red_size=2, 
-    team_blue_size=2, 
-    max_turns=20, 
-    seed=None, 
-    debate_rounds=2, 
-    red_model="anthropic/claude-3-haiku", 
-    blue_model="anthropic/claude-3-haiku", 
-    judge_model="anthropic/claude-3-haiku",
-    red_models=None,
-    blue_models=None,
+    team_red_size,
+    team_blue_size,
+    max_turns ,
+    seed ,
+    debate_rounds, 
+    red_model, 
+    blue_model, 
+    judge_model,
+    red_models,
+    blue_models,
     ):
     """
     Play a complete game of Codenames using the existing agent implementations.
@@ -710,6 +722,10 @@ def play_codenames_game(
         # Get current spymaster
         current_spymaster = get_current_spymaster_agent(game_state)
         
+        # Log which model is being used for the spymaster
+        current_model = red_model if current_team == CardType.RED else blue_model
+        print(f"Created {current_team.value.upper()} spymaster using {current_model}")
+        
         # Generate a clue
         clue_model = current_spymaster.generate_clue(game_state)
         # Simple logging for clue generation
@@ -717,6 +733,9 @@ def play_codenames_game(
                  turn=turn_count, 
                  team=current_team.value, 
                  clue_word=clue_model.clue)
+        
+        # Log the target words the spymaster had in mind
+        print(f"Spymaster's target words: {clue_model.selected_words}")
         clue_word = clue_model.clue
         clue_n_words = len(clue_model.selected_words)
         
@@ -799,6 +818,7 @@ def play_codenames_game(
         )
         
         print("Using DebateJudge to resolve the debate...")
+        print(f"Using model: {judge_model}")
         # Create a debate judge with the specified model
         judge = DebateJudge(model=judge_model)
         
@@ -841,16 +861,23 @@ def play_codenames_game(
         print("Filtered agreed words (on board):", filtered_agreed_words)
         print("Filtered disagreed words (on board):", filtered_disagreed_words)
         
-        selected_words = []
-        # Combine agreed and disagreed words into a prioritized list
+        # Only use agreed words for guessing, not disagreed words
         all_words = filtered_agreed_words.copy()
-        all_words.extend([word for word in filtered_disagreed_words if word not in all_words])
+        
+        # If there are no agreed words, only then consider disagreed words
+        if not all_words:
+            all_words = filtered_disagreed_words.copy()
         
         if not all_words:
             print("No valid words were selected after debate. Skipping turn.")
             continue
         
         print(f"Prioritized words after debate: {all_words}")
+        # Log whether we're using agreed words only or had to fall back to disagreed words
+        if filtered_agreed_words:
+            print("Using only words where operatives agreed")
+        else:
+            print("No agreed words found, falling back to words where operatives disagreed")
         
         # Process the clue to start the guessing phase
         try:
@@ -940,6 +967,12 @@ def play_codenames_game(
     end_time = time.time()
     game_duration = end_time - start_time
     
+    # Log model information
+    print(f"\n===== MODEL INFORMATION =====")
+    print(f"RED Team Model: {red_model}")
+    print(f"BLUE Team Model: {blue_model}")
+    print(f"Judge Model: {judge_model}")
+    
     
     game_outcome = {
         "turns_played": turn_count,
@@ -983,9 +1016,6 @@ if __name__ == "__main__":
     # Set up logging to file
     log_file = setup_logging()
     
-    # Define team sizes
-    red_team_size = 2
-    blue_team_size = 3
     
     # Define models for each team - can be customized
     # Available models include:
@@ -995,47 +1025,27 @@ if __name__ == "__main__":
     # - "openai/gpt-4-turbo" (OpenAI's GPT-4 model)
     # - "google/gemini-1.5-pro" (Google's Gemini model)
     # - "meta-llama/llama-3-70b-instruct" (Meta's Llama model)
-    red_model = "anthropic/claude-3-haiku"
-    blue_model = "anthropic/claude-3-haiku"
-    judge_model = "anthropic/claude-3-haiku"
-    
-    # Allow command line arguments to override defaults
-    import argparse
-    parser = argparse.ArgumentParser(description="Run Codenames AI game with customizable models")
-    parser.add_argument("--red-size", type=int, default=red_team_size, help="Number of RED team operatives")
-    parser.add_argument("--blue-size", type=int, default=blue_team_size, help="Number of BLUE team operatives")
-    parser.add_argument("--red-model", type=str, default=red_model, help="AI model for RED team")
-    parser.add_argument("--blue-model", type=str, default=blue_model, help="AI model for BLUE team")
-    parser.add_argument("--judge-model", type=str, default=judge_model, help="AI model for debate judge")
-    parser.add_argument("--max-turns", type=int, default=20, help="Maximum number of turns")
-    
-    args = parser.parse_args()
-    red_team_size = args.red_size
-    blue_team_size = args.blue_size
-    red_model = args.red_model
-    blue_model = args.blue_model
-    judge_model = args.judge_model
-    max_turns = args.max_turns
-    
-    # Welcome message with timestamp
-    print(f"Welcome to Codenames AI! ({datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')})")
-    print(f"Playing with RED team size: {red_team_size}, BLUE team size: {blue_team_size}")
-    print(f"Models: RED={red_model}, BLUE={blue_model}, JUDGE={judge_model}")
-    
+
     try:
         # Call the game function with optional arguments for team sizes, max_turns and debate_rounds
         game_state, game_outcome = play_codenames_game(
-            team_red_size=red_team_size, 
-            team_blue_size=blue_team_size, 
-            max_turns=max_turns,
-            red_model=red_model,
-            blue_model=blue_model,
-            judge_model=judge_model
+            team_red_size=4, 
+            team_blue_size=4, 
+            max_turns=20, 
+            seed=None, 
+            debate_rounds=2, 
+            red_model="deepseek/deepseek-prover-v2:free",
+            blue_model="deepseek/deepseek-prover-v2:free",
+            judge_model="openai/gpt-4.1",
+            red_models=["deepseek/deepseek-prover-v2:free"] * 4,
+            blue_models=["deepseek/deepseek-prover-v2:free"] * 4
         )
         
+
         # Print a summary of the game outcome
         print("\n===== GAME SUMMARY =====")
-        print(f"Teams: RED={red_team_size} operatives, BLUE={blue_team_size} operatives")
+        print(f"Teams: RED={team_red_size} operatives, BLUE={team_blue_size} operatives")
+        print(f"Models used: RED={red_model}, BLUE={blue_model}, JUDGE={judge_model}")
         print(f"Turns played: {game_outcome['turns_played']}")
         if game_outcome['winner']:
             print(f"Winner: {game_outcome['winner']} team")

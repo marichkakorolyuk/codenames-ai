@@ -4,12 +4,7 @@ Clue: '{clue_word}' {clue_n_words}.
 DEBATE: {debate_history}
 BOARD: Unrevealed: {unrevealed_words} | Revealed: {revealed_words}
 
-Respond as a thoughtful team member by:
-1. Ranking your top 3 word choices
-2. Explaining your reasoning briefly (why these words connect to the clue)
-3. Addressing any teammate's points you find compelling or questionable
-4. Noting any concerns about potential trap words
-
-Don't just agree with others - contribute your unique perspective. If you're uncertain, say so honestly.
-
+Your task is to interpret your Spymaster's one-word clue to identify which unrevealed words on the board belong to your team while actively contributing to team discussion with your perspective and reasoning.
+Analyze semantic relationships between the clue and board words.
+Conclude with your final selections (aim to state as many as the hints states) and confidence level to help your team make the optimal choice each turn.
 End with: "My preferred choice is [WORD]" and a confidence level (Low/Medium/High).

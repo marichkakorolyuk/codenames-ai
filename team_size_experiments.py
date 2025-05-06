@@ -97,6 +97,8 @@ def run_simple_experiment(
                         print(f"Reason: {result['win_reason']}")
                         
                     except Exception as e:
+                        import traceback
+                        traceback.print_exc()
                         print(f"Error running game: {e}")
                         # Write error to file to keep track of issues
                         with open("experiment_errors.log", "a") as error_file:
