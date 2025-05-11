@@ -24,6 +24,7 @@ Codenames is a game for two teams (Red and Blue) with a grid of 25 words. Some w
 - **SimpleOperativeAgent**: Interprets clues and selects words to guess
 - **DebateJudge**: Analyzes operative discussions to find consensus
 
+Gamelogs available at https://huggingface.co/datasets/mariiakoroliuk/codenames-AI 
 ### Prompt Templates
 
 All AI agent prompts are externalized in text files for easy customization:
