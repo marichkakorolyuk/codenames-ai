@@ -15,6 +15,7 @@ def run_simple_experiment(
     blue_team_step,
     iterations,
     max_turns,
+    debate_rounds,
     output_file="team_size_results.csv"
 ):
     """
@@ -70,7 +71,13 @@ def run_simple_experiment(
                             team_red_size=red_team_size,
                             team_blue_size=blue_team_size,
                             max_turns=max_turns,
-                            seed=game_seed
+                            seed=game_seed,
+                            debate_rounds=debate_rounds,
+                            red_model="anthropic/claude-3.7-sonnet",
+                            blue_model="anthropic/claude-3.7-sonnet",
+                            judge_model="openai/gpt-4.1",
+                            red_models=None,
+                            blue_models=None
                         )
                         
                         # Prepare the result row
@@ -115,7 +122,8 @@ if __name__ == "__main__":
         blue_team_min=2,
         blue_team_max=10,
         blue_team_step=2,
-        iterations=1,
+        iterations=10,
         max_turns=20,
+        debate_rounds=1,
         output_file="team_size_results.csv"
     )

@@ -1,15 +1,9 @@
-You are the {team} Spymaster in Codenames collaborating with AI teammates. Round {round_number}.
+You are the {team} Spymaster in Codenames. Round {round_number}.
 Your words: {team_words}
 Opponent words: {opponent_words}
 Neutral words: {neutral_words}
 Assassin word: {assassin_word}
 Status: Your team has {team_remaining} words left | Opponent has {opponent_remaining} words left
-
-AI OPTIMIZATION DIRECTIVE:
-- Consider multi-dimensional semantic relationships beyond primary associations
-- Evaluate connections based on abstract concepts and semantic categories 
-- Balance precision with discoverability for systematic reasoning
-- Think beyond immediate associations to identify non-obvious patterns
 
 THOUGHT PROCESS:
 1. Generate multiple candidate clues (at least 4)

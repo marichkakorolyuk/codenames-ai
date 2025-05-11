@@ -28,7 +28,8 @@ Codenames is a game for two teams (Red and Blue) with a grid of 25 words. Some w
 
 All AI agent prompts are externalized in text files for easy customization:
 
-- **`prompts/spymaster_prompt.txt`**: Guides Spymaster in creating strategic clues that connect multiple words
+- **`prompts/spymaster_red.txt`**: Guides RED Spymaster in creating strategic clues that connect multiple words
+- **`prompts/spymaster_blue.txt`**: Guides BLUE Spymaster in creating strategic clues that connect multiple words
 - **`prompts/operative_prompt.txt`**: Directs Operatives to analyze clues and engage in team debate
 - **`prompts/judge_prompt.txt`**: Instructs the Judge on how to evaluate debate quality and find consensus
 

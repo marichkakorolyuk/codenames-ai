@@ -413,8 +413,11 @@ class SimpleSpymasterAgent:
                         history_entries.append(f"Round {i+1}: Clue '{clue.get('word')}' {clue.get('number')} → Selected: {guess_words}")
             team_history = "; ".join(history_entries)
 
-        # Load the prompt from file
-        prompt_file = pathlib.Path("prompts/spymaster_prompt.txt")
+        # Load the team-specific prompt from file
+        if self.team == CardType.RED:
+            prompt_file = pathlib.Path("prompts/spymaster_red.txt")
+        else:  # BLUE team
+            prompt_file = pathlib.Path("prompts/spymaster_blue.txt")
         with open(prompt_file, "r") as f:
             prompt_template = f.read()
         
@@ -441,20 +444,39 @@ class SimpleSpymasterAgent:
         # Format prompt with strict instructions for JSON output
         enhanced_prompt = prompt + "\n\nYou MUST respond ONLY with a valid JSON object and nothing else. No explanations before or after the JSON. The JSON structure must be: {\"reasoning\": \"your reasoning\", \"clue\": \"your_clue_word\", \"selected_words\": [\"word1\", \"word2\"]}"
         
-        response = client.chat.completions.create(
-            model=self.model,
-            messages=[
-                {"role": "system", "content": enhanced_prompt}
-            ],
-            extra_headers={
-                "HTTP-Referer": "https://github.com/mariiakoroliuk/codenames-ai",
-                "X-Title": "Codenames AI"
-            },
-            response_format={"type": "json_object"}
-        )
-        
-        # Process response and manually parse JSON
-        response_text = response.choices[0].message.content
+        try:
+            response = client.chat.completions.create(
+                model=self.model,
+                messages=[
+                    {"role": "system", "content": enhanced_prompt}
+                ],
+                extra_headers={
+                    "HTTP-Referer": "https://github.com/mariiakoroliuk/codenames-ai",
+                    "X-Title": "Codenames AI"
+                },
+                response_format={"type": "json_object"}
+            )
+            
+            # Check if we got a valid response
+            if not response or not hasattr(response, 'choices') or len(response.choices) == 0:
+                print(f"Warning: Failed to get valid response from {self.model} for spymaster")
+                # Return a default clue
+                return ClueModel(
+                    clue="pass",
+                    selected_words=[],
+                    reasoning="The spymaster was unable to generate a clue due to a technical issue."
+                )
+                
+            # Process response and manually parse JSON
+            response_text = response.choices[0].message.content
+        except Exception as e:
+            print(f"Error in spymaster API call: {str(e)}")
+            # Return a default clue
+            return ClueModel(
+                clue="pass",
+                selected_words=[],
+                reasoning=f"The spymaster was unable to generate a clue due to a technical issue: {str(e)}"
+            )
         
         try:
             import json
@@ -468,7 +490,16 @@ class SimpleSpymasterAgent:
             else:
                 parsed_response = json.loads(response_text)
                 
-            # Log the full reasoning from the spymaster
+            # Log the complete thought process from the spymaster
+            print("\n=== SPYMASTER PROMPT ===\n")
+            print(enhanced_prompt)
+            print("\n=== END SPYMASTER PROMPT ===\n")
+            
+            print("\n=== SPYMASTER FULL RESPONSE ===\n")
+            print(response_text)
+            print("\n=== END SPYMASTER FULL RESPONSE ===\n")
+            
+            # Log the extracted reasoning separately for clarity
             full_reasoning = parsed_response.get("reasoning", "No reasoning provided")
             print("\n=== SPYMASTER REASONING ===\n")
             print(full_reasoning)
@@ -524,25 +555,32 @@ class SimpleOperativeAgent:
             base_url="https://openrouter.ai/api/v1",
             api_key=OPENROUTER_API_KEY
         )
-        completion = client.chat.completions.create(
-            model=self.model,
-            messages=[
-                {"role": "user", "content": prompt},
-            ],
-            extra_headers={
-                "HTTP-Referer": "https://github.com/mariiakoroliuk/codenames-ai",
-                "X-Title": "Codenames AI"
-            },
-            max_tokens=self.max_tokens
-        )
-        
-
-        response = completion.choices[0].message
-        return response.content
+        try:
+            completion = client.chat.completions.create(
+                model=self.model,
+                messages=[
+                    {"role": "user", "content": prompt},
+                ],
+                extra_headers={
+                    "HTTP-Referer": "https://github.com/mariiakoroliuk/codenames-ai",
+                    "X-Title": "Codenames AI"
+                },
+                max_tokens=self.max_tokens
+            )
+            
+            if completion and hasattr(completion, 'choices') and len(completion.choices) > 0:
+                response = completion.choices[0].message
+                return response.content
+            else:
+                print(f"Warning: Failed to get response from {self.model} for operative {self.name}")
+                return f"I'm having trouble thinking of words related to '{clue_word}' right now."  
+        except Exception as e:
+            print(f"Error getting response from {self.model} for operative {self.name}: {str(e)}")
+            return f"I'm having trouble thinking of words related to '{clue_word}' right now."
 
 class DebateJudge:
     """AI agent that judges debates between operatives"""
-    def __init__(self, model="anthropic/claude-3-haiku", max_tokens=1200):
+    def __init__(self, model="anthropic/claude-3-haiku", max_tokens=1400):
         self.model = model
         self.max_tokens = max_tokens
 
@@ -574,22 +612,41 @@ class DebateJudge:
         # Format prompt with strict instructions for JSON output
         enhanced_prompt = debate_judge_prompt + "\n\nYou MUST respond ONLY with a valid JSON object and nothing else. No explanations before or after the JSON. The JSON structure must be: {\"reasoning\": \"your reasoning\", \"words_where_operatives_agree\": [\"word1\", \"word2\"], \"words_where_operatives_disagree\": [\"word3\", \"word4\"]}"
         
-        # Make API call with the model specified during initialization
-        response = client.chat.completions.create(
-            model=self.model,
-            messages=[
-                {"role": "system", "content": enhanced_prompt}
-            ],
-            extra_headers={
-                "HTTP-Referer": "https://github.com/mariiakoroliuk/codenames-ai",
-                "X-Title": "Codenames AI"
-            },
-            response_format={"type": "json_object"},
-            max_tokens=self.max_tokens
-        )
-        
-        # Extract reasoning from the response
-        response_text = response.choices[0].message.content
+        try:
+            # Make API call with the model specified during initialization
+            response = client.chat.completions.create(
+                model=self.model,
+                messages=[
+                    {"role": "system", "content": enhanced_prompt}
+                ],
+                extra_headers={
+                    "HTTP-Referer": "https://github.com/mariiakoroliuk/codenames-ai",
+                    "X-Title": "Codenames AI"
+                },
+                response_format={"type": "json_object"},
+                max_tokens=self.max_tokens
+            )
+            
+            # Check if we got a valid response
+            if not response or not hasattr(response, 'choices') or len(response.choices) == 0:
+                print(f"Warning: Failed to get valid response from {self.model} for debate judge")
+                # Return a default result
+                return DebateJudgeResult(
+                    reasoning="The judge was unable to process the debate due to a technical issue.",
+                    words_where_operatives_agree=[],
+                    words_where_operatives_disagree=[]
+                )
+                
+            # Extract reasoning from the response
+            response_text = response.choices[0].message.content
+        except Exception as e:
+            print(f"Error in debate judge API call: {str(e)}")
+            # Return a default result
+            return DebateJudgeResult(
+                reasoning="The judge was unable to process the debate due to a technical issue: " + str(e),
+                words_where_operatives_agree=[],
+                words_where_operatives_disagree=[]
+            )
         
         try:
             import json
@@ -603,7 +660,16 @@ class DebateJudge:
             else:
                 parsed_response = json.loads(response_text)
             
-            # Log the full reasoning from the judge
+            # Log the complete thought process from the judge
+            print("\n=== JUDGE PROMPT ===\n")
+            print(enhanced_prompt)
+            print("\n=== END JUDGE PROMPT ===\n")
+            
+            print("\n=== JUDGE FULL RESPONSE ===\n")
+            print(response_text)
+            print("\n=== END JUDGE FULL RESPONSE ===\n")
+            
+            # Log the extracted reasoning separately for clarity
             full_reasoning = parsed_response.get("reasoning", "No reasoning provided")
             print("\n=== JUDGE REASONING ===\n")
             print(full_reasoning)
@@ -646,7 +712,8 @@ def play_codenames_game(
     judge_model,
     red_models,
     blue_models,
-    ):
+    setup_logging_file=True
+):
     """
     Play a complete game of Codenames using the existing agent implementations.
     
@@ -659,10 +726,20 @@ def play_codenames_game(
         red_model: The model to use for RED team agents
         blue_model: The model to use for BLUE team agents
         judge_model: The model to use for the debate judge
+        red_models: List of models for red team operatives (optional)
+        blue_models: List of models for blue team operatives (optional)
+        setup_logging_file: Whether to set up logging to a file (default: True)
         
     Returns:
-        The final game state
+        The final game state and game outcome
     """
+    
+    # Set up logging to file if requested
+    original_stdout = None
+    log_file = None
+    if setup_logging_file:
+        log_file = setup_logging()
+        original_stdout = sys.stdout
     
     # Backward compatibility: If no models are provided, use the default model for each team
     # The +1 is for the spymaster
@@ -675,7 +752,13 @@ def play_codenames_game(
     else:
         team_blue_size = len(blue_models)
     
-    # Start tracking game time
+    # Log model information
+    print(f"\n===== MODEL INFORMATION =====")
+    print(f"RED Team Model: {red_models[0]}")
+    print(f"BLUE Team Model: {blue_models[0]}")
+    print(f"Judge Model: {judge_model}")
+    
+    # Start the game
     start_time = time.time()
     
     # Initialize game variables
@@ -967,13 +1050,6 @@ def play_codenames_game(
     end_time = time.time()
     game_duration = end_time - start_time
     
-    # Log model information
-    print(f"\n===== MODEL INFORMATION =====")
-    print(f"RED Team Model: {red_model}")
-    print(f"BLUE Team Model: {blue_model}")
-    print(f"Judge Model: {judge_model}")
-    
-    
     game_outcome = {
         "turns_played": turn_count,
         "winner": None,
@@ -1009,14 +1085,22 @@ def play_codenames_game(
     # Simple logging for game end
     log_event("game_ended", outcome=game_outcome)
     
+    # Print summary of the game outcome
+    print("\n===== GAME SUMMARY =====")
+    print(f"Turns played: {game_outcome['turns_played']}")
+    if game_outcome['winner']:
+        print(f"Winner: {game_outcome['winner']} team")
+    print(f"Outcome: {game_outcome['win_reason']}")
+    print(f"Total game time: {game_outcome['game_duration_seconds']:.2f} seconds")
+    
+    # Restore original stdout if we changed it
+    if original_stdout:
+        sys.stdout = original_stdout
+    
     # Return both the game state and detailed outcome information
     return game_state, game_outcome
 
 if __name__ == "__main__":
-    # Set up logging to file
-    log_file = setup_logging()
-    
-    
     # Define models for each team - can be customized
     # Available models include:
     # - "anthropic/claude-3-opus" (powerful Claude model)
@@ -1033,24 +1117,14 @@ if __name__ == "__main__":
             team_blue_size=4, 
             max_turns=20, 
             seed=None, 
-            debate_rounds=2, 
-            red_model="deepseek/deepseek-prover-v2:free",
-            blue_model="deepseek/deepseek-prover-v2:free",
+            debate_rounds=1, 
+            red_model="anthropic/claude-3.7-sonnet:thinking",
+            blue_model="anthropic/claude-3.7-sonnet:thinking",
             judge_model="openai/gpt-4.1",
-            red_models=["deepseek/deepseek-prover-v2:free"] * 4,
-            blue_models=["deepseek/deepseek-prover-v2:free"] * 4
+            red_models=None, 
+            blue_models=None,
+            setup_logging_file=True
         )
-        
-
-        # Print a summary of the game outcome
-        print("\n===== GAME SUMMARY =====")
-        print(f"Teams: RED={team_red_size} operatives, BLUE={team_blue_size} operatives")
-        print(f"Models used: RED={red_model}, BLUE={blue_model}, JUDGE={judge_model}")
-        print(f"Turns played: {game_outcome['turns_played']}")
-        if game_outcome['winner']:
-            print(f"Winner: {game_outcome['winner']} team")
-        print(f"Outcome: {game_outcome['win_reason']}")
-        print(f"Total game time: {game_outcome['game_duration_seconds']:.2f} seconds")
     except KeyboardInterrupt:
         print("\nGame interrupted by user.")
     except Exception as e:
